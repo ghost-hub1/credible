@@ -5,14 +5,34 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
 <head>
+<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
+<link rel="stylesheet" href="/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/absolute-fix.css">
+<style>
+    /* Emergency inline fix */
+    [class*="icon-"]:before {
+        font-family: "Font Awesome 6 Free" !important;
+        font-weight: 900 !important;
+    }
+    .icon-menu:before { content: "\f0c9"; }
+    .icon-chevron-right:before { content: "\f054"; }
+    .icon-chevron-left:before { content: "\f053"; }
+    .icon-check:before { content: "\f00c"; }
+    .icon-close:before { content: "\f00d"; }
+    .icon-search:before { content: "\f002"; }
+    .icon-arrow-forward:before { content: "\f061"; }
+    .icon-credit-score:before { content: "\f09d"; }
+    .icon-coins:before { content: "\f51e"; }
+</style>
+<!-- ===== END ICON FIX ===== -->
 <title>Email Protection | Cloudflare</title>
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="robots" content="noindex, nofollow" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" id="cf_styles-css" href="./cdn-cgi/styles/cf.errors.css" />
-<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="./cdn-cgi/styles/cf.errors.ie.css" /><![endif]-->
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" />
+<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" /><![endif]-->
 <style>body{margin:0;padding:0}</style>
 
 
@@ -26,6 +46,7 @@
   }
 </script>
 <!--<![endif]-->
+
 
 </head>
 <body>

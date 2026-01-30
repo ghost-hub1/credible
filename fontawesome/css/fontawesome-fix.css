@@ -1,0 +1,98 @@
+/* COMPLETE FONTAWESOME FIX - All Icons */
+@font-face {
+  font-family: 'FA-Solid';
+  src: url('../fontawesome/webfonts/fa-solid-900.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-solid-900.ttf') format('truetype');
+  font-weight: 900;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'FA-Regular';
+  src: url('../fontawesome/webfonts/fa-regular-400.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-regular-400.ttf') format('truetype');
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'FA-Brands';
+  src: url('../fontawesome/webfonts/fa-brands-400.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-brands-400.ttf') format('truetype');
+  font-weight: 400;
+  font-display: block;
+}
+
+/* Map all icon classes to correct fonts */
+.fas, .fa-solid { font-family: 'FA-Solid'; font-weight: 900; }
+.far, .fa-regular { font-family: 'FA-Regular'; font-weight: 400; }
+.fab, .fa-brands { font-family: 'FA-Brands'; font-weight: 400; }
+
+/* Specific missing icons fix */
+.fa-chevron-left::before { content: '\f053'; }
+.fa-chevron-right::before { content: '\f054'; }
+.fa-arrow-left::before { content: '\f060'; }
+.fa-arrow-right::before { content: '\f061'; }
+.fa-angle-left::before { content: '\f104'; }
+.fa-angle-right::before { content: '\f105'; }
+.fa-caret-left::before { content: '\f0d9'; }
+.fa-caret-right::before { content: '\f0da'; }
+.fa-long-arrow-alt-left::before { content: '\f30a'; }
+.fa-long-arrow-alt-right::before { content: '\f30b'; }
+.fa-home::before { content: '\f015'; }
+.fa-user::before { content: '\f007'; }
+.fa-search::before { content: '\f002'; }
+.fa-bell::before { content: '\f0f3'; }
+.fa-envelope::before { content: '\f0e0'; }
+.fa-settings::before { content: '\f013'; }
+.fa-heart::before { content: '\f004'; }
+.fa-star::before { content: '\f005'; }
+.fa-download::before { content: '\f019'; }
+.fa-upload::before { content: '\f093'; }
+.fa-print::before { content: '\f02f'; }
+.fa-share::before { content: '\f064'; }
+.fa-trash::before { content: '\f2ed'; }
+.fa-edit::before { content: '\f044'; }
+.fa-plus::before { content: '\f067'; }
+.fa-minus::before { content: '\f068'; }
+.fa-check::before { content: '\f00c'; }
+.fa-times::before { content: '\f00d'; }
+.fa-exclamation::before { content: '\f12a'; }
+.fa-question::before { content: '\f128'; }
+.fa-info::before { content: '\f129'; }
+.fa-bars::before { content: '\f0c9'; }
+.fa-ellipsis-v::before { content: '\f142'; }
+.fa-ellipsis-h::before { content: '\f141'; }
+.fa-lock::before { content: '\f023'; }
+.fa-unlock::before { content: '\f09c'; }
+.fa-globe::before { content: '\f0ac'; }
+.fa-calendar::before { content: '\f133'; }
+.fa-clock::before { content: '\f017'; }
+.fa-map-marker::before { content: '\f041'; }
+.fa-camera::before { content: '\f030'; }
+.fa-music::before { content: '\f001'; }
+.fa-video::before { content: '\f03d'; }
+.fa-shopping-cart::before { content: '\f07a'; }
+.fa-credit-card::before { content: '\f09d'; }
+.fa-wallet::before { content: '\f555'; }
+.fa-gift::before { content: '\f06b'; }
+.fa-tag::before { content: '\f02b'; }
+.fa-tags::before { content: '\f02c'; }
+.fa-bell-slash::before { content: '\f1f6'; }
+.fa-volume-up::before { content: '\f028'; }
+.fa-volume-down::before { content: '\f027'; }
+.fa-volume-mute::before { content: '\f026'; }
+.fa-headphones::before { content: '\f025'; }
+.fa-microphone::before { content: '\f130'; }
+.fa-microphone-slash::before { content: '\f131'; }
+.fa-thumbs-up::before { content: '\f164'; }
+.fa-thumbs-down::before { content: '\f165'; }
+.fa-hand-paper::before { content: '\f256'; }
+.fa-hand-rock::before { content: '\f255'; }
+.fa-hand-scissors::before { content: '\f257'; }
+.fa-hand-lizard::before { content: '\f258'; }
+.fa-hand-spock::before { content: '\f259'; }
+.fa-hand-point-up::before { content: '\f0a6'; }
+.fa-hand-point-down::before { content: '\f0a7'; }
+.fa-hand-point-left::before { content: '\f0a5'; }
+.fa-hand-point-right::before { content: '\f0a4'; }

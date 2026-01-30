@@ -1,0 +1,26 @@
+{
+  "name": "credible",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghost-hub1/credible.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ghost-hub1/credible/issues"
+  },
+  "homepage": "https://github.com/ghost-hub1/credible#readme",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "fs-extra": "^11.3.3",
+    "playwright": "^1.58.0"
+  }
+}

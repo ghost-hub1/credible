@@ -1,0 +1,172 @@
+/* UNIVERSAL CUSTOM ICON FIX */
+/* For ALL pages that use icon-* classes */
+
+/* Arrow Icons */
+.icon-arrow-forward::before,
+.icon-arrow-right::before,
+[aria-label="Left arrow"]::before,
+[aria-label="Right arrow"]::before,
+.slick-prev::before,
+.slick-next::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: inherit;
+  display: inline-block;
+}
+
+/* Specific icon mappings */
+.icon-arrow-forward::before,
+.icon-arrow-right::before,
+.slick-next::before {
+  content: "\f061"; /* fa-arrow-right */
+}
+
+[aria-label="Right arrow"]::before {
+  content: "\f054"; /* fa-chevron-right */
+}
+
+.icon-arrow-backward::before,
+.icon-arrow-left::before,
+.slick-prev::before {
+  content: "\f060"; /* fa-arrow-left */
+}
+
+[aria-label="Left arrow"]::before {
+  content: "\f053"; /* fa-chevron-left */
+}
+
+/* Financial/Score Icons */
+.icon-credit-score::before,
+.icon-score::before,
+.icon-rating::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: "\f09d"; /* fa-credit-card */
+}
+
+.icon-coins::before,
+.icon-money::before,
+.icon-currency::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: "\f51e"; /* fa-coins */
+}
+
+/* Common icon mappings you'll need across pages */
+.icon-home::before { content: "\f015"; } /* fa-home */
+.icon-user::before { content: "\f007"; } /* fa-user */
+.icon-search::before { content: "\f002"; } /* fa-search */
+.icon-email::before, .icon-envelope::before { content: "\f0e0"; } /* fa-envelope */
+.icon-phone::before { content: "\f095"; } /* fa-phone */
+.icon-calendar::before { content: "\f073"; } /* fa-calendar */
+.icon-location::before { content: "\f3c5"; } /* fa-map-marker-alt */
+.icon-download::before { content: "\f019"; } /* fa-download */
+.icon-print::before { content: "\f02f"; } /* fa-print */
+.icon-share::before { content: "\f064"; } /* fa-share-alt */
+.icon-settings::before, .icon-gear::before { content: "\f013"; } /* fa-cog */
+.icon-bell::before, .icon-notification::before { content: "\f0f3"; } /* fa-bell */
+.icon-heart::before, .icon-like::before { content: "\f004"; } /* fa-heart */
+.icon-star::before, .icon-rating-star::before { content: "\f005"; } /* fa-star */
+.icon-check::before, .icon-success::before { content: "\f00c"; } /* fa-check */
+.icon-warning::before, .icon-alert::before { content: "\f071"; } /* fa-exclamation-triangle */
+.icon-error::before, .icon-danger::before { content: "\f057"; } /* fa-times-circle */
+.icon-info::before { content: "\f05a"; } /* fa-info-circle */
+.icon-question::before { content: "\f128"; } /* fa-question */
+.icon-lock::before, .icon-security::before { content: "\f023"; } /* fa-lock */
+.icon-unlock::before { content: "\f09c"; } /* fa-unlock */
+.icon-eye::before, .icon-view::before { content: "\f06e"; } /* fa-eye */
+.icon-eye-slash::before, .icon-hide::before { content: "\f070"; } /* fa-eye-slash */
+.icon-cart::before, .icon-shopping::before { content: "\f07a"; } /* fa-shopping-cart */
+.icon-tag::before, .icon-price::before { content: "\f02b"; } /* fa-tag */
+.icon-filter::before { content: "\f0b0"; } /* fa-filter */
+.icon-sort::before { content: "\f0dc"; } /* fa-sort */
+.icon-arrow-up::before { content: "\f062"; } /* fa-arrow-up */
+.icon-arrow-down::before { content: "\f063"; } /* fa-arrow-down */
+.icon-plus::before, .icon-add::before { content: "\f067"; } /* fa-plus */
+.icon-minus::before, .icon-remove::before { content: "\f068"; } /* fa-minus */
+.icon-close::before, .icon-cancel::before { content: "\f00d"; } /* fa-times */
+.icon-menu::before, .icon-bars::before { content: "\f0c9"; } /* fa-bars */
+.icon-external::before, .icon-link-external::before { content: "\f35d"; } /* fa-external-link-alt */
+.icon-document::before, .icon-file::before { content: "\f15b"; } /* fa-file */
+.icon-pdf::before { content: "\f1c1"; } /* fa-file-pdf */
+.icon-image::before, .icon-photo::before { content: "\f03e"; } /* fa-image */
+.icon-video::before { content: "\f03d"; } /* fa-video */
+.icon-audio::before, .icon-music::before { content: "\f001"; } /* fa-music */
+.icon-chart::before, .icon-graph::before { content: "\f200"; } /* fa-chart-line */
+.icon-database::before { content: "\f1c0"; } /* fa-database */
+.icon-cloud::before { content: "\f0c2"; } /* fa-cloud */
+.icon-clock::before, .icon-time::before { content: "\f017"; } /* fa-clock */
+.icon-refresh::before, .icon-sync::before { content: "\f021"; } /* fa-sync */
+.icon-trash::before, .icon-delete::before { content: "\f2ed"; } /* fa-trash-alt */
+.icon-edit::before, .icon-pencil::before { content: "\f303"; } /* fa-edit */
+.icon-copy::before, .icon-duplicate::before { content: "\f0c5"; } /* fa-copy */
+.icon-upload::before { content: "\f093"; } /* fa-upload */
+.icon-dashboard::before { content: "\f0e4"; } /* fa-tachometer-alt */
+.icon-analytics::before { content: "\f080"; } /* fa-chart-bar */
+.icon-report::before { content: "\f0f6"; } /* fa-chart-pie */
+.icon-bank::before, .icon-finance::before { content: "\f19c"; } /* fa-university */
+.icon-wallet::before { content: "\f555"; } /* fa-wallet */
+.icon-card::before, .icon-credit-card::before { content: "\f09d"; } /* fa-credit-card */
+.icon-payment::before, .icon-invoice::before { content: "\f570"; } /* fa-receipt */
+.icon-transfer::before, .icon-exchange::before { content: "\f362"; } /* fa-exchange-alt */
+.icon-savings::before { content: "\f4d3"; } /* fa-piggy-bank */
+.icon-investment::before { content: "\f0d6"; } /* fa-chart-line */
+.icon-loan::before { content: "\f51e"; } /* fa-hand-holding-usd */
+.icon-insurance::before { content: "\f4be"; } /* fa-shield-alt */
+
+/* Make sure buttons and i elements display icons properly */
+button[class*="slick-"],
+button[aria-label*="arrow"],
+.slick-prev,
+.slick-next {
+  position: relative;
+}
+
+button[class*="slick-"]::before,
+button[aria-label*="arrow"]::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+/* Ensure i elements with icon-* classes show the icon */
+i[class*="icon-"] {
+  font-style: normal;
+}
+
+i[class*="icon-"]::before {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+/* Fix for Slick Slider arrows */
+.slick-prev, .slick-next {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  width: 40px !important;
+  height: 40px !important;
+  z-index: 1 !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  font-size: 24px !important;
+  opacity: 1 !important;
+  color: #333 !important;
+}
+
+.slick-prev:before {
+  content: '\f060' !important; /* fa-arrow-left */
+}
+
+.slick-next:before {
+  content: '\f061' !important; /* fa-arrow-right */
+}
+
+/* Alternative if you want chevrons instead */
+.slick-prev.chevron:before { content: '\f053' !important; } /* fa-chevron-left */
+.slick-next.chevron:before { content: '\f054' !important; } /* fa-chevron-right */

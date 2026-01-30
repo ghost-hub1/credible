@@ -1,0 +1,183 @@
+/* ULTIMATE UNIVERSAL ICON FIX - Works on ALL pages */
+/* Fixes ALL icon types: cred-icon, icon-*, fa-*, .slick-arrows */
+
+/* ===== 1. FONT FACE DEFINITIONS ===== */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('../fontawesome/webfonts/fa-solid-900.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-solid-900.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../fontawesome/webfonts/fa-regular-400.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-regular-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../fontawesome/webfonts/fa-brands-400.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-brands-400.ttf') format('truetype');
+}
+
+/* ===== 2. BASE STYLES FOR ALL ICON TYPES ===== */
+.cred-icon,
+[class*="icon-"]::before,
+[class*="icon-"]::after,
+.slick-prev::before,
+.slick-next::before {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -webkit-font-smoothing: antialiased !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  line-height: 1 !important;
+}
+
+/* ===== 3. SPECIFIC ICON MAPPINGS ===== */
+
+/* Menu & Navigation Icons */
+.icon-menu:before,
+.cred-icon.icon-menu:before { content: "\f0c9" !important; } /* fa-bars */
+
+/* Arrow & Direction Icons */
+.icon-chevron-right:before,
+.icon-arrow-forward:before,
+.slick-next::before { content: "\f054" !important; } /* fa-chevron-right */
+
+.icon-chevron-left:before,
+.icon-arrow-backward:before,
+.slick-prev::before { content: "\f053" !important; } /* fa-chevron-left */
+
+.icon-arrow-right:before { content: "\f061" !important; } /* fa-arrow-right */
+.icon-arrow-left:before { content: "\f060" !important; } /* fa-arrow-left */
+
+/* Form & UI Icons */
+.icon-check:before,
+.cred-icon.icon-check:before { content: "\f00c" !important; } /* fa-check */
+.icon-close:before,
+.cred-icon.icon-close:before { content: "\f00d" !important; } /* fa-times */
+.icon-search:before,
+.cred-icon.icon-search:before { content: "\f002" !important; } /* fa-search */
+
+/* Contact Icons */
+.icon-phone:before,
+.cred-icon.icon-phone:before { content: "\f095" !important; } /* fa-phone */
+.icon-email:before,
+.cred-icon.icon-email:before { content: "\f0e0" !important; } /* fa-envelope */
+
+/* Rating & Feedback Icons */
+.icon-star:before,
+.cred-icon.icon-star:before { content: "\f005" !important; } /* fa-star */
+.icon-star-border:before {
+  content: "\f005" !important;
+  font-weight: 400 !important; /* Regular, not solid */
+}
+
+/* Financial Icons */
+.icon-credit-score:before,
+.cred-icon.icon-credit-score:before { content: "\f09d" !important; } /* fa-credit-card */
+.icon-coins:before,
+.cred-icon.icon-coins:before { content: "\f51e" !important; } /* fa-coins */
+.icon-calculator:before { content: "\f1ec" !important; } /* fa-calculator */
+
+/* Status Icons */
+.icon-info:before,
+.cred-icon.icon-info:before { content: "\f05a" !important; } /* fa-info-circle */
+.icon-warning:before,
+.cred-icon.icon-warning:before { content: "\f071" !important; } /* fa-exclamation-triangle */
+.icon-error:before,
+.cred-icon.icon-error:before { content: "\f057" !important; } /* fa-exclamation-circle */
+.icon-success:before,
+.cred-icon.icon-success:before { content: "\f058" !important; } /* fa-check-circle */
+
+/* Other Common Icons */
+.icon-home:before,
+.cred-icon.icon-home:before { content: "\f015" !important; } /* fa-home */
+.icon-user:before,
+.cred-icon.icon-user:before { content: "\f007" !important; } /* fa-user */
+.icon-lock:before,
+.cred-icon.icon-lock:before { content: "\f023" !important; } /* fa-lock */
+.icon-eye:before,
+.cred-icon.icon-eye:before { content: "\f06e" !important; } /* fa-eye */
+.icon-chat:before,
+.cred-icon.icon-chat:before { content: "\f27a" !important; } /* fa-comment-dots */
+
+/* ===== 4. SLICK SLIDER SPECIFIC FIXES ===== */
+.slick-prev, .slick-next {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  display: block !important;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  transform: translate(0, -50%) !important;
+  cursor: pointer !important;
+  color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  z-index: 1 !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 24px !important;
+  line-height: 1 !important;
+  opacity: 1 !important;
+  color: #333 !important;
+}
+
+/* Left arrow positioning */
+.slick-prev {
+  left: -50px !important;
+}
+
+/* Right arrow positioning */
+.slick-next {
+  right: -50px !important;
+}
+
+/* ===== 5. FIX FOR SPECIFIC CLASSES FOUND IN YOUR HTML ===== */
+.icon-arrow-forward::before { content: "\f061" !important; }
+.icon-credit-score::before { content: "\f09d" !important; }
+.icon-coins::before { content: "\f51e" !important; }
+
+/* ===== 6. HANDLE ALL POSSIBLE ICON PREFIXES ===== */
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  margin-right: 5px;
+}
+
+/* ===== 7. FALLBACK FOR EMPTY BUTTONS/SPANS ===== */
+button[class*="slick-"]:empty::before,
+button[aria-label*="arrow"]:empty::before {
+  content: "" !important;
+}
+
+/* ===== 8. FIX FOR DYNAMICALLY ADDED ICONS ===== */
+[class*="icon-"]:not([class*="fa-"]):not([class*="cred-icon"]) {
+  font-style: normal !important;
+}
+
+/* ===== 9. EMERGENCY FALLBACK TO SYSTEM FONTS ===== */
+/* This ensures SOMETHING shows even if fonts fail */
+.cred-icon.system-fallback,
+.icon-menu.system-fallback:before { content: "☰" !important; font-family: sans-serif !important; }
+.icon-chevron-right.system-fallback:before { content: "›" !important; font-family: sans-serif !important; }
+.icon-chevron-left.system-fallback:before { content: "‹" !important; font-family: sans-serif !important; }
+.icon-close.system-fallback:before { content: "✕" !important; font-family: sans-serif !important; }
+.icon-check.system-fallback:before { content: "✓" !important; font-family: sans-serif !important; }

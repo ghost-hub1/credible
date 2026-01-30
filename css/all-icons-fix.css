@@ -1,0 +1,272 @@
+/* MASTER ICON FIX - Works for ALL icon systems on ALL pages */
+/* Fixes: cred-icon, icon-*, fa-*, slick-*, and any other icon class */
+
+/* ===== 1. UNIVERSAL FONT LOADING ===== */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('../fontawesome/webfonts/fa-solid-900.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-solid-900.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../fontawesome/webfonts/fa-brands-400.woff2') format('woff2'),
+       url('../fontawesome/webfonts/fa-brands-400.ttf') format('truetype');
+}
+
+/* ===== 2. CATCH-ALL STYLES FOR EVERY ICON TYPE ===== */
+
+/* Style 1: For elements WITH class containing "icon" */
+[class*="icon"]::before,
+[class*="icon"]::after,
+[class*="Icon"]::before,
+[class*="Icon"]::after {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Style 2: For specific icon classes found in your code */
+.cred-icon,
+.icon-menu,
+.icon-chevron-right, 
+.icon-chevron-left,
+.icon-close,
+.icon-check,
+.icon-search,
+.icon-phone,
+.icon-email,
+.icon-star,
+.icon-home,
+.icon-arrow-forward,
+.icon-credit-score,
+.icon-coins,
+.icon-calculator,
+.icon-chat,
+.icon-arrow-right,
+.icon-arrow-left,
+.icon-info,
+.icon-warning,
+.icon-error,
+.icon-success,
+.icon-user,
+.icon-lock,
+.icon-eye,
+.icon-star-border {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  display: inline-block !important;
+}
+
+/* Style 3: For FontAwesome classes */
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  font-family: 'Font Awesome 6 Free' !important;
+}
+
+/* Style 4: For Slick slider */
+.slick-prev::before,
+.slick-next::before {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+}
+
+/* ===== 3. COMPLETE ICON MAPPING FOR EVERY ICON ===== */
+
+/* Menu & Navigation */
+.cred-icon.icon-menu::before,
+.icon-menu::before,
+[class*="icon-menu"]::before { content: "\f0c9" !important; } /* bars */
+
+/* Chevrons */
+.cred-icon.icon-chevron-right::before,
+.icon-chevron-right::before,
+[class*="icon-chevron-right"]::before { content: "\f054" !important; }
+
+.cred-icon.icon-chevron-left::before,
+.icon-chevron-left::before,
+[class*="icon-chevron-left"]::before { content: "\f053" !important; }
+
+/* Close/X */
+.cred-icon.icon-close::before,
+.icon-close::before,
+[class*="icon-close"]::before { content: "\f00d" !important; }
+
+/* Check */
+.cred-icon.icon-check::before,
+.icon-check::before,
+[class*="icon-check"]::before { content: "\f00c" !important; }
+
+/* Search */
+.cred-icon.icon-search::before,
+.icon-search::before,
+[class*="icon-search"]::before { content: "\f002" !important; }
+
+/* Phone */
+.cred-icon.icon-phone::before,
+.icon-phone::before,
+[class*="icon-phone"]::before { content: "\f095" !important; }
+
+/* Email */
+.cred-icon.icon-email::before,
+.icon-email::before,
+[class*="icon-email"]::before { content: "\f0e0" !important; }
+
+/* Star */
+.cred-icon.icon-star::before,
+.icon-star::before,
+[class*="icon-star"]::before { content: "\f005" !important; }
+
+/* Home */
+.cred-icon.icon-home::before,
+.icon-home::before,
+[class*="icon-home"]::before { content: "\f015" !important; }
+
+/* Arrow Forward/Right */
+.cred-icon.icon-arrow-forward::before,
+.icon-arrow-forward::before,
+[class*="icon-arrow-forward"]::before,
+.icon-arrow-right::before,
+[class*="icon-arrow-right"]::before { content: "\f061" !important; }
+
+/* Arrow Backward/Left */
+.icon-arrow-backward::before,
+[class*="icon-arrow-backward"]::before,
+.icon-arrow-left::before,
+[class*="icon-arrow-left"]::before { content: "\f060" !important; }
+
+/* Credit Score */
+.cred-icon.icon-credit-score::before,
+.icon-credit-score::before,
+[class*="icon-credit-score"]::before { content: "\f09d" !important; }
+
+/* Coins/Money */
+.cred-icon.icon-coins::before,
+.icon-coins::before,
+[class*="icon-coins"]::before { content: "\f51e" !important; }
+
+/* Calculator */
+.cred-icon.icon-calculator::before,
+.icon-calculator::before,
+[class*="icon-calculator"]::before { content: "\f1ec" !important; }
+
+/* Chat */
+.cred-icon.icon-chat::before,
+.icon-chat::before,
+[class*="icon-chat"]::before { content: "\f27a" !important; }
+
+/* Info */
+.cred-icon.icon-info::before,
+.icon-info::before,
+[class*="icon-info"]::before { content: "\f05a" !important; }
+
+/* Warning */
+.cred-icon.icon-warning::before,
+.icon-warning::before,
+[class*="icon-warning"]::before { content: "\f071" !important; }
+
+/* Error */
+.cred-icon.icon-error::before,
+.icon-error::before,
+[class*="icon-error"]::before { content: "\f057" !important; }
+
+/* Success */
+.cred-icon.icon-success::before,
+.icon-success::before,
+[class*="icon-success"]::before { content: "\f058" !important; }
+
+/* User */
+.cred-icon.icon-user::before,
+.icon-user::before,
+[class*="icon-user"]::before { content: "\f007" !important; }
+
+/* Lock */
+.cred-icon.icon-lock::before,
+.icon-lock::before,
+[class*="icon-lock"]::before { content: "\f023" !important; }
+
+/* Eye */
+.cred-icon.icon-eye::before,
+.icon-eye::before,
+[class*="icon-eye"]::before { content: "\f06e" !important; }
+
+/* Star Border (regular weight) */
+.cred-icon.icon-star-border::before,
+.icon-star-border::before,
+[class*="icon-star-border"]::before {
+  content: "\f005" !important;
+  font-weight: 400 !important;
+}
+
+/* ===== 4. SLICK SLIDER SPECIFIC FIX ===== */
+.slick-prev::before {
+  content: "\f060" !important; /* arrow-left */
+}
+
+.slick-next::before {
+  content: "\f061" !important; /* arrow-right */
+}
+
+/* Make sure slick buttons are visible */
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 24px;
+  line-height: 1;
+  opacity: 1;
+  color: #333;
+}
+
+/* ===== 5. FONTAWESOME CLASS FALLBACKS ===== */
+.fa-chevron-left::before { content: "\f053" !important; }
+.fa-chevron-right::before { content: "\f054" !important; }
+.fa-arrow-left::before { content: "\f060" !important; }
+.fa-arrow-right::before { content: "\f061" !important; }
+
+/* ===== 6. EMERGENCY SYSTEM FALLBACK ===== */
+/* This ensures icons ALWAYS show something */
+.cred-icon::before,
+[class*="icon-"]::before {
+  /* Unicode fallbacks as last resort */
+  font-family: 'Segoe UI Symbol', 'Apple Symbols', 'SF Pro Icons', sans-serif !important;
+}
+
+/* Unicode fallback mapping */
+.icon-menu::before { content: "☰" !important; }
+.icon-chevron-right::before { content: "›" !important; }
+.icon-chevron-left::before { content: "‹" !important; }
+.icon-close::before { content: "✕" !important; }
+.icon-check::before { content: "✓" !important; }
+.icon-search::before { content: "🔍" !important; }
+.icon-phone::before { content: "📞" !important; }
+.icon-email::before { content: "✉" !important; }
+.icon-star::before { content: "★" !important; }
+.icon-home::before { content: "⌂" !important; }

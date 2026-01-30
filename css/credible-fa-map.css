@@ -1,0 +1,37 @@
+/* css/credible-fa-map.css */
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900;
+  display: inline-block;
+}
+
+/* NAV / UI */
+.icon-menu::before { content: "\f0c9"; }
+.icon-close::before { content: "\f00d"; }
+.icon-search::before { content: "\f002"; }
+.icon-chevron-right::before { content: "\f054"; }
+.icon-chevron-left::before { content: "\f053"; }
+.icon-arrow-forward::before { content: "\f061"; }
+.icon-arrow-back::before { content: "\f060"; }
+
+/* FINANCE */
+.icon-credit-score::before { content: "\f09d"; }
+.icon-coins::before { content: "\f51e"; }
+.icon-wallet::before { content: "\f555"; }
+.icon-bank::before { content: "\f19c"; }
+.icon-percent::before { content: "\f295"; }
+
+/* STATUS */
+.icon-check::before { content: "\f00c"; }
+.icon-error::before { content: "\f06a"; }
+.icon-info::before { content: "\f129"; }
+.icon-warning::before { content: "\f071"; }
+
+/* CONTACT */
+.icon-phone::before { content: "\f095"; }
+.icon-email::before { content: "\f0e0"; }
+.icon-location::before { content: "\f3c5"; }
+
+/* FALLBACK */
+.icon-unknown::before { content: "\f128"; }

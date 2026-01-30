@@ -1,0 +1,33 @@
+/* DATA-URI FONT FIX - Fonts embedded IN the CSS */
+/* No file paths needed! */
+
+/* FontAwesome Solid font as data-uri (base64 encoded) */
+@font-face {
+  font-family: 'FontAwesomeDataURI';
+  src: url('data:font/woff2;charset=utf-8;base64,[PASTE_BASE64_HERE]') format('woff2');
+  font-weight: 900;
+  font-display: block;
+}
+
+/* Apply to all icons */
+.cred-icon,
+[class*="icon-"],
+.slick-prev,
+.slick-next {
+  font-family: 'FontAwesomeDataURI', sans-serif !important;
+  font-weight: 900 !important;
+}
+
+/* Icon mappings */
+.icon-menu::before { content: "\f0c9" !important; }
+.icon-chevron-right::before { content: "\f054" !important; }
+.icon-chevron-left::before { content: "\f053" !important; }
+.icon-check::before { content: "\f00c" !important; }
+.icon-close::before { content: "\f00d" !important; }
+.icon-search::before { content: "\f002" !important; }
+.icon-arrow-forward::before { content: "\f061" !important; }
+.icon-credit-score::before { content: "\f09d" !important; }
+.icon-coins::before { content: "\f51e" !important; }
+
+.slick-prev::before { content: "\f060" !important; }
+.slick-next::before { content: "\f061" !important; }
