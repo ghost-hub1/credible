@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f8f07ed09989b',cH: 'aAiPQOlw2QnyGUJ41HHD6fuV0YWYcc56bJSl_gKm5v8-1769258000-1.2.1.1-nNLet82PvO5sR2acUOibS3cDZU.M8cs_0NJb9qstEjQ7coWAADFZGfk0pESEK.kK',cUPMDTk:"\/blog\/mortgages\/first-time-homebuyer-tips\/?__cf_chl_tk=Y8wHE0BL5CjZ0x8Iyl7UWBr6czqDyuWAg6Dl4XJzttI-1769258000-1.0.1.1-8S6EI5FOLaROs45wHzksRnJ9oRaPt658NGb5gonXuIY",cFPWv: 'b',cITimeS: '1769258000',cTplC:0,cTplV:5,cTplB: '0',fa:"\/blog\/mortgages\/first-time-homebuyer-tips\/?__cf_chl_f_tk=Y8wHE0BL5CjZ0x8Iyl7UWBr6czqDyuWAg6Dl4XJzttI-1769258000-1.0.1.1-8S6EI5FOLaROs45wHzksRnJ9oRaPt658NGb5gonXuIY",md: 'tJgkVmO8u_DSz7k6wqhcqmpi4RxyQCIS3A2wzOIfZQg-1769258000-1.2.1.1-L9UYTyasNZK.6nKa1EDKn1VkKUjkKY5W1ZyW42ETdPdS7_mGgsuzy__BlNsPlNtTkqnZq44Czb4QJkAnyMp3crAwqGMOc51.aAbRXW6r1HKp0NTcLAdhsFIncKa.PIZ69bZ5ttXokBlMfGg7y3yjmE.CjseQVDbbHSrUj1FPepgeuadrpf1x4_X852l1aUBQzxYhR.7UDMATXZhZaTcZLWcPMefw77OYI_L31QsAlE.CXXqWkpnkCOuQkiDJiPMsk4vl9cH1Vqv6MHN_Tl5lkK3mnnOSMBGZsb07s82u_wz7NHSkA0_PbD4EAfn1pGrJ9qS0NyqrZxz36Y2haKDsdbWZm1_jyyh2HqTJk15nuDbfeAUadDN.D9fcUAaK0pMRO0KhaBhJ.v3cG2mX.fasNqy1OW8QrfNOaTVbsAnLTzu7AkugacPrcxja8rc2MliHaDE_SeuYGDKYXuLzmWl5kYBhXzbXmR.GpBzOSrpVoa3c0QZDklPsGCZW5yIhsESy3sF44XWfxAZkGSJu.alvFi2sR9qEB.nEG.Q3NJQE49kHhXOgKNh7zanRyhbcluOnVjoh5ZNPw.XLlTINwdQBXd4mKAEFmYj2YzJ2pAo8vgvQNJqgINgA.BwbQge68.ZPeE5PLQEAWjvMaAyvXZdU.lCQu5I4sYUdpYlMd9XH06e2Tkt8QQ9RkYqUSulRfbfChRRkUCiOxKW0DAywMyDu02Rnhur2NecWy7MOpbX.YgTVYi20LPhvLHdvwX8YGmWIWTD7Bn5JJHl4VASXk5eyYNmEpInuho6zHi5izqYCBMzQKxerE5aCy6ipvdB8rtXIUNCEZmH_JmkssypLsMYTCPYwwOLLW9MjXphD.Tc75aA0X_Cym0C7Yz3vGEVeBk5_Ks9x_O2EalOaT3B_4Bhc4iUqmZQ4zZebJiNx1NSPFGzsxA718JLDAYOQMwvbiIFG4lOTdHZ0ZijYqtgAS7PzvCOoOw322LPRcoDDGJ2if6gWkXyrRPd.0DxRcKuzSXaH',mdrd: 'pYvM86.fR_uTtkluHej4F3Kyfovx1Tt28W9k3sc4vs8-1769258000-1.2.1.1-jsXPPYcGNmbhWSxcGWuNXCNLNIpAoVhM1BxPxD4sWwuYRtlS5xK4Uq3AMF_M5D_.yUAI.Nf1mPicpwjxSolZB.bgyrGIVsVtKHd2dK0NbKphuhtrSzEBJzs5RNm_G_h0KqWlwzoieFhEhq5WFc4MKr99yw.dcGmPX6qPQWQ9MJoz1a6nvok33t.L3P4z3WWVJ10R02MUOUA2RCn9zh_bzt.RpMilhH8JWBn0DW98J22mp7dsqhRrumj42a5xP7LIQqf7wDIX1WprKTCPfVRCe7RbbTvCrba_tvHKWPvuDeE_mEZAt5u4ggCUh0.fBa85Pc.f.cTGvhTAzo.eOUaOdJ19wK1yXEAzhHbOs9A2lhbSFDiz2MrNq.dkjiGkcu0fYdf1YteyHdXtjC9b6U.hSvlGuQYG_6cp82Hx_kzdKd59O1rJk1jH5j_Xgt0c.gbaygbzoLOnEJmkvb2xJ_0kn_sGr9heC16a7BK1f0uoZVC9TUHWHiVvpAs43Kf6tGbkIXsrQrQlJH3U8Lzz5ffv7MIAiQKx6VthiIHOsTdcY.lSRx4PeEJKWbk3CV7CgNXaLcOSS09lKLD1Ol9rgbonKUqq4UVd3KKZabSYpnIwl8mkDIvOYg6pt23mNA_MBnHYXmbxQAiQ0wc_faeHAdX09MYWE24MRbEaSiszztfdECLTlLPh79kuysITGoL5hjEn3K4TLprSRnL2rOpuWmbbcGLOWhl79eFbkhYPQshMhMFmmfFcktzBYTs3qcaHfHA3TaqD39Ms8mGpnhBucaf_OmLHD87_QGzG4yyfCTdECUoknEmdg1PsE0pDvE7FyeEm1.J.AdTYvv5EoMnPtavNYZbLmgTB1eiQY9YxZEbGbV6FG8Nj0Bds0BCWaOThxpiQM9MFXrhF6faaIidOZ5OGIUzosZGNH6HA55BKsaSAAggWkg2Pz0hZA5k_KltJfcow9SmUS8NJ7pLcHtl30AJhJo0srf.H6Y51r5AdlkpBzeqbY5IlrGhLD58x2TrjaptKxuQYaYa3K2V0cQ1b7hSdBJvcZ5UQS3byr6s0WXrQiHBmlwyprpc9KYH6ilqyttAxx6NKRpvM1q7Jog_lJ6vwTu5PcS1w5C03WrwocB9mM6FI0hJaFmTnZsHBA4g3DxzXygo.mboEMIM5JVWE3eaahthSkwPr6Gh9ts.WYZmLju0E.kZv.FJyNDnP7_xYw598.JspU6AFgw0A6d6CJWqyikR.TBBClH9GVJ2fwgyUPA2NoTUHpBonlJ5B_vy72hXXVOgFex_o6nHaDjUXRDQX_obS9v0Eb29vlEy0s7wce2M6Yqo9.GrfAj5ZCsFjzwGG1fmTYYDzku.e5sWKEzFKQcf0q7qy1JpJu3LmD6ciX_oSk.t0Of.pFPxHYoUJ7Q68CDJe_exdOqHrV1D3PK57VFdWomkUghfuAiV3U9SbVFQvZ4RwETK6fbfBU4x5wSSG0FRNLUVN94dEdBsr3yyG.UIaKyb88iT_Er3SbmRuXVKcmLEcDPCPg93ktj4MUxui2nFjm4tqdQIFHgcq6F.C8jDNEJvx4RVNOkNuDxPcrSR6wr27GXtlWGEtcEt95i3suvtbGwCgl0yFieljIH0GCoPgJmrAeKM770919cdFPCS0TR2AYQNCwWXe.ZG7EFwXrL2425_2ZL1Gc8BU2z9r1T6NmlBE_fw9mo.nTRuRboolc9cn4t_YCGVNnn8_TbeiYIcXR1IJh9as4U13ODRSLPhTrn84el2PY0CT5QIjLGE9IuLHXS4MYFVHtLV7JfIoEoyGaGG4tgf5j3ZsNh2ARxOQrkpXkA5IfdZjOIfj6kDmE0RHfSypyxBObZ9twI1hU9vTsm.Er3oYZqqN.QqfvTPS8NI6K8fKAFApZ2lD81lg5pvEtBG7pIwYVVeL01CwJeJviyEveCcUC4uc8emHFbYbCMActImHsZLT3TljNHIAWbHO4Vext0vz0nvpyF5jZ3RlZJweKWfIS5_CI7Ax89udinz.e_j0xja5bccQZjqzr5lssE8QMQp51jzwooX8wfPl257Qvmb2GH4N8Y.zL6G8bww4uVwIBddrk9cXiEhF_pyk8IGgxWbT29sUW0cE0V8kdZD9PXKLkGpplrmKm.Wo8DPBwGG6KhU7.1f_gbXTsQhn_Oz8NEspqNYtkueDOM0dCLS6Q6t1kHPPOr4vX9ZOwwGqRUsZ_7TlgMmvS0RjPXRY3wj6P9rjI5pN6B0q9z2H4QONfy1hNeWB7njjZTeQGqkc965YSlNY8rJl.Wf.bbwIpVOzITcZ25aqhBcsvCUAcJfxd80pShR6yIkVHD3i70rfIlY2_zT83EZUEvZihwEjePEY10kA4DkbMrYJv6TIszQ_WiZ8CMvcURZXLw',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f8f07ed09989b';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/blog\/mortgages\/first-time-homebuyer-tips\/?__cf_chl_rt_tk=Y8wHE0BL5CjZ0x8Iyl7UWBr6czqDyuWAg6Dl4XJzttI-1769258000-1.0.1.1-8S6EI5FOLaROs45wHzksRnJ9oRaPt658NGb5gonXuIY"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f8f07ed09989b',cH: 'aAiPQOlw2QnyGUJ41HHD6fuV0YWYcc56bJSl_gKm5v8-1769258000-1.2.1.1-nNLet82PvO5sR2acUOibS3cDZU.M8cs_0NJb9qstEjQ7coWAADFZGfk0pESEK.kK',cUPMDTk:"\/blog\/mortgages\/first-time-homebuyer-tips\/?__cf_chl_tk=Y8wHE0BL5CjZ0x8Iyl7UWBr6czqDyuWAg6Dl4XJzttI-1769258000-1.0.1.1-8S6EI5FOLaROs45wHzksRnJ9oRaPt658NGb5gonXuIY",cFPWv: 'b',cITimeS: '1769258000',cTplC:0,cTplV:5,cTplB: '0',fa:"\/blog\/mortgages\/first-time-homebuyer-tips\/?__cf_chl_f_tk=Y8wHE0BL5CjZ0x8Iyl7UWBr6czqDyuWAg6Dl4XJzttI-1769258000-1.0.1.1-8S6EI5FOLaROs45wHzksRnJ9oRaPt658NGb5gonXuIY",md: 'tJgkVmO8u_DSz7k6wqhcqmpi4RxyQCIS3A2wzOIfZQg-1769258000-1.2.1.1-L9UYTyasNZK.6nKa1EDKn1VkKUjkKY5W1ZyW42ETdPdS7_mGgsuzy__BlNsPlNtTkqnZq44Czb4QJkAnyMp3crAwqGMOc51.aAbRXW6r1HKp0NTcLAdhsFIncKa.PIZ69bZ5ttXokBlMfGg7y3yjmE.CjseQVDbbHSrUj1FPepgeuadrpf1x4_X852l1aUBQzxYhR.7UDMATXZhZaTcZLWcPMefw77OYI_L31QsAlE.CXXqWkpnkCOuQkiDJiPMsk4vl9cH1Vqv6MHN_Tl5lkK3mnnOSMBGZsb07s82u_wz7NHSkA0_PbD4EAfn1pGrJ9qS0NyqrZxz36Y2haKDsdbWZm1_jyyh2HqTJk15nuDbfeAUadDN.D9fcUAaK0pMRO0KhaBhJ.v3cG2mX.fasNqy1OW8QrfNOaTVbsAnLTzu7AkugacPrcxja8rc2MliHaDE_SeuYGDKYXuLzmWl5kYBhXzbXmR.GpBzOSrpVoa3c0QZDklPsGCZW5yIhsESy3sF44XWfxAZkGSJu.alvFi2sR9qEB.nEG.Q3NJQE49kHhXOgKNh7zanRyhbcluOnVjoh5ZNPw.XLlTINwdQBXd4mKAEFmYj2YzJ2pAo8vgvQNJqgINgA.BwbQge68.ZPeE5PLQEAWjvMaAyvXZdU.lCQu5I4sYUdpYlMd9XH06e2Tkt8QQ9RkYqUSulRfbfChRRkUCiOxKW0DAywMyDu02Rnhur2NecWy7MOpbX.YgTVYi20LPhvLHdvwX8YGmWIWTD7Bn5JJHl4VASXk5eyYNmEpInuho6zHi5izqYCBMzQKxerE5aCy6ipvdB8rtXIUNCEZmH_JmkssypLsMYTCPYwwOLLW9MjXphD.Tc75aA0X_Cym0C7Yz3vGEVeBk5_Ks9x_O2EalOaT3B_4Bhc4iUqmZQ4zZebJiNx1NSPFGzsxA718JLDAYOQMwvbiIFG4lOTdHZ0ZijYqtgAS7PzvCOoOw322LPRcoDDGJ2if6gWkXyrRPd.0DxRcKuzSXaH',mdrd: 'pYvM86.fR_uTtkluHej4F3Kyfovx1Tt28W9k3sc4vs8-1769258000-1.2.1.1-jsXPPYcGNmbhWSxcGWuNXCNLNIpAoVhM1BxPxD4sWwuYRtlS5xK4Uq3AMF_M5D_.yUAI.Nf1mPicpwjxSolZB.bgyrGIVsVtKHd2dK0NbKphuhtrSzEBJzs5RNm_G_h0KqWlwzoieFhEhq5WFc4MKr99yw.dcGmPX6qPQWQ9MJoz1a6nvok33t.L3P4z3WWVJ10R02MUOUA2RCn9zh_bzt.RpMilhH8JWBn0DW98J22mp7dsqhRrumj42a5xP7LIQqf7wDIX1WprKTCPfVRCe7RbbTvCrba_tvHKWPvuDeE_mEZAt5u4ggCUh0.fBa85Pc.f.cTGvhTAzo.eOUaOdJ19wK1yXEAzhHbOs9A2lhbSFDiz2MrNq.dkjiGkcu0fYdf1YteyHdXtjC9b6U.hSvlGuQYG_6cp82Hx_kzdKd59O1rJk1jH5j_Xgt0c.gbaygbzoLOnEJmkvb2xJ_0kn_sGr9heC16a7BK1f0uoZVC9TUHWHiVvpAs43Kf6tGbkIXsrQrQlJH3U8Lzz5ffv7MIAiQKx6VthiIHOsTdcY.lSRx4PeEJKWbk3CV7CgNXaLcOSS09lKLD1Ol9rgbonKUqq4UVd3KKZabSYpnIwl8mkDIvOYg6pt23mNA_MBnHYXmbxQAiQ0wc_faeHAdX09MYWE24MRbEaSiszztfdECLTlLPh79kuysITGoL5hjEn3K4TLprSRnL2rOpuWmbbcGLOWhl79eFbkhYPQshMhMFmmfFcktzBYTs3qcaHfHA3TaqD39Ms8mGpnhBucaf_OmLHD87_QGzG4yyfCTdECUoknEmdg1PsE0pDvE7FyeEm1.J.AdTYvv5EoMnPtavNYZbLmgTB1eiQY9YxZEbGbV6FG8Nj0Bds0BCWaOThxpiQM9MFXrhF6faaIidOZ5OGIUzosZGNH6HA55BKsaSAAggWkg2Pz0hZA5k_KltJfcow9SmUS8NJ7pLcHtl30AJhJo0srf.H6Y51r5AdlkpBzeqbY5IlrGhLD58x2TrjaptKxuQYaYa3K2V0cQ1b7hSdBJvcZ5UQS3byr6s0WXrQiHBmlwyprpc9KYH6ilqyttAxx6NKRpvM1q7Jog_lJ6vwTu5PcS1w5C03WrwocB9mM6FI0hJaFmTnZsHBA4g3DxzXygo.mboEMIM5JVWE3eaahthSkwPr6Gh9ts.WYZmLju0E.kZv.FJyNDnP7_xYw598.JspU6AFgw0A6d6CJWqyikR.TBBClH9GVJ2fwgyUPA2NoTUHpBonlJ5B_vy72hXXVOgFex_o6nHaDjUXRDQX_obS9v0Eb29vlEy0s7wce2M6Yqo9.GrfAj5ZCsFjzwGG1fmTYYDzku.e5sWKEzFKQcf0q7qy1JpJu3LmD6ciX_oSk.t0Of.pFPxHYoUJ7Q68CDJe_exdOqHrV1D3PK57VFdWomkUghfuAiV3U9SbVFQvZ4RwETK6fbfBU4x5wSSG0FRNLUVN94dEdBsr3yyG.UIaKyb88iT_Er3SbmRuXVKcmLEcDPCPg93ktj4MUxui2nFjm4tqdQIFHgcq6F.C8jDNEJvx4RVNOkNuDxPcrSR6wr27GXtlWGEtcEt95i3suvtbGwCgl0yFieljIH0GCoPgJmrAeKM770919cdFPCS0TR2AYQNCwWXe.ZG7EFwXrL2425_2ZL1Gc8BU2z9r1T6NmlBE_fw9mo.nTRuRboolc9cn4t_YCGVNnn8_TbeiYIcXR1IJh9as4U13ODRSLPhTrn84el2PY0CT5QIjLGE9IuLHXS4MYFVHtLV7JfIoEoyGaGG4tgf5j3ZsNh2ARxOQrkpXkA5IfdZjOIfj6kDmE0RHfSypyxBObZ9twI1hU9vTsm.Er3oYZqqN.QqfvTPS8NI6K8fKAFApZ2lD81lg5pvEtBG7pIwYVVeL01CwJeJviyEveCcUC4uc8emHFbYbCMActImHsZLT3TljNHIAWbHO4Vext0vz0nvpyF5jZ3RlZJweKWfIS5_CI7Ax89udinz.e_j0xja5bccQZjqzr5lssE8QMQp51jzwooX8wfPl257Qvmb2GH4N8Y.zL6G8bww4uVwIBddrk9cXiEhF_pyk8IGgxWbT29sUW0cE0V8kdZD9PXKLkGpplrmKm.Wo8DPBwGG6KhU7.1f_gbXTsQhn_Oz8NEspqNYtkueDOM0dCLS6Q6t1kHPPOr4vX9ZOwwGqRUsZ_7TlgMmvS0RjPXRY3wj6P9rjI5pN6B0q9z2H4QONfy1hNeWB7njjZTeQGqkc965YSlNY8rJl.Wf.bbwIpVOzITcZ25aqhBcsvCUAcJfxd80pShR6yIkVHD3i70rfIlY2_zT83EZUEvZihwEjePEY10kA4DkbMrYJv6TIszQ_WiZ8CMvcURZXLw',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f8f07ed09989b';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/blog\/mortgages\/first-time-homebuyer-tips\/?__cf_chl_rt_tk=Y8wHE0BL5CjZ0x8Iyl7UWBr6czqDyuWAg6Dl4XJzttI-1769258000-1.0.1.1-8S6EI5FOLaROs45wHzksRnJ9oRaPt658NGb5gonXuIY"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

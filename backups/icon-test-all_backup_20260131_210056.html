@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
+<link rel="stylesheet" href="/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/absolute-fix.css">
+<style>
+    /* Emergency inline fix */
+    [class*="icon-"]:before {
+        font-family: "Font Awesome 6 Free" !important;
+        font-weight: 900 !important;
+    }
+    .icon-menu:before { content: "\f0c9"; }
+    .icon-chevron-right:before { content: "\f054"; }
+    .icon-chevron-left:before { content: "\f053"; }
+    .icon-check:before { content: "\f00c"; }
+    .icon-close:before { content: "\f00d"; }
+    .icon-search:before { content: "\f002"; }
+    .icon-arrow-forward:before { content: "\f061"; }
+    .icon-credit-score:before { content: "\f09d"; }
+    .icon-coins:before { content: "\f51e"; }
+</style>
+<!-- ===== END ICON FIX ===== -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .test { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .success { color: green; }
+        .fail { color: red; }
+    </style>
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head>
+<body>
+    <h1>Icon System Diagnostic Test</h1>
+    
+    <div class="test">
+        <h3>1. cred-icon system:</h3>
+        <p>☰ Menu: <i class="icon-menu"></i> <span class="success">✓ Should show hamburger</span></p>
+        <p>✓ Check:  <span class="success">✓ Should show checkmark</span></p>
+        <p>✕ Close: <i class="icon-close"></i> <span class="success">✓ Should show X</span></p>
+    </div>
+    
+    <div class="test">
+        <h3>2. icon-* system:</h3>
+        <p>› Chevron Right: <i class="icon-chevron-right"></i></p>
+        <p>‹ Chevron Left: <i class="icon-chevron-left"></i></p>
+        <p>→ Arrow Forward: <i class="icon-chevron-right"></i></p>
+        <p>💳 Credit Score: <i class="icon-credit-score"></i></p>
+        <p>💰 Coins: <i class="icon-coins"></i></p>
+    </div>
+    
+    <div class="test">
+        <h3>3. FontAwesome system:</h3>
+        <p>‹ fa-chevron-left: <i class="fa fa-chevron-left"></i></p>
+        <p>› fa-chevron-right: <i class="fa fa-chevron-right"></i></p>
+        <p>← fa-arrow-left: <i class="fa fa-arrow-left"></i></p>
+        <p>→ fa-arrow-right: <i class="fa fa-arrow-right"></i></p>
+    </div>
+    
+    <div class="test">
+        <h3>4. Slick Slider:</h3>
+        <button class="slick-prev">Prev</button>
+        <button class="slick-next">Next</button>
+        <p><span class="success">✓ Buttons should show arrow icons</span></p>
+    </div>
+    
+    <script>
+        // Count visible icons
+        setTimeout(() => {
+            const icons = document.querySelectorAll('[class*="icon"], .fa, .slick-prev, .slick-next');
+            let visible = 0;
+            icons.forEach(icon => {
+                if (getComputedStyle(icon, '::before').content !== 'none') {
+                    visible++;
+                }
+            });
+            document.body.innerHTML += `<h2>Results: ${visible}/${icons.length} icons visible</h2>`;
+        }, 100);
+    </script>
+    <script src="js/menu-fix.js"></script>
+</body>
+</html>

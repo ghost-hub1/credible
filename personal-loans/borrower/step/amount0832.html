@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f868b3ff4774f',cH: 'ZyofNjtJxl1dAa0vLRQupS3Zzyw5nWZoTWI95NKnICU-1769257653-1.2.1.1-jT6RN2YMddPQJcGd4fVsh8TpL65N5MfKyUzUnxO3rzi1v35jTr_y5RJY8ukBx_oc',cUPMDTk:"\/personal-loans\/borrower\/step\/amount?preferred_lender=axos_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_tk=jfl8QcRrRIUgHl4_97yYu4NI4xe77aDxwu8dd4r1.nk-1769257653-1.0.1.1-L9AswaK.etvp8Y7Uf2jO39csR1SPcN1irNQS0I3CTI0",cFPWv: 'b',cITimeS: '1769257653',cTplC:0,cTplV:5,cTplB: '0',fa:"\/personal-loans\/borrower\/step\/amount?preferred_lender=axos_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_f_tk=jfl8QcRrRIUgHl4_97yYu4NI4xe77aDxwu8dd4r1.nk-1769257653-1.0.1.1-L9AswaK.etvp8Y7Uf2jO39csR1SPcN1irNQS0I3CTI0",md: '1gd_v8Tk3AHIY0wwvtlMEzwwJDZB_t8hSXtTD9wI3iU-1769257653-1.2.1.1-X7V7FcC53Pz0oENLvguEeGlsnjT9lElX3_HQfxVkGMz9hZIF8yvXJeY42RrNBnCili5PUYH2d66cO2Pbbc4dsSY_uFf9spc79_H0AJq4csHzhTuyMmU9ZH33Rh6hC1e6z5zS9tDiAUu6JT.iVKNWYD0veJ5.VEQ_broJ.qbL93EfnkjvQOpeRAXobOIQ_JHqwxlT9ZxikP5kamnYExEq540IQmVC4POnmj6li.nP55XXACG5vFwbnwoj1ljiIRKlRBBM2uS3e2gdcHDPGtPmGI6Q9TAU3dJSHiwXMrLbC9k__iQRP4ZYNUbNXjbrQ4DjsEl1Bt7RtUoL1jfeGhSvJGcYZcD2cdPd0iEFCLr3MZ88p4Q7C9fVdgKzmZixzwtW14ZC7ZSYpT6_Jdf.EUU0DJUEydxoZRsYOrLC4u1x.76GYqt6OnphHptEU3p.r.3qtQLm68EgJJnAXrAA12zVaeJlyu6BbhLWITwCUeIfdNnrfSee3WuLoRcXffurlUhYXup6bV_Ja2hkqQXXIRYnHK0Ui0cP6RmmlDNmKsMSZu86C9Bxk4XBF_TD3.3xCuTav0_3q3DpNghfwvOgB0fI.1oqH7_1J0fxHH9v7XDaaRcqanvwOjOOhypx9qTmMjtcEiZa98r9JaEs_NJ1D5d_NOt_5ER66KR7G8TW_vCXs_7Tn4Xl_s7Y1LJUwSCywWf31RECj8him3JWjCiT8LRjIIbtrAeFB0NQjJqwnrhNgG7MEF8RHCl0tpe5tt2rnreHPG3Tb20r66sEoJQ6u.OYMO6hKmESu5gVZFs9O9br7jMN8j39.p2Ed5WAg3NBUtXg3qIsj3MaX.SLciuAz1NojEGzQB2lWnRtfwl.uPisN1xL7155dmiBfdkCsFhOJXwOwmYyhA89aHNVyT687C2YRtTizvOQq43O7nA8x27p_GtGDxK_DgcQzl7kU2rqegZTspWJ4TYJzck9jhj7rvBkEF_3dQsXDNMZZaaQssWkHr_pAP_tEJoJJR5FBzJmXq9mhVhzWjoFi.4XBb9BRF2PevSeZ4_nrdLm4YFNJTJLWqXVb.mSWezWFmfyr90hAPyFVdSl5Kat8bGuLS99YyksIBkYCSAIwoCT9OFdCIe9_F6zn1ku4JGBoh_8hI3v2PkvURWUu4i_Rf7XB7lKlwaiAA',mdrd: 'r7gBLv6VVpYVz1kLdMWsXiowRbDq1p6xd8HT1GN5.D4-1769257653-1.2.1.1-QII3k6KpDSl0pdV7QsFB4WPma72O4TdDwfzJpLKrjCLtTku6wyhlTlRmFkG0YFsed0U3ZcmwPAf0AX1CPwfovQxP0c9DLfxJizJW2v94lhxDdY6jb_hVC0W4wEgI.TkLYrmJkaIPKTcIaMXv2ITzCWXR2Y9iMEJlhDAVbdZxLlwc2S8XO6IOYr9qfqLH0KCwLvcoyoVF7GrNp_rR6.0UGd5NJF9h.9xx.OXx2iaAnBvkA6UUw0jrpP7K3sOC5Kwo22E0i5FFYGM5jmStK2sdGnH4le9dwjKQu45Ll.bTIku71aBIZ8Zqxe6eXrVHD9mCgkkT7LUQ0hhLNj.cnOnj8oHGpBp3.zcvDcK3N6zxELTl7n44qHe4xR1PZJrZHSs6FLH.AR5W_t5juCkhNHFHekOTsSJaqKOqRg.EozJ9xAtB9Kk88gseXJ5QFLCVsAvwlpUdkGZoZGSe6JEQpmEZNsywCGxRw7H0dtm_tdStDJt4ZDcGaXMfNzWmd36wHgWAAW7kN61f7uG2RaBtJrm7atzOzxfCPOcsWJ1d_7ZchMqcTRSzykyMRI29Q.O_oQjdWXHpIpuUWPJJC..3_YrC9Zhn95uB266WZhdNiPi.6MlulATJB9ThZmjLmg1QEC2vN6lIDvNaWbdHLSlTumNJj0YNFynZTl.PQthE65RFPkv_kbufihjCKcHl0rWHykIc46uWLqsFbzBYjK63gxLypzKo2mJ6MN5oaJsb9C8fMqnh29Hg7j7WxRCIykcNK8ITuQjReCdVkcfaZbx7GlxDa6e7figveCtVFaBTGrAMG1zvVBIxJuRIiCMmRXgxRp68kWnlD4rbaHz0dwMgW1AhVCwEP7_Yw7WtOL2tjKm8lU43BFGKZJ9WnpiADK2Dufn.5oIQke2ZwqzHAzFsVgNmTWBpL8lkn2.clSrw0NJFuKpiz8LiMECIWlDDCXBuP9ldtwUGl77_UlX7FiOa8F0GqJy6QR9G41t20iKFyLumNvsy9K4f0EIGuUy6bXJIkFNZViScpu5h_MvztLYwfqFHbLHltZvWVoc6_M59O1LBqWTCb4Bmow.V4HSNc0Oe_m92hG0X7Y1QFwiL3HwWjuFQWuHF9ZIRRX97uVe.RtZIVloZItaxpZFdEQj91DbKSIuDqQxXTs8DVdfgdSquXqnvx7jqzgBdfgrxNx6jV0F60k7c06bJNxwtBP8o7muHf3hoI7Pxu46d5B1_Gy.c5EuZSfC39Ekbey7rciTZngaxGtIvIPEdtANe.jX.qNNOPlkkstQmK10O92ul.8eDuM9Sj9h_lSKPqcwjC6_yxDI5LbCZhNG6DVmkYNxeaT8XaAJM3__b3ri1egWZ0H9zGcuC5IiiAfARZqiiB7nWFhHCZ8gk81tflkc29fboSsrJ.G7Fv_3xQYqShzpKrJkBqY3xIsmrP5v8uOGW9ncO27L9uaZ_LS6JJsaOWWXbz3R3jOcQ8mZf0BssaiAUVJjPmmYcf8R94vBsUR2jV8_4WSdkqiY5iZO2oFXIw56FzyjoqgRwdiumh64ft3oofFcHDcanBzE2pIev3uyhNsHFW44h96xP_seAO3tlfIBVf7aX4ormFQ1hMnBC0cJwwron4UkODolmB7FqtwmWOERtQs1S7Ls9ps2CJy1vvpN_gQecFDg45JNx91VNX9TCQbM5nyCYfskQ1jRnCAnFRwswmiaRXotsZhZnc77RTtSwuv3oztYCeQWFZ0Ja_F9vr7MgwojvAQ4WvRKFE3bZ3HVYyg.1U9sjFwF_MlDp.H3pHLvqQOfpeEw1G3y8ANQzgdiqTyrtGWphX5wIrMCvKVJ4mtEZd3VAqKAowum1QiqSLapRGN.cI1F.jM.Ro1UVylKasF0XPtxr9gAYNsNvo1J28FgpvFDm7HRt6tudkmkuCi9gpCoFeJDVbgViHvcllpHiDIJOoNP3705VARAdA0yfY0gtGsPExHdolEGUbNMCDuZkeuDRK20v.dh3O09FyDZtOswpQEkZ2URtkh8s8kLoipRa1LNZm89ZjWMvyEGgNXZerRTmSd0XNxuDX8vzBTIarWtj6jDBCe6vla2Fh2Rf8sFzZdgBIC_34qWL8gKE3EXt2vtTiNR_TqEeiMQsjdTlW.vTo3C46ZzYjvbU7PgxNfEWSyjM4r9WwbQG9vux22kfBgGHT1LVydteEE_ebzY3MkCK9O70HUS4nbQUY1B9lqzWQHhAuEl15VMKv2dhnlXbmCsyvvbAbIFOjtedHBc7sUeAklzv1oXfN04g3H78psr5.CF.32ul48jlVBQ2.PhKPLgiWXoerwS2jorGh.tdLSl94CJT37kU8jWzSesII4848TY22Q81HoA2jb9TSx2GZPbFJ_K4bhhsufFQWW3nkrlsDOVDOHc9Cchux1AzS214Kos',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f868b3ff4774f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/personal-loans\/borrower\/step\/amount?preferred_lender=axos_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_rt_tk=jfl8QcRrRIUgHl4_97yYu4NI4xe77aDxwu8dd4r1.nk-1769257653-1.0.1.1-L9AswaK.etvp8Y7Uf2jO39csR1SPcN1irNQS0I3CTI0"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f868b3ff4774f',cH: 'ZyofNjtJxl1dAa0vLRQupS3Zzyw5nWZoTWI95NKnICU-1769257653-1.2.1.1-jT6RN2YMddPQJcGd4fVsh8TpL65N5MfKyUzUnxO3rzi1v35jTr_y5RJY8ukBx_oc',cUPMDTk:"\/personal-loans\/borrower\/step\/amount?preferred_lender=axos_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_tk=jfl8QcRrRIUgHl4_97yYu4NI4xe77aDxwu8dd4r1.nk-1769257653-1.0.1.1-L9AswaK.etvp8Y7Uf2jO39csR1SPcN1irNQS0I3CTI0",cFPWv: 'b',cITimeS: '1769257653',cTplC:0,cTplV:5,cTplB: '0',fa:"\/personal-loans\/borrower\/step\/amount?preferred_lender=axos_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_f_tk=jfl8QcRrRIUgHl4_97yYu4NI4xe77aDxwu8dd4r1.nk-1769257653-1.0.1.1-L9AswaK.etvp8Y7Uf2jO39csR1SPcN1irNQS0I3CTI0",md: '1gd_v8Tk3AHIY0wwvtlMEzwwJDZB_t8hSXtTD9wI3iU-1769257653-1.2.1.1-X7V7FcC53Pz0oENLvguEeGlsnjT9lElX3_HQfxVkGMz9hZIF8yvXJeY42RrNBnCili5PUYH2d66cO2Pbbc4dsSY_uFf9spc79_H0AJq4csHzhTuyMmU9ZH33Rh6hC1e6z5zS9tDiAUu6JT.iVKNWYD0veJ5.VEQ_broJ.qbL93EfnkjvQOpeRAXobOIQ_JHqwxlT9ZxikP5kamnYExEq540IQmVC4POnmj6li.nP55XXACG5vFwbnwoj1ljiIRKlRBBM2uS3e2gdcHDPGtPmGI6Q9TAU3dJSHiwXMrLbC9k__iQRP4ZYNUbNXjbrQ4DjsEl1Bt7RtUoL1jfeGhSvJGcYZcD2cdPd0iEFCLr3MZ88p4Q7C9fVdgKzmZixzwtW14ZC7ZSYpT6_Jdf.EUU0DJUEydxoZRsYOrLC4u1x.76GYqt6OnphHptEU3p.r.3qtQLm68EgJJnAXrAA12zVaeJlyu6BbhLWITwCUeIfdNnrfSee3WuLoRcXffurlUhYXup6bV_Ja2hkqQXXIRYnHK0Ui0cP6RmmlDNmKsMSZu86C9Bxk4XBF_TD3.3xCuTav0_3q3DpNghfwvOgB0fI.1oqH7_1J0fxHH9v7XDaaRcqanvwOjOOhypx9qTmMjtcEiZa98r9JaEs_NJ1D5d_NOt_5ER66KR7G8TW_vCXs_7Tn4Xl_s7Y1LJUwSCywWf31RECj8him3JWjCiT8LRjIIbtrAeFB0NQjJqwnrhNgG7MEF8RHCl0tpe5tt2rnreHPG3Tb20r66sEoJQ6u.OYMO6hKmESu5gVZFs9O9br7jMN8j39.p2Ed5WAg3NBUtXg3qIsj3MaX.SLciuAz1NojEGzQB2lWnRtfwl.uPisN1xL7155dmiBfdkCsFhOJXwOwmYyhA89aHNVyT687C2YRtTizvOQq43O7nA8x27p_GtGDxK_DgcQzl7kU2rqegZTspWJ4TYJzck9jhj7rvBkEF_3dQsXDNMZZaaQssWkHr_pAP_tEJoJJR5FBzJmXq9mhVhzWjoFi.4XBb9BRF2PevSeZ4_nrdLm4YFNJTJLWqXVb.mSWezWFmfyr90hAPyFVdSl5Kat8bGuLS99YyksIBkYCSAIwoCT9OFdCIe9_F6zn1ku4JGBoh_8hI3v2PkvURWUu4i_Rf7XB7lKlwaiAA',mdrd: 'r7gBLv6VVpYVz1kLdMWsXiowRbDq1p6xd8HT1GN5.D4-1769257653-1.2.1.1-QII3k6KpDSl0pdV7QsFB4WPma72O4TdDwfzJpLKrjCLtTku6wyhlTlRmFkG0YFsed0U3ZcmwPAf0AX1CPwfovQxP0c9DLfxJizJW2v94lhxDdY6jb_hVC0W4wEgI.TkLYrmJkaIPKTcIaMXv2ITzCWXR2Y9iMEJlhDAVbdZxLlwc2S8XO6IOYr9qfqLH0KCwLvcoyoVF7GrNp_rR6.0UGd5NJF9h.9xx.OXx2iaAnBvkA6UUw0jrpP7K3sOC5Kwo22E0i5FFYGM5jmStK2sdGnH4le9dwjKQu45Ll.bTIku71aBIZ8Zqxe6eXrVHD9mCgkkT7LUQ0hhLNj.cnOnj8oHGpBp3.zcvDcK3N6zxELTl7n44qHe4xR1PZJrZHSs6FLH.AR5W_t5juCkhNHFHekOTsSJaqKOqRg.EozJ9xAtB9Kk88gseXJ5QFLCVsAvwlpUdkGZoZGSe6JEQpmEZNsywCGxRw7H0dtm_tdStDJt4ZDcGaXMfNzWmd36wHgWAAW7kN61f7uG2RaBtJrm7atzOzxfCPOcsWJ1d_7ZchMqcTRSzykyMRI29Q.O_oQjdWXHpIpuUWPJJC..3_YrC9Zhn95uB266WZhdNiPi.6MlulATJB9ThZmjLmg1QEC2vN6lIDvNaWbdHLSlTumNJj0YNFynZTl.PQthE65RFPkv_kbufihjCKcHl0rWHykIc46uWLqsFbzBYjK63gxLypzKo2mJ6MN5oaJsb9C8fMqnh29Hg7j7WxRCIykcNK8ITuQjReCdVkcfaZbx7GlxDa6e7figveCtVFaBTGrAMG1zvVBIxJuRIiCMmRXgxRp68kWnlD4rbaHz0dwMgW1AhVCwEP7_Yw7WtOL2tjKm8lU43BFGKZJ9WnpiADK2Dufn.5oIQke2ZwqzHAzFsVgNmTWBpL8lkn2.clSrw0NJFuKpiz8LiMECIWlDDCXBuP9ldtwUGl77_UlX7FiOa8F0GqJy6QR9G41t20iKFyLumNvsy9K4f0EIGuUy6bXJIkFNZViScpu5h_MvztLYwfqFHbLHltZvWVoc6_M59O1LBqWTCb4Bmow.V4HSNc0Oe_m92hG0X7Y1QFwiL3HwWjuFQWuHF9ZIRRX97uVe.RtZIVloZItaxpZFdEQj91DbKSIuDqQxXTs8DVdfgdSquXqnvx7jqzgBdfgrxNx6jV0F60k7c06bJNxwtBP8o7muHf3hoI7Pxu46d5B1_Gy.c5EuZSfC39Ekbey7rciTZngaxGtIvIPEdtANe.jX.qNNOPlkkstQmK10O92ul.8eDuM9Sj9h_lSKPqcwjC6_yxDI5LbCZhNG6DVmkYNxeaT8XaAJM3__b3ri1egWZ0H9zGcuC5IiiAfARZqiiB7nWFhHCZ8gk81tflkc29fboSsrJ.G7Fv_3xQYqShzpKrJkBqY3xIsmrP5v8uOGW9ncO27L9uaZ_LS6JJsaOWWXbz3R3jOcQ8mZf0BssaiAUVJjPmmYcf8R94vBsUR2jV8_4WSdkqiY5iZO2oFXIw56FzyjoqgRwdiumh64ft3oofFcHDcanBzE2pIev3uyhNsHFW44h96xP_seAO3tlfIBVf7aX4ormFQ1hMnBC0cJwwron4UkODolmB7FqtwmWOERtQs1S7Ls9ps2CJy1vvpN_gQecFDg45JNx91VNX9TCQbM5nyCYfskQ1jRnCAnFRwswmiaRXotsZhZnc77RTtSwuv3oztYCeQWFZ0Ja_F9vr7MgwojvAQ4WvRKFE3bZ3HVYyg.1U9sjFwF_MlDp.H3pHLvqQOfpeEw1G3y8ANQzgdiqTyrtGWphX5wIrMCvKVJ4mtEZd3VAqKAowum1QiqSLapRGN.cI1F.jM.Ro1UVylKasF0XPtxr9gAYNsNvo1J28FgpvFDm7HRt6tudkmkuCi9gpCoFeJDVbgViHvcllpHiDIJOoNP3705VARAdA0yfY0gtGsPExHdolEGUbNMCDuZkeuDRK20v.dh3O09FyDZtOswpQEkZ2URtkh8s8kLoipRa1LNZm89ZjWMvyEGgNXZerRTmSd0XNxuDX8vzBTIarWtj6jDBCe6vla2Fh2Rf8sFzZdgBIC_34qWL8gKE3EXt2vtTiNR_TqEeiMQsjdTlW.vTo3C46ZzYjvbU7PgxNfEWSyjM4r9WwbQG9vux22kfBgGHT1LVydteEE_ebzY3MkCK9O70HUS4nbQUY1B9lqzWQHhAuEl15VMKv2dhnlXbmCsyvvbAbIFOjtedHBc7sUeAklzv1oXfN04g3H78psr5.CF.32ul48jlVBQ2.PhKPLgiWXoerwS2jorGh.tdLSl94CJT37kU8jWzSesII4848TY22Q81HoA2jb9TSx2GZPbFJ_K4bhhsufFQWW3nkrlsDOVDOHc9Cchux1AzS214Kos',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f868b3ff4774f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/personal-loans\/borrower\/step\/amount?preferred_lender=axos_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_rt_tk=jfl8QcRrRIUgHl4_97yYu4NI4xe77aDxwu8dd4r1.nk-1769257653-1.0.1.1-L9AswaK.etvp8Y7Uf2jO39csR1SPcN1irNQS0I3CTI0"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

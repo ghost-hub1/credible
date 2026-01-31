@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2faad0aa2da49d',cH: 'ssye7BqGbBkWNKqtBSjkSNuKrlbMAsVwsvUtQ4LMwqU-1769259138-1.2.1.1-KxQ70CStG7SoW34is2usuZmgnZ6nWVe9g6Xc6RWd_48L.6Qq13YSglmJYXckRt8I',cUPMDTk:"\/assets\/cms\/Nelnet_Loan_Servicer_a40c80bab8.png?__cf_chl_tk=fFVH86B4mi.WMdKYsBXUZRCCCsOKSlOZtYggdJs4s2A-1769259138-1.0.1.1-684unGGzBVCu77trCaGm5.RSm5gE_hcprAnJ_Zj_7Qc",cFPWv: 'b',cITimeS: '1769259138',cTplC:0,cTplV:5,cTplB: '0',fa:"\/assets\/cms\/Nelnet_Loan_Servicer_a40c80bab8.png?__cf_chl_f_tk=fFVH86B4mi.WMdKYsBXUZRCCCsOKSlOZtYggdJs4s2A-1769259138-1.0.1.1-684unGGzBVCu77trCaGm5.RSm5gE_hcprAnJ_Zj_7Qc",md: 'Thwegb9re44s58irVrecDjtB9vk8YfFO4EYjMcXKEB8-1769259138-1.2.1.1-DGw8aburf2gjaRvtLBQbeyXcRcMVcBWYOvIaIfK5HB1FztDs1ndTZf3Ff97WdU.F2cSvwjgGVypOwb83afxG5zu1D4RyGV1lkQl0XsbikU_bR.mI9rhSV8TupJhJFb3SGB3lOhiwktQi7Dl9NwVkcyecZ4GzuJYx.oKJZdxVBKYkdXYgFIuJh5Hh0k2HUkugddATPxcxRR4F.Km1E0UBXREZUT4NhAB0LHkhFbwnrupB0NPLEdCfCHUmoSR076SALIAqtGxBWL_IyY4hIbP3ezZX94znLRZdmiiKK7R2caMx.Z2vNk5dJ2AfTRuUQ3vQT7fNOD8u9cRQ3mPF4CKGEZ.87KO90j8zVE9b_FyIAxbAXY_mpwsKgdkYsibrwYsq5femwBYBR8rJOAPwKsMRKL_gAPpjE5Oua.mXKK3qkqnnJMl_OaeUUEi68gBCcnTGJkauIAdAnQrr6kWuppi47zuoeUwKC3zSrfVPDm1cNgeXU3YoqjTPmhF.ooObw3nkpmdm5lXaFwK.ixo5SjL8jw0uX.lflfARhwm0bhWM0qvbiWVQJ6gStFIPIT.OJvp5ooI1.rmWlMfVZWQzQeq2PRGDCcb901HRQRlZXIKr9_OoUC50ljqbwQp2UDQNcg_tE27C3fcepY53vB6H9P9luLyhOpXChIIT7sFbbqiRoqA6eGePGDPYH1gudI5Eo9REy_g727m89RhJfLliDLoHlYfCbQ46N6rol1_J1RJL35sacez19P5gfFbs0EdYm.rag.JQAO3lOeSvKFsYdU8zqPrhD.SoYIgKKN5J2r4wVNRbA31MpA9m_Hf_l6Cbwo2Hh6gu2_vDhY7nj.g_yj6JApkfOmkRGvNX6hV_QfhQHz6kiuMCO1bFz.rO5t20WA8jZXzHq82XSH_S1V7aQossfGRRH7a61vBnZ_4sqHeleI75arnv0mRz0Yg.VM2qgo6HNUylAMQQDrwvKDqET37gDv.G24biHlrzYqDy8EwanuD5_jT0_SBvH3wWo.LhN5G_',mdrd: '9c8MLMSJlxpO_Qyw0wQTji9yUcbhOoBaekVvyrV5fYI-1769259138-1.2.1.1-w7tmonhuJI8sBO8eyiifiLx5mUeRwt835lRh0ZniKlz88Z8a5cgUGFF.hBH8xpssB8U09U42Bk5XiP_vNfCp9ycx2mxiz0cFZyXrGJ0gCfXSX6TIjMuH7r0W2rxKY9YB2aUEpJsgsUzxUKtUwTmGCsS3I5LEZZ.16sUhgyA66Am.EwigEzw_8wrH9xy.rsVbDtgBeKIYd97JzJesfwi9xfSYuayl5D4y51vkPyMRNEUPUwx_M_Gqs2DR3Km0Mnb3xGDGVvjN6YMuQWPUkLKbTL_JJNaJoYU2rGN90qTsCGgyx0thToFLY5GUm.w_BoudJRCk32NfhqYwKUsTo2HVLs1w2uBn5O107fpPpi3UMGtfAFVoziIXUzNkpGgBPtHvpjo7o5g8fAZ8v4S55hL11U0JXeJodDH6nKchR_zGUi_CmDH8mbuumehC0Vv7N3J_QuIt02PHxQ.i4lay8B2b9FuObU5qgwD6lXnPe3hIjBLcpc6oP5NWKcWBh_rlVvasWZvK.00Trd09LI669pWKd4PfjHscIGU82krG94YuT5fOUo4QxdlFvmWIW2sk5SYXNjzAj0XBU5oo_M0xRFJrJfIG9swPncCq_XKf0_XEhzy.0dgiqdx4NdspA3ntuM9ZMXU6GZStIv_Htmjuer12oefocTSsn0y4P9ouTA9gDP3j3WSVyPSG0dhio3fxtEz_Bjz7WapbG3ZaxaNOclzN5t.5zeD9.k4XzkwbpOiwwhFISd.is0dqhDbPmmvEzWvjYqEN_DmH3qwunZoDZOMslY1EyRMPu1qLWTunS1UVrWfMOsprdzYlucgK8MgNxuaZMeXK1AnwmdhdPb1nR5gyHVLDvmr.CNRh2iJuj3ConbJ9TdPGJo3tLlOnSZKDNWAx8NQO0PQ.D.zgY_efhPo73M_3Cz49bNL_Pz.oQsjL311axXn.GZGn2LLY2a4JPkjNmDHM.lC6xgipAKw4hVmMCKuJBSlnaoOTfn3fk1b3uZvJa6hHvnnaJqZulvrRuh41CBfGE9fWvnr83.ujOnThqZEmRCWv9i9t6dLoeo1tDcLir_ly_E4lcR3xmUhEP7xCMdheSsE_mG99F_hhtpK6MYJ13.6q3uzQ6s6PCWzNyHM3Jau4k.ylUtGwwccRQOeP6nMJn2tRh6yH6YFZZnH26loAIMNlK9g0ySmoTdJZTO4aV_9dA07D30940Jm3yUbsbUDSJuyfemkS91x8uXQmAi.bX.6RanjpwIEqij9xXYPhM2JEicx_zCjxo4w3_GbEmJlC0ODJPj2FE1SSMnc_i6BnMUbjwxGkGZnSI6dh6NORRv76OGivjbrjwqWfWmfKHwRnfLV08L5JbWmu_D3PgORvBhDTdKfBqsENT01qOQV5EpUsJbJyJJomf6N4jQTSE0AZuPpob7bmpmu0Aeown_LRnVLNfDIUyB_Z4yyAoel3st32VIiQVxu1Nz4dpQN4zoI4RGD48OGXYKeLuQjRphTC6nK_.9cysfWFNTfr53SFBaM9Avf_HqHO3udnJ0V3NPdVTb0A2XfdNh8il.mUOvO8oPg1GRiSCOP1eH6voMZGip6xIaUEkNv19S.5FIoq0aoFie1uIc92ujAijkz0FNRSN7tPlnknzbN6v.Pin_mBRvI38bKpPAIXTDSoCYl.ERm6Y_EPnTEZvzGNn29pb_DGkzFaOLrOyv_xf3DFqj6_X3wMAbu1rnUmRhmHSY7IiLH3Tp3Gpq1sIA.YGldIQ9QWEKW_OmjbpAGET9Kz0gasTGnIfw7J5ccLVRv_6tByNTCm2iMH7H8YwxGtLUXRP1tHZvOZfaFB8NfkkuUumlG9BWYzyo_YhPnhRIS1p2sU9fYlu4kGYiEpQanonsNM7b9ewxWW05aoubDFvlG2eQjfkxuOj_o7uILuVRDSvg8ku5IsCDBJyxQ3Rt2IoSQKLrZguNtyKG7G5tnGxdMG1TPQeEJYBSsS2Rou8IiSoeM7Iv3nzE0tvpp9CVf8SvV8qxOU9I08tN03.oMkxs7aET3KY36dkhrfRO4LqgUFrKvGPH5S7Kpd1RamopqdOK3gDUwzj4qddf_s8t_eI.1dY2FHcq1StJ3OWvookVIWWN0bymqk5AW.4zNn8cNaGystl45cUi.4xNadqz.qNbIGI_ULENMmjYwRgeAtYoLFUNqgyxbL9fMmIVCqcKpZgGrbbgap11F8xerHQV9._1ZPGQLComwlglMQNgEnk2qSmsUUmQsUQrH28C8hG9ptJ1bJ7LxgERRKVUiAYdfDSV4Fs1vWbaaH.IC8DxZgKWrXkB31_yLHGgex1kbUG8GAHMC6JUVMdRj48dDwWF2EAt.7wUY',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2faad0aa2da49d';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/assets\/cms\/Nelnet_Loan_Servicer_a40c80bab8.png?__cf_chl_rt_tk=fFVH86B4mi.WMdKYsBXUZRCCCsOKSlOZtYggdJs4s2A-1769259138-1.0.1.1-684unGGzBVCu77trCaGm5.RSm5gE_hcprAnJ_Zj_7Qc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2faad0aa2da49d',cH: 'ssye7BqGbBkWNKqtBSjkSNuKrlbMAsVwsvUtQ4LMwqU-1769259138-1.2.1.1-KxQ70CStG7SoW34is2usuZmgnZ6nWVe9g6Xc6RWd_48L.6Qq13YSglmJYXckRt8I',cUPMDTk:"\/assets\/cms\/Nelnet_Loan_Servicer_a40c80bab8.png?__cf_chl_tk=fFVH86B4mi.WMdKYsBXUZRCCCsOKSlOZtYggdJs4s2A-1769259138-1.0.1.1-684unGGzBVCu77trCaGm5.RSm5gE_hcprAnJ_Zj_7Qc",cFPWv: 'b',cITimeS: '1769259138',cTplC:0,cTplV:5,cTplB: '0',fa:"\/assets\/cms\/Nelnet_Loan_Servicer_a40c80bab8.png?__cf_chl_f_tk=fFVH86B4mi.WMdKYsBXUZRCCCsOKSlOZtYggdJs4s2A-1769259138-1.0.1.1-684unGGzBVCu77trCaGm5.RSm5gE_hcprAnJ_Zj_7Qc",md: 'Thwegb9re44s58irVrecDjtB9vk8YfFO4EYjMcXKEB8-1769259138-1.2.1.1-DGw8aburf2gjaRvtLBQbeyXcRcMVcBWYOvIaIfK5HB1FztDs1ndTZf3Ff97WdU.F2cSvwjgGVypOwb83afxG5zu1D4RyGV1lkQl0XsbikU_bR.mI9rhSV8TupJhJFb3SGB3lOhiwktQi7Dl9NwVkcyecZ4GzuJYx.oKJZdxVBKYkdXYgFIuJh5Hh0k2HUkugddATPxcxRR4F.Km1E0UBXREZUT4NhAB0LHkhFbwnrupB0NPLEdCfCHUmoSR076SALIAqtGxBWL_IyY4hIbP3ezZX94znLRZdmiiKK7R2caMx.Z2vNk5dJ2AfTRuUQ3vQT7fNOD8u9cRQ3mPF4CKGEZ.87KO90j8zVE9b_FyIAxbAXY_mpwsKgdkYsibrwYsq5femwBYBR8rJOAPwKsMRKL_gAPpjE5Oua.mXKK3qkqnnJMl_OaeUUEi68gBCcnTGJkauIAdAnQrr6kWuppi47zuoeUwKC3zSrfVPDm1cNgeXU3YoqjTPmhF.ooObw3nkpmdm5lXaFwK.ixo5SjL8jw0uX.lflfARhwm0bhWM0qvbiWVQJ6gStFIPIT.OJvp5ooI1.rmWlMfVZWQzQeq2PRGDCcb901HRQRlZXIKr9_OoUC50ljqbwQp2UDQNcg_tE27C3fcepY53vB6H9P9luLyhOpXChIIT7sFbbqiRoqA6eGePGDPYH1gudI5Eo9REy_g727m89RhJfLliDLoHlYfCbQ46N6rol1_J1RJL35sacez19P5gfFbs0EdYm.rag.JQAO3lOeSvKFsYdU8zqPrhD.SoYIgKKN5J2r4wVNRbA31MpA9m_Hf_l6Cbwo2Hh6gu2_vDhY7nj.g_yj6JApkfOmkRGvNX6hV_QfhQHz6kiuMCO1bFz.rO5t20WA8jZXzHq82XSH_S1V7aQossfGRRH7a61vBnZ_4sqHeleI75arnv0mRz0Yg.VM2qgo6HNUylAMQQDrwvKDqET37gDv.G24biHlrzYqDy8EwanuD5_jT0_SBvH3wWo.LhN5G_',mdrd: '9c8MLMSJlxpO_Qyw0wQTji9yUcbhOoBaekVvyrV5fYI-1769259138-1.2.1.1-w7tmonhuJI8sBO8eyiifiLx5mUeRwt835lRh0ZniKlz88Z8a5cgUGFF.hBH8xpssB8U09U42Bk5XiP_vNfCp9ycx2mxiz0cFZyXrGJ0gCfXSX6TIjMuH7r0W2rxKY9YB2aUEpJsgsUzxUKtUwTmGCsS3I5LEZZ.16sUhgyA66Am.EwigEzw_8wrH9xy.rsVbDtgBeKIYd97JzJesfwi9xfSYuayl5D4y51vkPyMRNEUPUwx_M_Gqs2DR3Km0Mnb3xGDGVvjN6YMuQWPUkLKbTL_JJNaJoYU2rGN90qTsCGgyx0thToFLY5GUm.w_BoudJRCk32NfhqYwKUsTo2HVLs1w2uBn5O107fpPpi3UMGtfAFVoziIXUzNkpGgBPtHvpjo7o5g8fAZ8v4S55hL11U0JXeJodDH6nKchR_zGUi_CmDH8mbuumehC0Vv7N3J_QuIt02PHxQ.i4lay8B2b9FuObU5qgwD6lXnPe3hIjBLcpc6oP5NWKcWBh_rlVvasWZvK.00Trd09LI669pWKd4PfjHscIGU82krG94YuT5fOUo4QxdlFvmWIW2sk5SYXNjzAj0XBU5oo_M0xRFJrJfIG9swPncCq_XKf0_XEhzy.0dgiqdx4NdspA3ntuM9ZMXU6GZStIv_Htmjuer12oefocTSsn0y4P9ouTA9gDP3j3WSVyPSG0dhio3fxtEz_Bjz7WapbG3ZaxaNOclzN5t.5zeD9.k4XzkwbpOiwwhFISd.is0dqhDbPmmvEzWvjYqEN_DmH3qwunZoDZOMslY1EyRMPu1qLWTunS1UVrWfMOsprdzYlucgK8MgNxuaZMeXK1AnwmdhdPb1nR5gyHVLDvmr.CNRh2iJuj3ConbJ9TdPGJo3tLlOnSZKDNWAx8NQO0PQ.D.zgY_efhPo73M_3Cz49bNL_Pz.oQsjL311axXn.GZGn2LLY2a4JPkjNmDHM.lC6xgipAKw4hVmMCKuJBSlnaoOTfn3fk1b3uZvJa6hHvnnaJqZulvrRuh41CBfGE9fWvnr83.ujOnThqZEmRCWv9i9t6dLoeo1tDcLir_ly_E4lcR3xmUhEP7xCMdheSsE_mG99F_hhtpK6MYJ13.6q3uzQ6s6PCWzNyHM3Jau4k.ylUtGwwccRQOeP6nMJn2tRh6yH6YFZZnH26loAIMNlK9g0ySmoTdJZTO4aV_9dA07D30940Jm3yUbsbUDSJuyfemkS91x8uXQmAi.bX.6RanjpwIEqij9xXYPhM2JEicx_zCjxo4w3_GbEmJlC0ODJPj2FE1SSMnc_i6BnMUbjwxGkGZnSI6dh6NORRv76OGivjbrjwqWfWmfKHwRnfLV08L5JbWmu_D3PgORvBhDTdKfBqsENT01qOQV5EpUsJbJyJJomf6N4jQTSE0AZuPpob7bmpmu0Aeown_LRnVLNfDIUyB_Z4yyAoel3st32VIiQVxu1Nz4dpQN4zoI4RGD48OGXYKeLuQjRphTC6nK_.9cysfWFNTfr53SFBaM9Avf_HqHO3udnJ0V3NPdVTb0A2XfdNh8il.mUOvO8oPg1GRiSCOP1eH6voMZGip6xIaUEkNv19S.5FIoq0aoFie1uIc92ujAijkz0FNRSN7tPlnknzbN6v.Pin_mBRvI38bKpPAIXTDSoCYl.ERm6Y_EPnTEZvzGNn29pb_DGkzFaOLrOyv_xf3DFqj6_X3wMAbu1rnUmRhmHSY7IiLH3Tp3Gpq1sIA.YGldIQ9QWEKW_OmjbpAGET9Kz0gasTGnIfw7J5ccLVRv_6tByNTCm2iMH7H8YwxGtLUXRP1tHZvOZfaFB8NfkkuUumlG9BWYzyo_YhPnhRIS1p2sU9fYlu4kGYiEpQanonsNM7b9ewxWW05aoubDFvlG2eQjfkxuOj_o7uILuVRDSvg8ku5IsCDBJyxQ3Rt2IoSQKLrZguNtyKG7G5tnGxdMG1TPQeEJYBSsS2Rou8IiSoeM7Iv3nzE0tvpp9CVf8SvV8qxOU9I08tN03.oMkxs7aET3KY36dkhrfRO4LqgUFrKvGPH5S7Kpd1RamopqdOK3gDUwzj4qddf_s8t_eI.1dY2FHcq1StJ3OWvookVIWWN0bymqk5AW.4zNn8cNaGystl45cUi.4xNadqz.qNbIGI_ULENMmjYwRgeAtYoLFUNqgyxbL9fMmIVCqcKpZgGrbbgap11F8xerHQV9._1ZPGQLComwlglMQNgEnk2qSmsUUmQsUQrH28C8hG9ptJ1bJ7LxgERRKVUiAYdfDSV4Fs1vWbaaH.IC8DxZgKWrXkB31_yLHGgex1kbUG8GAHMC6JUVMdRj48dDwWF2EAt.7wUY',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2faad0aa2da49d';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/assets\/cms\/Nelnet_Loan_Servicer_a40c80bab8.png?__cf_chl_rt_tk=fFVH86B4mi.WMdKYsBXUZRCCCsOKSlOZtYggdJs4s2A-1769259138-1.0.1.1-684unGGzBVCu77trCaGm5.RSm5gE_hcprAnJ_Zj_7Qc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

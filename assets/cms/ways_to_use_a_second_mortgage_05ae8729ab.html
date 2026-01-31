@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f966fecb8cd10',cH: 'i1HxhyCS6L9tuRNGAe2BjgyENZ8g.gXtZm1qCpBOlmQ-1769258304-1.2.1.1-80TEtLRX5E5p.tMDTOiXejzmSNk9p48NluUrJ16L4kfyVCC34bVzUqA.ADPmbSGd',cUPMDTk:"\/assets\/cms\/ways_to_use_a_second_mortgage_05ae8729ab.webp?__cf_chl_tk=Nr1DtRo.c1vcbXyTnXnpu7d_k0bx8bkcVPltDBdaseU-1769258304-1.0.1.1-b21EUkxWaQJ1gnA7WatEQ.x_EFNsuv3pXnrV6.qr96c",cFPWv: 'b',cITimeS: '1769258304',cTplC:0,cTplV:5,cTplB: '0',fa:"\/assets\/cms\/ways_to_use_a_second_mortgage_05ae8729ab.webp?__cf_chl_f_tk=Nr1DtRo.c1vcbXyTnXnpu7d_k0bx8bkcVPltDBdaseU-1769258304-1.0.1.1-b21EUkxWaQJ1gnA7WatEQ.x_EFNsuv3pXnrV6.qr96c",md: 'NzDDWb_JNtTaQRb6hmoh4ztIi8E_p4JJBj3rVLfxcYA-1769258304-1.2.1.1-LGZEGSDq5uELlDtPCz8fD61Xv20ys1kN3jkCEWT01WCSx5y8Wz2GC8cKmK90snmy4Ssblov8_rTn3xX8RUNMS1hODXAeOFN0eVydz0hIIKzr72GueN8oIyeH76hs_ClL6DIZoZ9gm_U5z8.04MMTpwLNwPpZGVtthqRCRpL68Qqnjn_yDJS99mABa_6xf9Onn5AED7WkyfiVXbITlOgeme6d3xdOQEeETTLldVw5mkSptl_pva_1XjhPchzdOKTbe77WgrWHJesxVnbKH1drju0HxoBPfz5Ac52a0iRtUE9XkwlvkBsQrsvLPBeLipiaY98m7.gr9ZASW0k3teqeTOWlvoVnEbVk5sq8cOx789XWouZgCZTlENTlzPsNA1gEhE_iIC9IbKhOi_415.10RIYy5ruPalJr.UvjwMcLRMhDUExamYYjQR4v_PZ27SFZop9DB.j4eUD7ymhUTksgyscAUXF.7S9lgL81Vwe2M8FfutgVWaxU6vIl460Fh66Ziz.fToVM4p8sLdlXuduURJmMWRmQsqFW_bwTCr07cfj7JtEgbF4XhTO3sxO3Itptryx.KVz0_wkfCXNBdRnHboMxtxyxfQr29I8EAm1OMWbtgSCYb59aF.T32FWGeL0.6WzqnPSCoIb73wPF538sKbVXMgzeWK0OK.22QPkLipdZbdJzzRAx6xYyB934r924W8DNAVxKqI8bvNZ2MPJIr0JCLgq0qCcqKg70vvMg8YGu1SOKVY5LrWEGuIOeqHL6Rb0aqz.ChdxxKei4NEyayhj3dAQwhxOKxfmk.p05v.O5MXX2lV0dX5XYEZlAqS2K5Z7EI.IQLy3539397cmzbx.fIBK_dxyV6dvu2a35abUYzqQNQ2r4WAYPb_uG4n7xNXmQt0uO1RlbkcuHCC6hz6EJ0BnBXoqk3FoTG1WiJaw.g5VcxGN_lX8E66TXg0omd6AK7Ej_tBcK2K2GRvvRUfff0Z5DBfJ4iNkGtC_ktxJwcoL66BwUR7hgXPniSDtncESMWV4uxsxY6m2Ef93U7g',mdrd: 'Nt3567bIRz6j14mwtB63h309.BW9L84473ALH4sptXI-1769258304-1.2.1.1-_7ND4lglKY2K5OUK8e77_gtBDrpoRHZe.RMjzDQwaWVTQVbrqx2Ets7bUpxT.WonnTlkQkauemkTDdievqOJEJ59E7pVc9PcVJ55C6ykNPfiiff3v9m6_ptjQiRHle6rSk3tlgOpVGTsHzBJOxE2_SxRkwxhghPLOpjdAtAgOG16Ty2HzKsnN45GfpSRkU0PvHZLXf_MUXMQwGpnoKvn1TgH2ig1ejHuLRzDHAgDQOm1vjXm7d1A4P6zEtt1O_Bhu9tcnwGXPZAbGDY6_8iMbdNMNQg.obBGyViqo9Lndy0rAHmxujvjyY1xeLdP3WTKgX2YvZywmn7aZM8QAlI9Pefzkg9PGn_OazpuiDrmC5uVPQfZDkVSe.5EeYr86TNypg.nd599JTkbwctV7dDgEymocXwTc6jw_0KjEA0Yl2fxumi2_fiZUapDi7wqa8Yh1HYyMGMe4EVu.etRp5VSrUJ47Mzh4j2H0.6GJo4PJF3oHwKdqwvKZYPjyEIpb_87kKsZbsg.G46XI1jGMrVy5_Caqg6sp9FZZNCRy3FDEWQd3vvPRFV9Ird1XEvGT98bLEnZEko0tYMelhEaqOl84qXBJ36jegumDAxZm4FmfqFXPN.EykcQLhpS4B4dyNFiAIgBZdZuQFekb.lzUyPywl4iFobAIA9NRv4PsIQuciiGFwmykzU7sAOKT_O7FrI81_Q1cs.8pUe3X5z4532IEeDg7pJp34AorXKMrEl5vRSYUeKdwoOh_g30H7toa4OmzW1_aFJmWkbou0cE1FqgSLfGtRf8_dEFN8Sogq0KDTgRW.Xpca6aS4OaR8x4ISca6BMzQfvZt4peBUpvGKTYkl_VcOpoD.YU2.uR7PZO4.Wd9nI902JqNW3qvTrh1g1cSROxWJ9Ua.PEmdHeK1PQyyLOvgJgqq9A0uimqU3iZsAL9ZuzSIGkOTTTZ7p6OYXULcEWz7LkjmYlBBK3bGPSdYmgokPfyvYWihc4bHGgfT15idF7kFmhQpbW71gdVF93LoKF3WbmjObTYY5p7PllrB4qD4e9RXuUuATCTduyqvR6GmHqpgknfcG2ES2zZcxTo2h.LmxgVbeTG9jOBTWWgRz4TCJAtv9yPJBWa_lVri47uLytgJ0XC0.LD1KrH16pja4e_DLsjbJunCWgnFTqhFOFBDNmPu9JraWce_xY0gW1aSh3pMJlk4A2cAzaFCPVEaxIqU81GqQqsZ3azVvihwEI8yoXp9poCnoJf.we7Gvsa4CkJlI9poDyx8bmTDVmpRircaX6pFGItZ8U2wPH3.x9DKi6eZwCBuBA6lE9kvYQBHWshe4Ut9_IQrmuM.0OPx7efaPaDzXuzR2Psz3TiJXjSpp_WQMRzcGoIGN3.OOIgMYEFPsJry0Eg3uAeYtaEsTBoA9VR5fmNk1XwRo9iZiic7bsrkYywzkFHfDMj.OWttXUHgr4Naep.M3C_qkSvVVC.u.N9wTmIjMzn.InPXYUB5nrvGtNP5Ug.11zDeh77JqGr7ngBkaEjpNf6lDFAhL7ky1EG8.LzzkOWL36NaLiRAUi0s3atHQTwe.aG_X3M0mxe2gI9wI4bR.I27gyXj4.j95gb.mnMvGp.4Mh0DnHTIc1hvEKarmmJij7SoPpWH1uuU5LqTXKzzhrH_WytUAokaPWmLioKVkFtB9pvjRsiWVMXjtnWScWVcwp0zwSTPpT5gcoIUucfy5i7.DcsTX.YxycdToMgxACGuILb2duoukWEPKaUNGk5pkrpCoPoAM.vbJb4sET6OEMEm4pVgCu9UMW3LAX3D22i9gv.w8YZGASVOy4jGjuMBzwcEUoRZnL3iiUdXYkwspGu2OHgABtz40m7Jzst09LvVwYZqeFptkbfj1qLnIeNNrjcLwZRWdNCtUnrKMIwNjspuwJDnQGn12eD2JgD6KLnWFbwV0nvlm5sib5jJnxp7LPqwqsOWcyfv8Ny_Gc4HrQFfeiJzBVv_.u4MKV5aka6FgIXYRO_HoOYZk_1tNSgMqVfEZfZE45RDFK3qbNmZ.hzgH3s3Nu5DrLQBoxxyinqRVNiiBeyt31jpxrfx9aH6XMii9Pcf5KXkOWgjSmnXvU52fVI6zoBVWuQVARvm.et4CfwJ0Cu18HD68ud8WGFDMNmzl7dXd3mn3xB5R7hDsi9FIKQiJbZJTzZFkV2T79TYErBpfCahx4nqbzFZgGN4l1uPYBX.frcYmhSMMqD8_5yeIHFGAhA.N6wF5gMXbL84DrP92.7SLO441WGVtI6xHkp.0p_aOTB_AytFAlhKfrRueVjxBcbJwxGFdxn3RhIQVXiocLdwDWqhfugMF8IISSCo7oOTIc0VR3jYqVfWuwj6ey',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f966fecb8cd10';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/assets\/cms\/ways_to_use_a_second_mortgage_05ae8729ab.webp?__cf_chl_rt_tk=Nr1DtRo.c1vcbXyTnXnpu7d_k0bx8bkcVPltDBdaseU-1769258304-1.0.1.1-b21EUkxWaQJ1gnA7WatEQ.x_EFNsuv3pXnrV6.qr96c"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f966fecb8cd10',cH: 'i1HxhyCS6L9tuRNGAe2BjgyENZ8g.gXtZm1qCpBOlmQ-1769258304-1.2.1.1-80TEtLRX5E5p.tMDTOiXejzmSNk9p48NluUrJ16L4kfyVCC34bVzUqA.ADPmbSGd',cUPMDTk:"\/assets\/cms\/ways_to_use_a_second_mortgage_05ae8729ab.webp?__cf_chl_tk=Nr1DtRo.c1vcbXyTnXnpu7d_k0bx8bkcVPltDBdaseU-1769258304-1.0.1.1-b21EUkxWaQJ1gnA7WatEQ.x_EFNsuv3pXnrV6.qr96c",cFPWv: 'b',cITimeS: '1769258304',cTplC:0,cTplV:5,cTplB: '0',fa:"\/assets\/cms\/ways_to_use_a_second_mortgage_05ae8729ab.webp?__cf_chl_f_tk=Nr1DtRo.c1vcbXyTnXnpu7d_k0bx8bkcVPltDBdaseU-1769258304-1.0.1.1-b21EUkxWaQJ1gnA7WatEQ.x_EFNsuv3pXnrV6.qr96c",md: 'NzDDWb_JNtTaQRb6hmoh4ztIi8E_p4JJBj3rVLfxcYA-1769258304-1.2.1.1-LGZEGSDq5uELlDtPCz8fD61Xv20ys1kN3jkCEWT01WCSx5y8Wz2GC8cKmK90snmy4Ssblov8_rTn3xX8RUNMS1hODXAeOFN0eVydz0hIIKzr72GueN8oIyeH76hs_ClL6DIZoZ9gm_U5z8.04MMTpwLNwPpZGVtthqRCRpL68Qqnjn_yDJS99mABa_6xf9Onn5AED7WkyfiVXbITlOgeme6d3xdOQEeETTLldVw5mkSptl_pva_1XjhPchzdOKTbe77WgrWHJesxVnbKH1drju0HxoBPfz5Ac52a0iRtUE9XkwlvkBsQrsvLPBeLipiaY98m7.gr9ZASW0k3teqeTOWlvoVnEbVk5sq8cOx789XWouZgCZTlENTlzPsNA1gEhE_iIC9IbKhOi_415.10RIYy5ruPalJr.UvjwMcLRMhDUExamYYjQR4v_PZ27SFZop9DB.j4eUD7ymhUTksgyscAUXF.7S9lgL81Vwe2M8FfutgVWaxU6vIl460Fh66Ziz.fToVM4p8sLdlXuduURJmMWRmQsqFW_bwTCr07cfj7JtEgbF4XhTO3sxO3Itptryx.KVz0_wkfCXNBdRnHboMxtxyxfQr29I8EAm1OMWbtgSCYb59aF.T32FWGeL0.6WzqnPSCoIb73wPF538sKbVXMgzeWK0OK.22QPkLipdZbdJzzRAx6xYyB934r924W8DNAVxKqI8bvNZ2MPJIr0JCLgq0qCcqKg70vvMg8YGu1SOKVY5LrWEGuIOeqHL6Rb0aqz.ChdxxKei4NEyayhj3dAQwhxOKxfmk.p05v.O5MXX2lV0dX5XYEZlAqS2K5Z7EI.IQLy3539397cmzbx.fIBK_dxyV6dvu2a35abUYzqQNQ2r4WAYPb_uG4n7xNXmQt0uO1RlbkcuHCC6hz6EJ0BnBXoqk3FoTG1WiJaw.g5VcxGN_lX8E66TXg0omd6AK7Ej_tBcK2K2GRvvRUfff0Z5DBfJ4iNkGtC_ktxJwcoL66BwUR7hgXPniSDtncESMWV4uxsxY6m2Ef93U7g',mdrd: 'Nt3567bIRz6j14mwtB63h309.BW9L84473ALH4sptXI-1769258304-1.2.1.1-_7ND4lglKY2K5OUK8e77_gtBDrpoRHZe.RMjzDQwaWVTQVbrqx2Ets7bUpxT.WonnTlkQkauemkTDdievqOJEJ59E7pVc9PcVJ55C6ykNPfiiff3v9m6_ptjQiRHle6rSk3tlgOpVGTsHzBJOxE2_SxRkwxhghPLOpjdAtAgOG16Ty2HzKsnN45GfpSRkU0PvHZLXf_MUXMQwGpnoKvn1TgH2ig1ejHuLRzDHAgDQOm1vjXm7d1A4P6zEtt1O_Bhu9tcnwGXPZAbGDY6_8iMbdNMNQg.obBGyViqo9Lndy0rAHmxujvjyY1xeLdP3WTKgX2YvZywmn7aZM8QAlI9Pefzkg9PGn_OazpuiDrmC5uVPQfZDkVSe.5EeYr86TNypg.nd599JTkbwctV7dDgEymocXwTc6jw_0KjEA0Yl2fxumi2_fiZUapDi7wqa8Yh1HYyMGMe4EVu.etRp5VSrUJ47Mzh4j2H0.6GJo4PJF3oHwKdqwvKZYPjyEIpb_87kKsZbsg.G46XI1jGMrVy5_Caqg6sp9FZZNCRy3FDEWQd3vvPRFV9Ird1XEvGT98bLEnZEko0tYMelhEaqOl84qXBJ36jegumDAxZm4FmfqFXPN.EykcQLhpS4B4dyNFiAIgBZdZuQFekb.lzUyPywl4iFobAIA9NRv4PsIQuciiGFwmykzU7sAOKT_O7FrI81_Q1cs.8pUe3X5z4532IEeDg7pJp34AorXKMrEl5vRSYUeKdwoOh_g30H7toa4OmzW1_aFJmWkbou0cE1FqgSLfGtRf8_dEFN8Sogq0KDTgRW.Xpca6aS4OaR8x4ISca6BMzQfvZt4peBUpvGKTYkl_VcOpoD.YU2.uR7PZO4.Wd9nI902JqNW3qvTrh1g1cSROxWJ9Ua.PEmdHeK1PQyyLOvgJgqq9A0uimqU3iZsAL9ZuzSIGkOTTTZ7p6OYXULcEWz7LkjmYlBBK3bGPSdYmgokPfyvYWihc4bHGgfT15idF7kFmhQpbW71gdVF93LoKF3WbmjObTYY5p7PllrB4qD4e9RXuUuATCTduyqvR6GmHqpgknfcG2ES2zZcxTo2h.LmxgVbeTG9jOBTWWgRz4TCJAtv9yPJBWa_lVri47uLytgJ0XC0.LD1KrH16pja4e_DLsjbJunCWgnFTqhFOFBDNmPu9JraWce_xY0gW1aSh3pMJlk4A2cAzaFCPVEaxIqU81GqQqsZ3azVvihwEI8yoXp9poCnoJf.we7Gvsa4CkJlI9poDyx8bmTDVmpRircaX6pFGItZ8U2wPH3.x9DKi6eZwCBuBA6lE9kvYQBHWshe4Ut9_IQrmuM.0OPx7efaPaDzXuzR2Psz3TiJXjSpp_WQMRzcGoIGN3.OOIgMYEFPsJry0Eg3uAeYtaEsTBoA9VR5fmNk1XwRo9iZiic7bsrkYywzkFHfDMj.OWttXUHgr4Naep.M3C_qkSvVVC.u.N9wTmIjMzn.InPXYUB5nrvGtNP5Ug.11zDeh77JqGr7ngBkaEjpNf6lDFAhL7ky1EG8.LzzkOWL36NaLiRAUi0s3atHQTwe.aG_X3M0mxe2gI9wI4bR.I27gyXj4.j95gb.mnMvGp.4Mh0DnHTIc1hvEKarmmJij7SoPpWH1uuU5LqTXKzzhrH_WytUAokaPWmLioKVkFtB9pvjRsiWVMXjtnWScWVcwp0zwSTPpT5gcoIUucfy5i7.DcsTX.YxycdToMgxACGuILb2duoukWEPKaUNGk5pkrpCoPoAM.vbJb4sET6OEMEm4pVgCu9UMW3LAX3D22i9gv.w8YZGASVOy4jGjuMBzwcEUoRZnL3iiUdXYkwspGu2OHgABtz40m7Jzst09LvVwYZqeFptkbfj1qLnIeNNrjcLwZRWdNCtUnrKMIwNjspuwJDnQGn12eD2JgD6KLnWFbwV0nvlm5sib5jJnxp7LPqwqsOWcyfv8Ny_Gc4HrQFfeiJzBVv_.u4MKV5aka6FgIXYRO_HoOYZk_1tNSgMqVfEZfZE45RDFK3qbNmZ.hzgH3s3Nu5DrLQBoxxyinqRVNiiBeyt31jpxrfx9aH6XMii9Pcf5KXkOWgjSmnXvU52fVI6zoBVWuQVARvm.et4CfwJ0Cu18HD68ud8WGFDMNmzl7dXd3mn3xB5R7hDsi9FIKQiJbZJTzZFkV2T79TYErBpfCahx4nqbzFZgGN4l1uPYBX.frcYmhSMMqD8_5yeIHFGAhA.N6wF5gMXbL84DrP92.7SLO441WGVtI6xHkp.0p_aOTB_AytFAlhKfrRueVjxBcbJwxGFdxn3RhIQVXiocLdwDWqhfugMF8IISSCo7oOTIc0VR3jYqVfWuwj6ey',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f966fecb8cd10';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/assets\/cms\/ways_to_use_a_second_mortgage_05ae8729ab.webp?__cf_chl_rt_tk=Nr1DtRo.c1vcbXyTnXnpu7d_k0bx8bkcVPltDBdaseU-1769258304-1.0.1.1-b21EUkxWaQJ1gnA7WatEQ.x_EFNsuv3pXnrV6.qr96c"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

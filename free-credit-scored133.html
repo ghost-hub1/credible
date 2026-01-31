@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f9e09d86e3784',cH: 'yYdqJuOQb9ex.uOnI89khLt5qr42eNUut8iUF7uGLTk-1769258615-1.2.1.1-3Wv1OsuQQHRXCxK5Scl_cCXZW.NBC.FAD31AeP7foEa7V0sZP1oLIhyx2gpavQqV',cUPMDTk:"\/free-credit-score?utm_source=credible_blog&utm_medium=blog&utm_campaign=%2Fpersonal-loan%2Finterest-free-loans&__cf_chl_tk=vtEWWSKe5s9HJ2MbQE2QvWEghuJ.nvEJyUDz.h6v7P4-1769258615-1.0.1.1-ajN_CBqPdlYr6hSBnFi4EmG0nnWsv_I4ETHDfMZMqBs",cFPWv: 'b',cITimeS: '1769258615',cTplC:0,cTplV:5,cTplB: '0',fa:"\/free-credit-score?utm_source=credible_blog&utm_medium=blog&utm_campaign=%2Fpersonal-loan%2Finterest-free-loans&__cf_chl_f_tk=vtEWWSKe5s9HJ2MbQE2QvWEghuJ.nvEJyUDz.h6v7P4-1769258615-1.0.1.1-ajN_CBqPdlYr6hSBnFi4EmG0nnWsv_I4ETHDfMZMqBs",md: 'IYo70fcMVHU1Oyg71JEbL0q.nfvdu.BBwMO8ffhXiB4-1769258615-1.2.1.1-7Gk7srcamIv6kxDmnc2ZHMJrpprxm0.sTBjwa4yKiYAosVTbCFQ36vVQBDz3oqfNLpSZIcNBVIOs3CXwdX8iOVP34Y_xYbMpXITgae7H2xQzOhQKinFp1YfTNI9rdmnICbErD23UFOCfKfpcI3GoJiL90gi27tr7CIcEQhkzsxGBrW5G0ROwq_lxojkuDwVTTXNpaG6hHAIYtUcihopOPEIs3d7i4ZBOK6QnpkjHPmBStYP7Tvfr7tLWoFGCd_bJXhC7jnYfloUkq.LSlvoWN.wUFR5yEsw3b9YypcSjDxp55rULg4QsyZVpIKdV6DF4mjukn9O7a23cVJ180zbEv18P6msBA3dKu4GVP2DbIeKV0DcTzueVPUK7YjO3J5fS3jW7ljEEIRs8Bkw11lqGUX2Buob8aohgqzcIE4iGIzAoCp.JUR3GijSzR57no0b2QA2JBB2tOdUTtxycpCfvmn3tzoo5DkeDY1LLfNahej.v9nHPKYWSRNOnJWNXISzaFBELnvbr8KKODRrDqpHaUT7rzi6ItUGxp6X_tgCgQKMLlhcIVH88zXymDEnNWveFTD07ANmq80gncpq_8T8zbqpWzxo0X_6bB5JGCzWLfgjfZqIHnvOYo3umLID4BYUcn0YFoUNVNrMZsOZyxDsqLh3j5lKOWhVvyrOsDvB1JM68jwxIlqkuOONeLQx2jR8l6AyoWqRP8bJnyDPwdqiD93RCe8Pk4P9iNZ4Eju1pJj5ZcEyOWlsgzYoGsQ7wK8Wdf6xzjI6rF8zDbnDMiht6Y.K2mXRXsK3098LQRHvTceAPjtjlrox0TEmdDPKAcLU71w1ZKb0rHO4nuFXnPXPnN0qnv9.pfbqoE8fSXgS7Qzt.pbN8MgGtiybBGMzBo.2C8uJKzf3aW4fod4cP5H1zmop1v4W.Z4qBpN5KWMhxDy2vw7SFNAJRddw2Lgr_m7zGNldGoziAc7wO21wGSJltZ036qcsZC01mzwAUsNqnG11pfH_zAd0T8O1DITtL4KQamJLVenqWgaW6x0fUTQtPPLXyMguceNZbHngNdB_IravprPNmKCVRXd0WIHs4p91trZvpsmENWq5ZUVpTqs7IYw',mdrd: 'ZjBq1Ss8UEGlv4coA41YNaMq6x1ulYZ__AVXCux_STo-1769258615-1.2.1.1-qO6eBCDMKf.8IT0xWaP5RGyMzvF6sgp6AmgcS.1suynv.3HCSNkjHuESTM6oqRzSuYEZHEYq_UzxIpACZ4iiRyCrSUSuw1eB8MOi08vbrMYlyjbXA2kHpBtoVIJvIeabOfRxLFA8YlX97M0DQXqkew_RL2RJ7tX5Q0IV.9j6wRv5t1PkgarBUO3ewRjNWXa7YK_aZmggQId2zsiHxO9ns1c5cw8eRtEB6M_OWsEZH9bTSGdawDgeYr6jy2gJ.xSkgoxlNrChctgy242jXCDrDLoYhfQgun6LM2y426AujK7nUdtZ9DcQWuews.Lvhxg7ob_unWIuxmaIjEbCMwq_bRccoTKyhW.LHGP1adE8QtNSED3eJORPZBue6FOLIGJw7m0foW8_ehEabmE9YhgceaSxK3lHbyT6_AAZfjOV.erpK.jFnRcYcln2QyHpQuOqbZhuOVc3OCQG3jM9huVu_53HrXlGxi0vwM5LW3pJLO1AnneE41_ihQ.SS_FrYXTR37UXGzhmNhSaQtS2vqq1TNjnRhLNVWQs80OV1YqeCSpctqo2STjOoejZJu24XdhsJEG_4d5BJzuvY1lRRjDOGMv83OAenXMjCNv39kvnDEy_GtZihFGSUwIWqFsHtIGikzXjEMsCdtYZZMg_mK_gfsPwfotuJKmvFlV9LdZyT1kDGX9hTwIrSs8snyWpHKT8yC_PGTt33Yh2y6b9oj.gmCRdf9hOZoqbGgmImu0pw2sqKlOVJXpAhCFhMERNqz7b_bJmU32eolMPHEmJdJgkYCEyAsVpo66Gb0oeyapM_b5pYwLcjmT3eNOtPHcZCQREAQLyuiZzR5H81NUgVQVvEPZR3LObfZttackELIbK82JePUmyTCg2vnqGv91NxBRfypRF2up8OoXHmqOiAIvMeVfdKowYBp8KHOSOLbaXSyfYttS2ChCjnnNf0JWuMDU.mhYlVqaUcPVK6Pu0h04U5D6rbh3QC7XVo1QKvyf4wClghFyivFitY1yUvh5U.srsz20huQOYqqQzh7zl_he3gTNJz.wXeioosm8dkEwCxfEPek7i7et6VkToOZD6Mt4kYumLkS6Qfdu7qMxIczm_q_Ckuy1_X.UO5ax_fKe_.n6rU_uqyRc0uGdFRX93ZyTfmf_ODhPiAQ1TcTUOEVdsIgjT.QNyoV8p0hfVcxlSZRzGniD3qN7IuIj57iL1XRA7Wf9qJFR.fSdH_kKMtighvpSuOp2q6qgNSK_624XsGgHSk2cEKZ3.T.xbol4fjIvePldsU6cvYR28zUrE7nwwgtVq2jj5W5n0rURNL9AIbmg0defkVw4ZVvfROK3v_t.XdDUZEfyDteIfX.9XiyE0Qby.sZiZG7Q1.s0ojhnZb1K5p5On3gJ5TvHP24XHC.UQQIJvsIj11rQde3pNPhtUeHzMc_dW2guY7eOInj6321TA08ODC26SetGJHnikGgg3FGv5t__2nk22A2CeQJl5AOPn4_cF5exjG0dFYAyC5Sd4_G0GRL5vDWghTdgp6tIQYGJUXPNVs.ywZLEAexDGQsByM9xiv4D0J0Rlk5oj9Vhopu30s309WMCwpuaGY.XutUKn8PSK7lh1Ju9.EnaD2SVsbTxrHWX9husFkfzT2wV30gWlYVtwN5VYP__KebREZOefdpUPb90tEeS_9G5qjJCQg0W3foxAAP6HFYKMH5weM0b0EWOWNha2tpDmoxpa9di6LxV0bZgvwNNV2dcbQlpgLdijx1HP9LEpSj0BlQlxF9tt1o3EFEWUQ7VXWFdczN15kXC1rn49MWSbA50egz10H4uhF3DOTjx5niyQddWhOVwSfq8EB52AXkl1ux5q2mo1sx6ZbpF1JR8TWAZVoY30.xE1iCMBWAYRjHRTQ1BlLrjaV.7PemoqVqzhPyxFZWnBtOv8QcW30KdYmYZ2J63UeL9Bin7Z44NdM3.1Oai8eufOl1NefS24vTt18WQ5NBZvJAefzU20ME1GBt8dccMc1DK28fOvIcyGKfvjh74B9sv6UDipannzM0BOEY83CEZdCSYoWM.040vm_yWy_20lsMzDWwpvf.wyhNtUdNv_KGoBNP8mIhhuboVEU5JlvbGGDtyH8ofb28.Oqju5VSsq6k4MSCvJlTH3grT9tPRq2vnS6ShNgBLdOCebMI2_A45VdTLS4g3i42Kywuc2AjJsAvQhlqzH1PmS7tH5AKFuWdIzlO52BN8c2OUwB9a.yssuCmd4XucFOhOhD0T2OYnoVr2KsXG4vbrUaMlHA8oy7rpmZWYFoxlRRD.GMLgvgkCvjGp.3EJwL1Lb57_9ePUu09Df6yxEPX3dLtvlN7ue7iBh2Ceev59yp.Labrt6',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f9e09d86e3784';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/free-credit-score?utm_source=credible_blog&utm_medium=blog&utm_campaign=%2Fpersonal-loan%2Finterest-free-loans&__cf_chl_rt_tk=vtEWWSKe5s9HJ2MbQE2QvWEghuJ.nvEJyUDz.h6v7P4-1769258615-1.0.1.1-ajN_CBqPdlYr6hSBnFi4EmG0nnWsv_I4ETHDfMZMqBs"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f9e09d86e3784',cH: 'yYdqJuOQb9ex.uOnI89khLt5qr42eNUut8iUF7uGLTk-1769258615-1.2.1.1-3Wv1OsuQQHRXCxK5Scl_cCXZW.NBC.FAD31AeP7foEa7V0sZP1oLIhyx2gpavQqV',cUPMDTk:"\/free-credit-score?utm_source=credible_blog&utm_medium=blog&utm_campaign=%2Fpersonal-loan%2Finterest-free-loans&__cf_chl_tk=vtEWWSKe5s9HJ2MbQE2QvWEghuJ.nvEJyUDz.h6v7P4-1769258615-1.0.1.1-ajN_CBqPdlYr6hSBnFi4EmG0nnWsv_I4ETHDfMZMqBs",cFPWv: 'b',cITimeS: '1769258615',cTplC:0,cTplV:5,cTplB: '0',fa:"\/free-credit-score?utm_source=credible_blog&utm_medium=blog&utm_campaign=%2Fpersonal-loan%2Finterest-free-loans&__cf_chl_f_tk=vtEWWSKe5s9HJ2MbQE2QvWEghuJ.nvEJyUDz.h6v7P4-1769258615-1.0.1.1-ajN_CBqPdlYr6hSBnFi4EmG0nnWsv_I4ETHDfMZMqBs",md: 'IYo70fcMVHU1Oyg71JEbL0q.nfvdu.BBwMO8ffhXiB4-1769258615-1.2.1.1-7Gk7srcamIv6kxDmnc2ZHMJrpprxm0.sTBjwa4yKiYAosVTbCFQ36vVQBDz3oqfNLpSZIcNBVIOs3CXwdX8iOVP34Y_xYbMpXITgae7H2xQzOhQKinFp1YfTNI9rdmnICbErD23UFOCfKfpcI3GoJiL90gi27tr7CIcEQhkzsxGBrW5G0ROwq_lxojkuDwVTTXNpaG6hHAIYtUcihopOPEIs3d7i4ZBOK6QnpkjHPmBStYP7Tvfr7tLWoFGCd_bJXhC7jnYfloUkq.LSlvoWN.wUFR5yEsw3b9YypcSjDxp55rULg4QsyZVpIKdV6DF4mjukn9O7a23cVJ180zbEv18P6msBA3dKu4GVP2DbIeKV0DcTzueVPUK7YjO3J5fS3jW7ljEEIRs8Bkw11lqGUX2Buob8aohgqzcIE4iGIzAoCp.JUR3GijSzR57no0b2QA2JBB2tOdUTtxycpCfvmn3tzoo5DkeDY1LLfNahej.v9nHPKYWSRNOnJWNXISzaFBELnvbr8KKODRrDqpHaUT7rzi6ItUGxp6X_tgCgQKMLlhcIVH88zXymDEnNWveFTD07ANmq80gncpq_8T8zbqpWzxo0X_6bB5JGCzWLfgjfZqIHnvOYo3umLID4BYUcn0YFoUNVNrMZsOZyxDsqLh3j5lKOWhVvyrOsDvB1JM68jwxIlqkuOONeLQx2jR8l6AyoWqRP8bJnyDPwdqiD93RCe8Pk4P9iNZ4Eju1pJj5ZcEyOWlsgzYoGsQ7wK8Wdf6xzjI6rF8zDbnDMiht6Y.K2mXRXsK3098LQRHvTceAPjtjlrox0TEmdDPKAcLU71w1ZKb0rHO4nuFXnPXPnN0qnv9.pfbqoE8fSXgS7Qzt.pbN8MgGtiybBGMzBo.2C8uJKzf3aW4fod4cP5H1zmop1v4W.Z4qBpN5KWMhxDy2vw7SFNAJRddw2Lgr_m7zGNldGoziAc7wO21wGSJltZ036qcsZC01mzwAUsNqnG11pfH_zAd0T8O1DITtL4KQamJLVenqWgaW6x0fUTQtPPLXyMguceNZbHngNdB_IravprPNmKCVRXd0WIHs4p91trZvpsmENWq5ZUVpTqs7IYw',mdrd: 'ZjBq1Ss8UEGlv4coA41YNaMq6x1ulYZ__AVXCux_STo-1769258615-1.2.1.1-qO6eBCDMKf.8IT0xWaP5RGyMzvF6sgp6AmgcS.1suynv.3HCSNkjHuESTM6oqRzSuYEZHEYq_UzxIpACZ4iiRyCrSUSuw1eB8MOi08vbrMYlyjbXA2kHpBtoVIJvIeabOfRxLFA8YlX97M0DQXqkew_RL2RJ7tX5Q0IV.9j6wRv5t1PkgarBUO3ewRjNWXa7YK_aZmggQId2zsiHxO9ns1c5cw8eRtEB6M_OWsEZH9bTSGdawDgeYr6jy2gJ.xSkgoxlNrChctgy242jXCDrDLoYhfQgun6LM2y426AujK7nUdtZ9DcQWuews.Lvhxg7ob_unWIuxmaIjEbCMwq_bRccoTKyhW.LHGP1adE8QtNSED3eJORPZBue6FOLIGJw7m0foW8_ehEabmE9YhgceaSxK3lHbyT6_AAZfjOV.erpK.jFnRcYcln2QyHpQuOqbZhuOVc3OCQG3jM9huVu_53HrXlGxi0vwM5LW3pJLO1AnneE41_ihQ.SS_FrYXTR37UXGzhmNhSaQtS2vqq1TNjnRhLNVWQs80OV1YqeCSpctqo2STjOoejZJu24XdhsJEG_4d5BJzuvY1lRRjDOGMv83OAenXMjCNv39kvnDEy_GtZihFGSUwIWqFsHtIGikzXjEMsCdtYZZMg_mK_gfsPwfotuJKmvFlV9LdZyT1kDGX9hTwIrSs8snyWpHKT8yC_PGTt33Yh2y6b9oj.gmCRdf9hOZoqbGgmImu0pw2sqKlOVJXpAhCFhMERNqz7b_bJmU32eolMPHEmJdJgkYCEyAsVpo66Gb0oeyapM_b5pYwLcjmT3eNOtPHcZCQREAQLyuiZzR5H81NUgVQVvEPZR3LObfZttackELIbK82JePUmyTCg2vnqGv91NxBRfypRF2up8OoXHmqOiAIvMeVfdKowYBp8KHOSOLbaXSyfYttS2ChCjnnNf0JWuMDU.mhYlVqaUcPVK6Pu0h04U5D6rbh3QC7XVo1QKvyf4wClghFyivFitY1yUvh5U.srsz20huQOYqqQzh7zl_he3gTNJz.wXeioosm8dkEwCxfEPek7i7et6VkToOZD6Mt4kYumLkS6Qfdu7qMxIczm_q_Ckuy1_X.UO5ax_fKe_.n6rU_uqyRc0uGdFRX93ZyTfmf_ODhPiAQ1TcTUOEVdsIgjT.QNyoV8p0hfVcxlSZRzGniD3qN7IuIj57iL1XRA7Wf9qJFR.fSdH_kKMtighvpSuOp2q6qgNSK_624XsGgHSk2cEKZ3.T.xbol4fjIvePldsU6cvYR28zUrE7nwwgtVq2jj5W5n0rURNL9AIbmg0defkVw4ZVvfROK3v_t.XdDUZEfyDteIfX.9XiyE0Qby.sZiZG7Q1.s0ojhnZb1K5p5On3gJ5TvHP24XHC.UQQIJvsIj11rQde3pNPhtUeHzMc_dW2guY7eOInj6321TA08ODC26SetGJHnikGgg3FGv5t__2nk22A2CeQJl5AOPn4_cF5exjG0dFYAyC5Sd4_G0GRL5vDWghTdgp6tIQYGJUXPNVs.ywZLEAexDGQsByM9xiv4D0J0Rlk5oj9Vhopu30s309WMCwpuaGY.XutUKn8PSK7lh1Ju9.EnaD2SVsbTxrHWX9husFkfzT2wV30gWlYVtwN5VYP__KebREZOefdpUPb90tEeS_9G5qjJCQg0W3foxAAP6HFYKMH5weM0b0EWOWNha2tpDmoxpa9di6LxV0bZgvwNNV2dcbQlpgLdijx1HP9LEpSj0BlQlxF9tt1o3EFEWUQ7VXWFdczN15kXC1rn49MWSbA50egz10H4uhF3DOTjx5niyQddWhOVwSfq8EB52AXkl1ux5q2mo1sx6ZbpF1JR8TWAZVoY30.xE1iCMBWAYRjHRTQ1BlLrjaV.7PemoqVqzhPyxFZWnBtOv8QcW30KdYmYZ2J63UeL9Bin7Z44NdM3.1Oai8eufOl1NefS24vTt18WQ5NBZvJAefzU20ME1GBt8dccMc1DK28fOvIcyGKfvjh74B9sv6UDipannzM0BOEY83CEZdCSYoWM.040vm_yWy_20lsMzDWwpvf.wyhNtUdNv_KGoBNP8mIhhuboVEU5JlvbGGDtyH8ofb28.Oqju5VSsq6k4MSCvJlTH3grT9tPRq2vnS6ShNgBLdOCebMI2_A45VdTLS4g3i42Kywuc2AjJsAvQhlqzH1PmS7tH5AKFuWdIzlO52BN8c2OUwB9a.yssuCmd4XucFOhOhD0T2OYnoVr2KsXG4vbrUaMlHA8oy7rpmZWYFoxlRRD.GMLgvgkCvjGp.3EJwL1Lb57_9ePUu09Df6yxEPX3dLtvlN7ue7iBh2Ceev59yp.Labrt6',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f9e09d86e3784';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/free-credit-score?utm_source=credible_blog&utm_medium=blog&utm_campaign=%2Fpersonal-loan%2Finterest-free-loans&__cf_chl_rt_tk=vtEWWSKe5s9HJ2MbQE2QvWEghuJ.nvEJyUDz.h6v7P4-1769258615-1.0.1.1-ajN_CBqPdlYr6hSBnFi4EmG0nnWsv_I4ETHDfMZMqBs"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2faa40dcc063aa',cH: 'BAz6jX6tjKfoXrWbWO.qrWgYD.fyAgHHpmhpXF.wHFs-1769259115-1.2.1.1-nQQme.GuWcwnd7bJNpGN24oJZMiHOzUm5dhFNOudr96KFWyFbAYPgt.vaCuCetSg',cUPMDTk:"\/refinance-student-loans?preferred_lender=so-fi_slr&utm_campaign=&utm_content=&utm_source=credible_blog&__cf_chl_tk=UXCd7jgNqWl0jcihuxb_yArkw0kQq35FnLVkOKVYvo8-1769259115-1.0.1.1-wtW0jfgiySLvagE6j8LSyUs1mOQy_9ZfRTMWOrQBNho",cFPWv: 'b',cITimeS: '1769259115',cTplC:0,cTplV:5,cTplB: '0',fa:"\/refinance-student-loans?preferred_lender=so-fi_slr&utm_campaign=&utm_content=&utm_source=credible_blog&__cf_chl_f_tk=UXCd7jgNqWl0jcihuxb_yArkw0kQq35FnLVkOKVYvo8-1769259115-1.0.1.1-wtW0jfgiySLvagE6j8LSyUs1mOQy_9ZfRTMWOrQBNho",md: '79mUjn.oXc3CwwByIQMIiH7x2jJaLzSDnCUIivp0fvo-1769259115-1.2.1.1-.UauVAsmMY1KTNJxvPV5W6BpEbLMpZS8ESe1CK6RKsW8LxTpqOEyND0YJdPf2PJ1qOp.49RfDNPVvNybMo5TU7qIbMrtUhFZiDFziBZnlcBQ7UME5FZygix7rwBTMv.G.ZbESO5VFzyX4cVJQq9J0qxtINJpHtYaQwVFDs9EnMc8OMVUFGzpczHJKC3NAmdH0PSB6Ss4nMHYbsPWFn_bcILSSZi6hqBmfm0d9CuyWuDYIIv4si94nddkzpDKnPnZOmQyyb2.kuCd4b2qEpXYwMuiC2LUvfUUK1Fw2OkSS1a7NDbnUGWmEYarhxpu2Gj4pfRZ.N_dXtwJuA1GTyT_ZnQStEnB4h0P062FlRABzMARMhrc3S3gvHit6HMXpexepFLcvkjw1y5aOI1evk2MlFgU0N8Mrz1auO0ZhNFH2FXF3bAa53BWGUbIWhW3AXGoEMXbbNJo2c8.N5FVmPMEoUyqsh8WO1dn7DJiWmmN.J4ENrv0qYXeE_Ps5.sPV.Y.j0Y2OIPUlQvThbh5.5bTvfNF90P4keN_UyIPbiIEDunpgovqqQQB0j30XKde7tCuwBlmDAbMHvyzTlkOkYba_HeTwup0wFVWtsDENSrJxvW_Isq0ug3Gg8eNEMeIAj2cGA.zKNPklkW9H8F8eGzJlTssfvndprBY3p2bqn3ganG5p.Ow22pppXw4NkdgG_kxMxOimU7ymka0Ssxpj505UQBm8XNjqE9CeBN_CmGudfMC9x.15hTuNUprVMSA7JGJk01es.rVxG8zcBR_Lkl9joFnsSy2N3Z_Pf0aDaHzpt0MBuI1CxY_NFu170RZ6Lo2fc1ibr2dJdJRL_OJx39cJrkjeZ5WS2KvVAwvaQYXPyHBE71pUNpmCM8oX9Vf1kPYtruprIR_3EotxJ8ZYUf7S5J8tBrdKd1FT8_CS1zcFlTRpRX44TP.01xzhK4_xhHbu2vqyh1mNPtHlXXXv_mUJ3lHUgh9Mn8PM31Mid3c4xYVhuc1orTX54nyFVeq3tJtu.1i7QhYOJOz0vUx0QtAFAhMC_1XjS6e6c6G62Bz.cHpr2jxVeaHQRg9REDGV_Vhj7826oAXseamI8OWb6kBtw',mdrd: 'P0EHbIKKMzsvMxRXgH396h_5hzh8XtPXsDnzdzzxQN8-1769259115-1.2.1.1-TQNv3Uu87be2UjxmbM0UKprW2DCmD.tw9AgdbzCYt5hDzPz4YpQYJCvVR.nZRufIRqoeDQBtHPCKuwjaYfohm73XUgDr_e9VHwzbCjEhlSOdVNVoefKjQGkpAO3zot8GVsk_npezRTYTI09JHBjGwIl2FIbwS0F0y8nYnBQSo0a9zd3SBbJMYD59zChGlIRnrRnITAJWsDA5ZnteQsVQZspjfxv8Zk_Eb1ihZ6speeoktFgUbFLFFWA7u8b2I5DYodGFVuWMlCeHJ._B7BmKGSql7ViJJe62bCCa6u6uEw3lHJX3IbzmJsdlm45HBX9Ur.Vw2rEadHEe8qIpPD4kiEiTbvIn_lV1rmAoU_uFIG4rmesBMZjM_amzLZEWl7I3Qrz0CqSRHBvMmHq5F6BFOQ7ZHY6HeKa0qq49b8bKldeoylJRdx1KRXfZNXvsesaENA2u6oOyujIm3F36cQ6ljE3kv6j1WgdrelEe8N_lJbbb2ZcNe2u2jBMmxZNzhKZNNg7QmyHZzkUBmV5fjRnIr0_T7WNsUBFL2rIkvl1RnN6wnPkpbFbBtyAq7bp3Jabt4fvNuo2XV.o0aYD_QkeU3dOUEOLqeJ2En_tUo9UJvgOtGLG02XEf66L8u3vHkN9xKIBAmnujQ7kHQFPxY18.ZmFV0.feUxRmXZxYhr2y6AE_HqLCzu7PmVgaoDTKGJRP020qHYs0_vPczxuwSYWXBUb2ISkNhZ6nXEA2ijtZSTa1UzAgW6bRWJy7pywktUUctxAd5PY5G6ACE7kl3fnKrg3DJmGQ8hh746QsC3XIK3WNQgHt6E7UM3P.VQqvJxybOPNuVDJo.qOr9JNHLhoNA9Gb5yHx5ExmNwSfrkeo1Sh_sg.Hq5hKKHqdi_a__3922vQLR17bZ2Kw4CQ4sf8ZBhqL4Ygk2OVGq6IkD_EGxreI7hUN.fIbrb.re5IlCaDANE16zfgHv0ajMfPHD_njZf9FQ6PvziOgNB84a7TkC8rsQAf5aZXHSbIc1ZtCcQgZ_XzEA2QBjBKxHJMYwDWoZ8FDl4fKd_hym.9ykp8p5qjn7cUqwmu3yAEJ2hrC4AEns4_kH6g2VsdyUtQgDdgCBxMotWCqU6wcDu3bjoV9nt1EzdZnpTpQg4MwmKPUrz5L36yumvvEb5gcY32BtNPpvpLEsjXw0fii1rwRAevcj8hLn3fig3voK4WXdDFaFqRAE714USSUifeHUzN3T8wY6j7UJ3tlsjCmnUPpNK_F64ThmQPDIoDK1LxRMMtEn68a78E4UOdTGVf6b89elagBRsKdYGumjL3_AV7fFIYA9wMJYCoqY0buP2IonCStdMJolDm7H_TybYxkJq6uRq1SRftEdnv.9snVclc2hDClj_6jGO84j_rlPfuG2DU5CvSNzyz4GwyJEnx4gszwWvCFW9OzQRMcVJl5c_K8DL8rfo6VObtVJo1mTHkc0FaKjOFmPzUtaSJUDCy.t_D3DgYhUip9x5lJI7iY0amvOjIHvvc5UJL65msVhzmdUV0MOz.PXj_jhlJCU2ptVYW0cPvr.YgmDckV3ai7BZiYQHZAUUtSB32XI4ars9SP6Chx7liiCfy0DSzKq24HAoqEsBJ.1psreAWWZdJ4hdGmn64UGPK88forcyuTiPqdmIJX4YUG42gY2Zjasx1Qsy6v58_Kt9whWm.gY.1RPq5qF5v3k7f2SNZNUDDj.1saYoRJBt_Fn8rOYbSBY3ZsA0QXfnCp3CNKwdvwOnpWc7b4bhx09zLe5bKJdzvbiQnkQFCG3JEOGh4EIiaRnGck.icGQy4tqMHxytOh19TzlQVSVmM_i2i5uH2BBNnkOdJv75u4Ur8E2bW2DTpF7NqQUNXavtygZXvoF4k5zOg1VQp_LBHAs2ATQ1BaKrJJ7N70kB14LxUVdIJQ2.gCX54y36EX6xDIgQvngeTJZRrsM5KEUnJ2ZTf4OvbqgyjMnDXJMUZgOnJG4_J6_bw5yhz_0CT0LHPKzreFW4nguvPvU.sUEk3dFjP69fCigWEXUCekSBgYBI7fhOl3cmWO9oXRDE61lExPeCfos8m15g34B7lVEqayv_Ts9gS2Ld7GA_wvji7dODthaONZXffgsqPcEC59U.xCfnQm0J_ww.aw4_uwgRCPSaVDo87UlN1K7YkfnhepLIbdr44tEpveDLtJiTS.J0qcqGpUot9AjdzGZFnjeI_hEm9Y4tSDHqLTl_AUgD3K2bClfc04uVAKCGPGPOO_JWIEVN2iF5SAbo.Dv0xv9ZHzXvSvC0zNjW_iHAmNEWGqKuL2CjiuvdlvKkq0rylkBbI4zQttnjQ.Thb.QRA0dykLjiofqC8OFAgMt1hGEVjWDQAXy7_70dh0TWQYSBTlE0.V3hv1kTuPASywat6OUPnbsjYNjIYIKQXTxDaBV8CKuRGm',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2faa40dcc063aa';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/refinance-student-loans?preferred_lender=so-fi_slr&utm_campaign=&utm_content=&utm_source=credible_blog&__cf_chl_rt_tk=UXCd7jgNqWl0jcihuxb_yArkw0kQq35FnLVkOKVYvo8-1769259115-1.0.1.1-wtW0jfgiySLvagE6j8LSyUs1mOQy_9ZfRTMWOrQBNho"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2faa40dcc063aa',cH: 'BAz6jX6tjKfoXrWbWO.qrWgYD.fyAgHHpmhpXF.wHFs-1769259115-1.2.1.1-nQQme.GuWcwnd7bJNpGN24oJZMiHOzUm5dhFNOudr96KFWyFbAYPgt.vaCuCetSg',cUPMDTk:"\/refinance-student-loans?preferred_lender=so-fi_slr&utm_campaign=&utm_content=&utm_source=credible_blog&__cf_chl_tk=UXCd7jgNqWl0jcihuxb_yArkw0kQq35FnLVkOKVYvo8-1769259115-1.0.1.1-wtW0jfgiySLvagE6j8LSyUs1mOQy_9ZfRTMWOrQBNho",cFPWv: 'b',cITimeS: '1769259115',cTplC:0,cTplV:5,cTplB: '0',fa:"\/refinance-student-loans?preferred_lender=so-fi_slr&utm_campaign=&utm_content=&utm_source=credible_blog&__cf_chl_f_tk=UXCd7jgNqWl0jcihuxb_yArkw0kQq35FnLVkOKVYvo8-1769259115-1.0.1.1-wtW0jfgiySLvagE6j8LSyUs1mOQy_9ZfRTMWOrQBNho",md: '79mUjn.oXc3CwwByIQMIiH7x2jJaLzSDnCUIivp0fvo-1769259115-1.2.1.1-.UauVAsmMY1KTNJxvPV5W6BpEbLMpZS8ESe1CK6RKsW8LxTpqOEyND0YJdPf2PJ1qOp.49RfDNPVvNybMo5TU7qIbMrtUhFZiDFziBZnlcBQ7UME5FZygix7rwBTMv.G.ZbESO5VFzyX4cVJQq9J0qxtINJpHtYaQwVFDs9EnMc8OMVUFGzpczHJKC3NAmdH0PSB6Ss4nMHYbsPWFn_bcILSSZi6hqBmfm0d9CuyWuDYIIv4si94nddkzpDKnPnZOmQyyb2.kuCd4b2qEpXYwMuiC2LUvfUUK1Fw2OkSS1a7NDbnUGWmEYarhxpu2Gj4pfRZ.N_dXtwJuA1GTyT_ZnQStEnB4h0P062FlRABzMARMhrc3S3gvHit6HMXpexepFLcvkjw1y5aOI1evk2MlFgU0N8Mrz1auO0ZhNFH2FXF3bAa53BWGUbIWhW3AXGoEMXbbNJo2c8.N5FVmPMEoUyqsh8WO1dn7DJiWmmN.J4ENrv0qYXeE_Ps5.sPV.Y.j0Y2OIPUlQvThbh5.5bTvfNF90P4keN_UyIPbiIEDunpgovqqQQB0j30XKde7tCuwBlmDAbMHvyzTlkOkYba_HeTwup0wFVWtsDENSrJxvW_Isq0ug3Gg8eNEMeIAj2cGA.zKNPklkW9H8F8eGzJlTssfvndprBY3p2bqn3ganG5p.Ow22pppXw4NkdgG_kxMxOimU7ymka0Ssxpj505UQBm8XNjqE9CeBN_CmGudfMC9x.15hTuNUprVMSA7JGJk01es.rVxG8zcBR_Lkl9joFnsSy2N3Z_Pf0aDaHzpt0MBuI1CxY_NFu170RZ6Lo2fc1ibr2dJdJRL_OJx39cJrkjeZ5WS2KvVAwvaQYXPyHBE71pUNpmCM8oX9Vf1kPYtruprIR_3EotxJ8ZYUf7S5J8tBrdKd1FT8_CS1zcFlTRpRX44TP.01xzhK4_xhHbu2vqyh1mNPtHlXXXv_mUJ3lHUgh9Mn8PM31Mid3c4xYVhuc1orTX54nyFVeq3tJtu.1i7QhYOJOz0vUx0QtAFAhMC_1XjS6e6c6G62Bz.cHpr2jxVeaHQRg9REDGV_Vhj7826oAXseamI8OWb6kBtw',mdrd: 'P0EHbIKKMzsvMxRXgH396h_5hzh8XtPXsDnzdzzxQN8-1769259115-1.2.1.1-TQNv3Uu87be2UjxmbM0UKprW2DCmD.tw9AgdbzCYt5hDzPz4YpQYJCvVR.nZRufIRqoeDQBtHPCKuwjaYfohm73XUgDr_e9VHwzbCjEhlSOdVNVoefKjQGkpAO3zot8GVsk_npezRTYTI09JHBjGwIl2FIbwS0F0y8nYnBQSo0a9zd3SBbJMYD59zChGlIRnrRnITAJWsDA5ZnteQsVQZspjfxv8Zk_Eb1ihZ6speeoktFgUbFLFFWA7u8b2I5DYodGFVuWMlCeHJ._B7BmKGSql7ViJJe62bCCa6u6uEw3lHJX3IbzmJsdlm45HBX9Ur.Vw2rEadHEe8qIpPD4kiEiTbvIn_lV1rmAoU_uFIG4rmesBMZjM_amzLZEWl7I3Qrz0CqSRHBvMmHq5F6BFOQ7ZHY6HeKa0qq49b8bKldeoylJRdx1KRXfZNXvsesaENA2u6oOyujIm3F36cQ6ljE3kv6j1WgdrelEe8N_lJbbb2ZcNe2u2jBMmxZNzhKZNNg7QmyHZzkUBmV5fjRnIr0_T7WNsUBFL2rIkvl1RnN6wnPkpbFbBtyAq7bp3Jabt4fvNuo2XV.o0aYD_QkeU3dOUEOLqeJ2En_tUo9UJvgOtGLG02XEf66L8u3vHkN9xKIBAmnujQ7kHQFPxY18.ZmFV0.feUxRmXZxYhr2y6AE_HqLCzu7PmVgaoDTKGJRP020qHYs0_vPczxuwSYWXBUb2ISkNhZ6nXEA2ijtZSTa1UzAgW6bRWJy7pywktUUctxAd5PY5G6ACE7kl3fnKrg3DJmGQ8hh746QsC3XIK3WNQgHt6E7UM3P.VQqvJxybOPNuVDJo.qOr9JNHLhoNA9Gb5yHx5ExmNwSfrkeo1Sh_sg.Hq5hKKHqdi_a__3922vQLR17bZ2Kw4CQ4sf8ZBhqL4Ygk2OVGq6IkD_EGxreI7hUN.fIbrb.re5IlCaDANE16zfgHv0ajMfPHD_njZf9FQ6PvziOgNB84a7TkC8rsQAf5aZXHSbIc1ZtCcQgZ_XzEA2QBjBKxHJMYwDWoZ8FDl4fKd_hym.9ykp8p5qjn7cUqwmu3yAEJ2hrC4AEns4_kH6g2VsdyUtQgDdgCBxMotWCqU6wcDu3bjoV9nt1EzdZnpTpQg4MwmKPUrz5L36yumvvEb5gcY32BtNPpvpLEsjXw0fii1rwRAevcj8hLn3fig3voK4WXdDFaFqRAE714USSUifeHUzN3T8wY6j7UJ3tlsjCmnUPpNK_F64ThmQPDIoDK1LxRMMtEn68a78E4UOdTGVf6b89elagBRsKdYGumjL3_AV7fFIYA9wMJYCoqY0buP2IonCStdMJolDm7H_TybYxkJq6uRq1SRftEdnv.9snVclc2hDClj_6jGO84j_rlPfuG2DU5CvSNzyz4GwyJEnx4gszwWvCFW9OzQRMcVJl5c_K8DL8rfo6VObtVJo1mTHkc0FaKjOFmPzUtaSJUDCy.t_D3DgYhUip9x5lJI7iY0amvOjIHvvc5UJL65msVhzmdUV0MOz.PXj_jhlJCU2ptVYW0cPvr.YgmDckV3ai7BZiYQHZAUUtSB32XI4ars9SP6Chx7liiCfy0DSzKq24HAoqEsBJ.1psreAWWZdJ4hdGmn64UGPK88forcyuTiPqdmIJX4YUG42gY2Zjasx1Qsy6v58_Kt9whWm.gY.1RPq5qF5v3k7f2SNZNUDDj.1saYoRJBt_Fn8rOYbSBY3ZsA0QXfnCp3CNKwdvwOnpWc7b4bhx09zLe5bKJdzvbiQnkQFCG3JEOGh4EIiaRnGck.icGQy4tqMHxytOh19TzlQVSVmM_i2i5uH2BBNnkOdJv75u4Ur8E2bW2DTpF7NqQUNXavtygZXvoF4k5zOg1VQp_LBHAs2ATQ1BaKrJJ7N70kB14LxUVdIJQ2.gCX54y36EX6xDIgQvngeTJZRrsM5KEUnJ2ZTf4OvbqgyjMnDXJMUZgOnJG4_J6_bw5yhz_0CT0LHPKzreFW4nguvPvU.sUEk3dFjP69fCigWEXUCekSBgYBI7fhOl3cmWO9oXRDE61lExPeCfos8m15g34B7lVEqayv_Ts9gS2Ld7GA_wvji7dODthaONZXffgsqPcEC59U.xCfnQm0J_ww.aw4_uwgRCPSaVDo87UlN1K7YkfnhepLIbdr44tEpveDLtJiTS.J0qcqGpUot9AjdzGZFnjeI_hEm9Y4tSDHqLTl_AUgD3K2bClfc04uVAKCGPGPOO_JWIEVN2iF5SAbo.Dv0xv9ZHzXvSvC0zNjW_iHAmNEWGqKuL2CjiuvdlvKkq0rylkBbI4zQttnjQ.Thb.QRA0dykLjiofqC8OFAgMt1hGEVjWDQAXy7_70dh0TWQYSBTlE0.V3hv1kTuPASywat6OUPnbsjYNjIYIKQXTxDaBV8CKuRGm',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2faa40dcc063aa';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/refinance-student-loans?preferred_lender=so-fi_slr&utm_campaign=&utm_content=&utm_source=credible_blog&__cf_chl_rt_tk=UXCd7jgNqWl0jcihuxb_yArkw0kQq35FnLVkOKVYvo8-1769259115-1.0.1.1-wtW0jfgiySLvagE6j8LSyUs1mOQy_9ZfRTMWOrQBNho"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

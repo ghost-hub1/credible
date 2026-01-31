@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f7bdd3dafbebf',cH: 'uytCA79JoIv8K2rMYvOR9QV0ajr5_Jo6mpv_aP783qU-1769257215-1.2.1.1-.8sBqLFXQ79Za1V0q53dElLtdNaV0wDN6B93ksnz3FGA00x909YYTIMBKS_xp265',cUPMDTk:"\/personal-loans\/borrower\/step\/amount?preferred_lender=60-month-loans_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_tk=VELWIEmQ9gyhhNBNyQ.i444hEv_xSltcUWXNvs_no3s-1769257215-1.0.1.1-ZdSwjjSvpl79kLaTrAWuKWL992HzgGkvRE2Bpwgd5ck",cFPWv: 'b',cITimeS: '1769257215',cTplC:0,cTplV:5,cTplB: '0',fa:"\/personal-loans\/borrower\/step\/amount?preferred_lender=60-month-loans_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_f_tk=VELWIEmQ9gyhhNBNyQ.i444hEv_xSltcUWXNvs_no3s-1769257215-1.0.1.1-ZdSwjjSvpl79kLaTrAWuKWL992HzgGkvRE2Bpwgd5ck",md: 'Dk9IWC7xxLZdaXTaI1eW34gd2JPYOFjgHT5cEkchF04-1769257215-1.2.1.1-E5XVttPmwMa7kM0dGw7E05YwFn5wP6GDotm2o3n2IFR_wvutI0x_GTernXkc1jBuUHAYa.mRiT3efnNUqXqqMFmx3nd8ZSGO2EbMIzqb5jFzm0PKCPmZPfgeyT4NB6KFbrk7FEUx1T7sCYV5i011Qd..Lg4ZpPDWCJ63bS0fO4hBSS7S5Cd2h8zPHtEYEzhlmzrj0wUM0ONF410YW_FL54OphnADxJ76NyQjvvDMv0qtEV2XUeY4bybp6L7WPA_g0k1iYJitR1MshSPua2Oy6AgpoiQm3ZKSgX.7PWKVaxAVrS4kdyhQDtWMu5bOJOPundiJxqJUo6kSW0.d2JpAooqVr5_aKlCJPn7U_cWFNwJyVWqO4h8F6WCMLs2Cw4d4.eBhyUmF14_afjvSg9ieUgePskCJEXW4X.0RXApuZbBp6LLHgiBojqCW_WuUcyxUUvlKvGoRr.Z.KfFePu5RVb.pkvJpf1WMPUL1GDQQfmbsPLGnz_gTQGHYna96Pes78ycBfan3w6imLPWk3acxNmdFlBsiudLXXd_s.MalBLo8MUuLWuz41eSxWRTNBWP_OSKEN8hgb9fqBKigMVVxLVRjvWl0xQunzOCJvNfH870h483P7ZKO7PUytypqdXvi0NkosdvJrM8VXgM7yoFYeIYHPwg6osuj.efbgpxPomHlsBBTulccF_LMfPcXm90.rJwkm2D.2CdC6aICRUxAs5tEqv1akQ.fQlA7VHfTNrlm5GTiq.Q0ZXfb6rRb_kizqmgicvWi3ixDNy4n9dg0QF5UDQ47mukQvdZDd5dQNCvbV0FhS1NjJzgX9r69B9fT3xwozvn3uT8xjQG54gmLeylibH2SmhpXSWrS0krmL7Bv9WqIp7G0QtGtzQ3Z4NcaT7VtAOjdcQt2ExPMBuE2U7YI7bm0MlFxpZrhjnQbCWmJrdVTDWDti825y0hn9w5qrAKr6pTSDnffYb6DnLSt_8OtdJ2yeNq8yk4UhGIhOFdJt1kIGkkTcdzNbmEIb5XXPgLbb.SWLst61WLe7d0vUu5.qCwy.dZmjjEJ5yMIuadBaL_T9qUAFKAt2eMb7c_aAzDMqB8vJ_pvuUKqhzWAG1TEe5yc5mm6hqMLLV5wj2obFE9TuzX2mvpS_Ycuh_XTTklNTIhTaDM9LtavW.F22w',mdrd: 'wA57XK68Uqa0QZymyDbzYu0KpLS9Apec1zV5nsn6tzM-1769257215-1.2.1.1-oPoS5.rouHtojzqSBCSg_wRXivuQ_bx0_8mEQPuQCfaHjQRDkjVCTvqYLmX89Q.eKwBTSlaeeCB2tEbggnijpi2h.EXRtv5IbmtGnA2xnmi2DhfePwpxvkB9jyMeGeeDIJ1hTTgOZcAhfje6_bpGLRuyc2K.X0M0Pt23nLxawMvu6mQvwRgg.v8gU.j4Oi98_sUGE3YuHpDsEQ.1xRUExRDdBzVIIEu4O17cTRHWHunpUQZ7aJiXnexPUVMhyS_P5KoeMFbvHFRV7ROkL0sTbDmM6XDOvt2l3yBnk.DcaXoUPezvqEvLIaQfLBVi5362vXStnr600iVw0DRAvyDUXTxvoSkXDP1jng1FUULKIQ12RVCWqigb.KibSQldWIwwy8EIByn5mMpT.2npaYlsVBiuE4Byjb1Sr5RCeI.JZto2FfojaUCnlOPJxv2Qe8OkruEmRaXeYPNka4_E6Vud5e5BJJzoQW8fUKB8I2NcOkNI8S_xPJ4vfplB7cDQn3A0kvLFyXThHCbLGiPh.NebEIBRwFYG7RhBD4Eijw1YtEaFvzfdweKiYVjPGLo.AdumBVSjdL61IUY.xvKL8ZRVgkUdGf.V_Vlv1udbx.hOxiMiocL.MVPxkepT_TtYliqX_fTIQKK9oJkosnZrY_OmArQUx7Wv8N2fnaMp6XdsckkeFcLabHLc6guG_g1a02otya_WXfiQmBhA91wABacC_sByPLjhCgAL0hyKEK88lwH53ijOdxZ8KSChBhEsHPRh9g7GXlOPyOebojdjRUv9TFvrj9hEIqxwK6tdwJehfs07ZoyuIGXHjkl3BoDoo7N1um_8EbDg7.cQA6spb4by8xn4uIe5XL2FoNEW7VleenzmgY0U1ThW6PeZc2fcypgWV3IDDRQmDLDpDfTf07epCxBw_s81MwYo8lkPQg8s_qp8Cj2jkJQbi_wexkpaIaU9gpqFowIaJt2xSnz6fXOMljSyHsR7vgk4kP.9KRaCPEzP..PbPaPuPoNNeD05_tESz4fk8uzDv2EVnt3bDaKRFhWoMtUWT6ir8g4o8YthrkvxmsNPpjszZ1EA7rymlsLgeEvsRQIVLsz3X6n1gR8c0ftpLqpYiWYfxFN_yftNlWGDZa67K6PtFTe924gCpLZZz.Q2jH.FeoxQiKun6HH0SNJKUIFhNW31t6DVqnw1zj4afhnxyy.OabQaAscBFP3JpPI.Q9FbKc75RreHRNzxvNeHkg.V5sXbPl.WdywskNvqh15l8YUQsqt9l61TqswE0Q1jwIlHCbgohDYfIbsA28qyeEJI4PbnPXLc7mzEVmqzYdhOu2wEulQnSY_.XP5j4OkiCsiJMQduBpkJAeR1xzkNGSXO_h5.S_NoipbKH5hFL9gEiFaNHWFtADhWZq_tGyrXzRa4JOjtQ_DBVdmqfi6pv2VW9x67uO4XGOyTnwP0yTE5vwiLEZorM5JAywGaCknse3AGdmIxPxfFLp_0Z.HA7qkR7bC4X8ox8R1rY8HXzzsf.WdvLaM6PRL3.5ke61_YUqv7JJDTqu0xyZ1liI.ZxyjR_8k.3Ti_S9faZMAfi721ENy49HOcPUYzzvibKyXS88M75.o6W.6ltnEzkirXUV2Pz2SFpnwfhE3lZNK7TFtn64Ox2FfZmkm5H7jxzo.ybC58bymiuo8SraV.KoYEi83q64kAjcjHGpUguafVQBntyv.FC1M6Nh646jgGEYJMwafXqk9NSzIqCyMtOKi8sr5RzpYDBqdtcHNwzCeIWBql3hxm77pIf5ix8w1JV72b5H92Bm2DAR0n_JxjDAB4xZTvL.OcfV_rYYxa3xN.SzjTba.pEP_oqXKj0ElPSU0BiVXlDQYkaMojaZmDomRM3dihjFvNLTja37TqBPBtXTWToGzo8b0Dc4FZZefdciZnfVS3fWkE7eqVi71kKJawA_qzQkwqxfd0NbOMuXTH6Ago264RdYgvI7Tpc6Zb.B.w22l67.D6fy2D2KZu6E0YwvdbprOT3PJ8NmE6L6BSBMu.Zx3TZF_cWEBAx3jLdSIupTR6IJpe_3EPa6YlTiSL1f5kE7vJpY0.FPPab2m_qs5o8IJrpZnvExDwUr.oYXvXWU.3pIDC5GuTeYadmryK1LNYoUQTeHhysfqagzRyfuhgjvAcFvM86ZQFRt.hu6V4CQHd5oNGXTMXwvH_NIwKxoFJvgghLHzrBLC.15gjp8B7JLPCJ.q_Iz6fJ3ktUODCWgXvv.WCRFSVdF2oF7Md.Ez0EgvC4HTNwhsukIzvZX_DxYnTf1g2EhbtXg7Rd7UKechZ8kiCUXfqShlE4Yk1PoZ0FgPT_.chSm.9aGUL9rxaFvpTVLwCns7lY3mC',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f7bdd3dafbebf';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/personal-loans\/borrower\/step\/amount?preferred_lender=60-month-loans_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_rt_tk=VELWIEmQ9gyhhNBNyQ.i444hEv_xSltcUWXNvs_no3s-1769257215-1.0.1.1-ZdSwjjSvpl79kLaTrAWuKWL992HzgGkvRE2Bpwgd5ck"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f7bdd3dafbebf',cH: 'uytCA79JoIv8K2rMYvOR9QV0ajr5_Jo6mpv_aP783qU-1769257215-1.2.1.1-.8sBqLFXQ79Za1V0q53dElLtdNaV0wDN6B93ksnz3FGA00x909YYTIMBKS_xp265',cUPMDTk:"\/personal-loans\/borrower\/step\/amount?preferred_lender=60-month-loans_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_tk=VELWIEmQ9gyhhNBNyQ.i444hEv_xSltcUWXNvs_no3s-1769257215-1.0.1.1-ZdSwjjSvpl79kLaTrAWuKWL992HzgGkvRE2Bpwgd5ck",cFPWv: 'b',cITimeS: '1769257215',cTplC:0,cTplV:5,cTplB: '0',fa:"\/personal-loans\/borrower\/step\/amount?preferred_lender=60-month-loans_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_f_tk=VELWIEmQ9gyhhNBNyQ.i444hEv_xSltcUWXNvs_no3s-1769257215-1.0.1.1-ZdSwjjSvpl79kLaTrAWuKWL992HzgGkvRE2Bpwgd5ck",md: 'Dk9IWC7xxLZdaXTaI1eW34gd2JPYOFjgHT5cEkchF04-1769257215-1.2.1.1-E5XVttPmwMa7kM0dGw7E05YwFn5wP6GDotm2o3n2IFR_wvutI0x_GTernXkc1jBuUHAYa.mRiT3efnNUqXqqMFmx3nd8ZSGO2EbMIzqb5jFzm0PKCPmZPfgeyT4NB6KFbrk7FEUx1T7sCYV5i011Qd..Lg4ZpPDWCJ63bS0fO4hBSS7S5Cd2h8zPHtEYEzhlmzrj0wUM0ONF410YW_FL54OphnADxJ76NyQjvvDMv0qtEV2XUeY4bybp6L7WPA_g0k1iYJitR1MshSPua2Oy6AgpoiQm3ZKSgX.7PWKVaxAVrS4kdyhQDtWMu5bOJOPundiJxqJUo6kSW0.d2JpAooqVr5_aKlCJPn7U_cWFNwJyVWqO4h8F6WCMLs2Cw4d4.eBhyUmF14_afjvSg9ieUgePskCJEXW4X.0RXApuZbBp6LLHgiBojqCW_WuUcyxUUvlKvGoRr.Z.KfFePu5RVb.pkvJpf1WMPUL1GDQQfmbsPLGnz_gTQGHYna96Pes78ycBfan3w6imLPWk3acxNmdFlBsiudLXXd_s.MalBLo8MUuLWuz41eSxWRTNBWP_OSKEN8hgb9fqBKigMVVxLVRjvWl0xQunzOCJvNfH870h483P7ZKO7PUytypqdXvi0NkosdvJrM8VXgM7yoFYeIYHPwg6osuj.efbgpxPomHlsBBTulccF_LMfPcXm90.rJwkm2D.2CdC6aICRUxAs5tEqv1akQ.fQlA7VHfTNrlm5GTiq.Q0ZXfb6rRb_kizqmgicvWi3ixDNy4n9dg0QF5UDQ47mukQvdZDd5dQNCvbV0FhS1NjJzgX9r69B9fT3xwozvn3uT8xjQG54gmLeylibH2SmhpXSWrS0krmL7Bv9WqIp7G0QtGtzQ3Z4NcaT7VtAOjdcQt2ExPMBuE2U7YI7bm0MlFxpZrhjnQbCWmJrdVTDWDti825y0hn9w5qrAKr6pTSDnffYb6DnLSt_8OtdJ2yeNq8yk4UhGIhOFdJt1kIGkkTcdzNbmEIb5XXPgLbb.SWLst61WLe7d0vUu5.qCwy.dZmjjEJ5yMIuadBaL_T9qUAFKAt2eMb7c_aAzDMqB8vJ_pvuUKqhzWAG1TEe5yc5mm6hqMLLV5wj2obFE9TuzX2mvpS_Ycuh_XTTklNTIhTaDM9LtavW.F22w',mdrd: 'wA57XK68Uqa0QZymyDbzYu0KpLS9Apec1zV5nsn6tzM-1769257215-1.2.1.1-oPoS5.rouHtojzqSBCSg_wRXivuQ_bx0_8mEQPuQCfaHjQRDkjVCTvqYLmX89Q.eKwBTSlaeeCB2tEbggnijpi2h.EXRtv5IbmtGnA2xnmi2DhfePwpxvkB9jyMeGeeDIJ1hTTgOZcAhfje6_bpGLRuyc2K.X0M0Pt23nLxawMvu6mQvwRgg.v8gU.j4Oi98_sUGE3YuHpDsEQ.1xRUExRDdBzVIIEu4O17cTRHWHunpUQZ7aJiXnexPUVMhyS_P5KoeMFbvHFRV7ROkL0sTbDmM6XDOvt2l3yBnk.DcaXoUPezvqEvLIaQfLBVi5362vXStnr600iVw0DRAvyDUXTxvoSkXDP1jng1FUULKIQ12RVCWqigb.KibSQldWIwwy8EIByn5mMpT.2npaYlsVBiuE4Byjb1Sr5RCeI.JZto2FfojaUCnlOPJxv2Qe8OkruEmRaXeYPNka4_E6Vud5e5BJJzoQW8fUKB8I2NcOkNI8S_xPJ4vfplB7cDQn3A0kvLFyXThHCbLGiPh.NebEIBRwFYG7RhBD4Eijw1YtEaFvzfdweKiYVjPGLo.AdumBVSjdL61IUY.xvKL8ZRVgkUdGf.V_Vlv1udbx.hOxiMiocL.MVPxkepT_TtYliqX_fTIQKK9oJkosnZrY_OmArQUx7Wv8N2fnaMp6XdsckkeFcLabHLc6guG_g1a02otya_WXfiQmBhA91wABacC_sByPLjhCgAL0hyKEK88lwH53ijOdxZ8KSChBhEsHPRh9g7GXlOPyOebojdjRUv9TFvrj9hEIqxwK6tdwJehfs07ZoyuIGXHjkl3BoDoo7N1um_8EbDg7.cQA6spb4by8xn4uIe5XL2FoNEW7VleenzmgY0U1ThW6PeZc2fcypgWV3IDDRQmDLDpDfTf07epCxBw_s81MwYo8lkPQg8s_qp8Cj2jkJQbi_wexkpaIaU9gpqFowIaJt2xSnz6fXOMljSyHsR7vgk4kP.9KRaCPEzP..PbPaPuPoNNeD05_tESz4fk8uzDv2EVnt3bDaKRFhWoMtUWT6ir8g4o8YthrkvxmsNPpjszZ1EA7rymlsLgeEvsRQIVLsz3X6n1gR8c0ftpLqpYiWYfxFN_yftNlWGDZa67K6PtFTe924gCpLZZz.Q2jH.FeoxQiKun6HH0SNJKUIFhNW31t6DVqnw1zj4afhnxyy.OabQaAscBFP3JpPI.Q9FbKc75RreHRNzxvNeHkg.V5sXbPl.WdywskNvqh15l8YUQsqt9l61TqswE0Q1jwIlHCbgohDYfIbsA28qyeEJI4PbnPXLc7mzEVmqzYdhOu2wEulQnSY_.XP5j4OkiCsiJMQduBpkJAeR1xzkNGSXO_h5.S_NoipbKH5hFL9gEiFaNHWFtADhWZq_tGyrXzRa4JOjtQ_DBVdmqfi6pv2VW9x67uO4XGOyTnwP0yTE5vwiLEZorM5JAywGaCknse3AGdmIxPxfFLp_0Z.HA7qkR7bC4X8ox8R1rY8HXzzsf.WdvLaM6PRL3.5ke61_YUqv7JJDTqu0xyZ1liI.ZxyjR_8k.3Ti_S9faZMAfi721ENy49HOcPUYzzvibKyXS88M75.o6W.6ltnEzkirXUV2Pz2SFpnwfhE3lZNK7TFtn64Ox2FfZmkm5H7jxzo.ybC58bymiuo8SraV.KoYEi83q64kAjcjHGpUguafVQBntyv.FC1M6Nh646jgGEYJMwafXqk9NSzIqCyMtOKi8sr5RzpYDBqdtcHNwzCeIWBql3hxm77pIf5ix8w1JV72b5H92Bm2DAR0n_JxjDAB4xZTvL.OcfV_rYYxa3xN.SzjTba.pEP_oqXKj0ElPSU0BiVXlDQYkaMojaZmDomRM3dihjFvNLTja37TqBPBtXTWToGzo8b0Dc4FZZefdciZnfVS3fWkE7eqVi71kKJawA_qzQkwqxfd0NbOMuXTH6Ago264RdYgvI7Tpc6Zb.B.w22l67.D6fy2D2KZu6E0YwvdbprOT3PJ8NmE6L6BSBMu.Zx3TZF_cWEBAx3jLdSIupTR6IJpe_3EPa6YlTiSL1f5kE7vJpY0.FPPab2m_qs5o8IJrpZnvExDwUr.oYXvXWU.3pIDC5GuTeYadmryK1LNYoUQTeHhysfqagzRyfuhgjvAcFvM86ZQFRt.hu6V4CQHd5oNGXTMXwvH_NIwKxoFJvgghLHzrBLC.15gjp8B7JLPCJ.q_Iz6fJ3ktUODCWgXvv.WCRFSVdF2oF7Md.Ez0EgvC4HTNwhsukIzvZX_DxYnTf1g2EhbtXg7Rd7UKechZ8kiCUXfqShlE4Yk1PoZ0FgPT_.chSm.9aGUL9rxaFvpTVLwCns7lY3mC',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f7bdd3dafbebf';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/personal-loans\/borrower\/step\/amount?preferred_lender=60-month-loans_pl&utm_campaign&utm_content&utm_medium=cms-component-lender-table&utm_source=credible_blog&__cf_chl_rt_tk=VELWIEmQ9gyhhNBNyQ.i444hEv_xSltcUWXNvs_no3s-1769257215-1.0.1.1-ZdSwjjSvpl79kLaTrAWuKWL992HzgGkvRE2Bpwgd5ck"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

@@ -1,0 +1,144 @@
+<!-- Save as debug-icons.html in your CREDIBLE root folder -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
+<link rel="stylesheet" href="/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/absolute-fix.css">
+<style>
+    /* Emergency inline fix */
+    [class*="icon-"]:before {
+        font-family: "Font Awesome 6 Free" !important;
+        font-weight: 900 !important;
+    }
+    .icon-menu:before { content: "\f0c9"; }
+    .icon-chevron-right:before { content: "\f054"; }
+    .icon-chevron-left:before { content: "\f053"; }
+    .icon-check:before { content: "\f00c"; }
+    .icon-close:before { content: "\f00d"; }
+    .icon-search:before { content: "\f002"; }
+    .icon-arrow-forward:before { content: "\f061"; }
+    .icon-credit-score:before { content: "\f09d"; }
+    .icon-coins:before { content: "\f51e"; }
+</style>
+<!-- ===== END ICON FIX ===== -->
+    <title>Icon Debugger</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-box { border: 2px solid #ccc; padding: 15px; margin: 10px 0; }
+        .success { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+        .icon-display { font-size: 24px; margin: 0 10px; }
+    </style>
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head>
+<body>
+    <h1>🔍 ICON DEBUGGER</h1>
+    
+    <div class="test-box">
+        <h3>Test 1: Direct FontAwesome Test</h3>
+        <p>Direct FA icon: <span class="icon-display"></span> (Unicode: f00a)</p>
+        <p>If this shows a font icon: <span class="success">✓ FontAwesome fonts ARE loading</span></p>
+        <p>If this shows empty box: <span class="fail">✗ FontAwesome fonts are NOT loading</span></p>
+    </div>
+    
+    <div class="test-box">
+        <h3>Test 2: Check Your Font Paths</h3>
+        <p>Font files that should exist:</p>
+        <ul>
+            <li id="check-solid">fa-solid-900.woff2: <span>Checking...</span></li>
+            <li id="check-solid-ttf">fa-solid-900.ttf: <span>Checking...</span></li>
+            <li id="check-brands">fa-brands-400.woff2: <span>Checking...</span></li>
+        </ul>
+    </div>
+    
+    <div class="test-box">
+        <h3>Test 3: Check CSS Loading</h3>
+        <div id="css-check">Checking CSS files...</div>
+    </div>
+    
+    <div class="test-box">
+        <h3>Test 4: Load FontAwesome PROPERLY</h3>
+        <button onclick="loadFontAwesome()">Click to Load FontAwesome</button>
+        <div id="fa-test"></div>
+    </div>
+    
+    <script>
+        // Check if font files exist
+        async function checkFile(url, elementId) {
+            try {
+                const response = await fetch(url, { method: 'HEAD' });
+                const span = document.querySelector(`#${elementId} span`);
+                if (response.ok) {
+                    span.innerHTML = '<span class="success">✓ FOUND</span>';
+                    return true;
+                } else {
+                    span.innerHTML = '<span class="fail">✗ NOT FOUND</span>';
+                    return false;
+                }
+            } catch (error) {
+                document.querySelector(`#${elementId} span`).innerHTML = 
+                    '<span class="fail">✗ ERROR: ' + error.message + '</span>';
+                return false;
+            }
+        }
+        
+        // Check CSS
+        function checkCSS() {
+            const stylesheets = document.styleSheets;
+            let foundFA = false;
+            for (let i = 0; i < stylesheets.length; i++) {
+                try {
+                    const href = stylesheets[i].href || '';
+                    if (href.includes('fontawesome') || href.includes('fa-')) {
+                        foundFA = true;
+                        break;
+                    }
+                } catch (e) {}
+            }
+            document.getElementById('css-check').innerHTML = 
+                foundFA ? '<span class="success">✓ FontAwesome CSS is loaded</span>' :
+                         '<span class="fail">✗ FontAwesome CSS is NOT loaded</span>';
+        }
+        
+        // Load FontAwesome manually
+        function loadFontAwesome() {
+            // Create a simple FontAwesome CSS
+            const style = document.createElement('style');
+            style.textContent = `
+                @font-face {
+                    font-family: 'Font Awesome 6 Test';
+                    src: url('fontawesome/webfonts/fa-solid-900.woff2') format('woff2'),
+                         url('fontawesome/webfonts/fa-solid-900.ttf') format('truetype');
+                    font-weight: 900;
+                }
+                .test-icon {
+                    font-family: 'Font Awesome 6 Test';
+                    font-size: 24px;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Test it
+            document.getElementById('fa-test').innerHTML = `
+                <p>Test icon (bars): <span class="test-icon">&#xf0c9;</span></p>
+                <p>Test icon (check): <span class="test-icon">&#xf00c;</span></p>
+                <p>If these show: <span class="success">✓ Fonts work manually</span></p>
+                <p>If empty boxes: <span class="fail">✗ Font path is wrong</span></p>
+            `;
+        }
+        
+        // Run checks
+        checkFile('fontawesome/webfonts/fa-solid-900.woff2', 'check-solid');
+        checkFile('fontawesome/webfonts/fa-solid-900.ttf', 'check-solid-ttf');
+        checkFile('fontawesome/webfonts/fa-brands-400.woff2', 'check-brands');
+        
+        setTimeout(checkCSS, 500);
+    </script>
+    <script src="js/menu-fix.js"></script>
+</body>
+</html>

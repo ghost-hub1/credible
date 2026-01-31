@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f8b20abd290f7',cH: 'wLeRTrqHZ5apRwOf6VBg2qadC.u7REvmELk0_qH4haA-1769257840-1.2.1.1-rrZaHfH4y8qPCy3bNXlTJ_q64Xb4SC9w_iXAvRfseaRAipUxGNN_hURknT8FXM9W',cUPMDTk:"\/assets\/cms\/using_debt_avalanche_method_1200x739_309e925f0d.jpg?__cf_chl_tk=XzOEH6JMV739st2TXOChuCi581Qcu0Z9CbUksiNMMs0-1769257840-1.0.1.1-w7SevdwH5oDwy9F03b_OJSLU7a9GMMmI.YAYK5b9xoM",cFPWv: 'b',cITimeS: '1769257840',cTplC:0,cTplV:5,cTplB: '0',fa:"\/assets\/cms\/using_debt_avalanche_method_1200x739_309e925f0d.jpg?__cf_chl_f_tk=XzOEH6JMV739st2TXOChuCi581Qcu0Z9CbUksiNMMs0-1769257840-1.0.1.1-w7SevdwH5oDwy9F03b_OJSLU7a9GMMmI.YAYK5b9xoM",md: 'SZr020M4rirJL8qPvKtpEalQi89_61C5vH1r3XMLEwk-1769257840-1.2.1.1-InokHCSKJ4WtpscxMLqrccnYyqaelBXWCju2tArEltEwnl3ZC_K0sNvr3ozbByxx0ZSeBaaXu_aFgvu_QMfLSg8hbtn.K9cfaccnY0MdV_QtsfNvf0KBN6RbT36xo8HNbeq0aHQz6y26bvsbbGt4SZK64WjNkRuGEpHE12ZVnP.IThFBjMpqPlCQxvuJ6yav0oKQ85PIC9Todvk1WEdiGvm00wk7SLaG2lhjhMswYQXQ9tqLZ3BOd8L05.6oZ57w2wKlV3vAvarNJ1R8uBAUxfG0nu6hEGMeExPQ4VUPp0h9hizJw4xgrtWkTaYr3lTOqNrovOjhXLaAM9XUtTZgkdIVXaGiRriuoGXjW.3cZ8FZxAvLA4ix6vRSF6bCpvWCM8fntE2GZ3iY8A8bgt7rT6oBaLEhy6jpJ_TusZ6FvwleHJBS8up.W990aqqd6GgLA5Q0UYAHmsV9F2XcccA8JhNl4OFvph2Cy0ACq49YC1Zzp3x22qfUyTWZWXXcsFFohmEtyp_WyTVTfzEvUW9iFn5lI_Oqv4Izk4SQDBpNnKCZ6kW2JSZfgEaJIwQByJ8S33x7dT.J2VU0KfFmvPx8Ihdqu5sD.iBKmLUHp5uSxPcbeyCkt1_e0wOaORVGyEkyjA3vk5z2s0TDNu3kYvNftdqnHRQTtdv3pz_Em2r6l5F_td4xoG5MQc5KWvlsMxjT8Xc0e0lDZtOEHsGui8hcCh._UBKCNHet4apdh0ycFoigQJerxGZog1vi9uzgBIznTHl1dU0hPsDvrELa6mfRdIqOCjndf7J0v11sRyIe0exgJprOA2_LNaGCaGqvt3j.TGjpgOhDZkfs9NINaB7Tp3fCrvQHTiyJmtBsFjRLNZJBDX98H9nZYH7odwvKEMWX5OX5rdBZAsc2M2B15TWVgcD1ZTcMRqmkITlzXlj0lAXwTjG0PHF1d_zMnxSBTgYGawnTQZ4u_5jUXopa5G5.GNuIcKE1DscpGUIR9ONDLVUcM1lcftHLxVDpanYpqRWB_CoOhHN4ayIHhI2OnNxK_w',mdrd: 'e1LHsZ0qtkzLcZ4GAWj22hwGCNDeAVSI2_sax0kO3SE-1769257840-1.2.1.1-gGIp3FeMLlPAgILk1PlCNSBgQxtCvsjy09TIb4fouvFGMc2X7pvjKHWd2mU.OX.7ULhdFPdXYm35rzgJOagUJPqyHY5_._KFR5Dc_Z44RxOT0PpDHw_oE8RNVrbBow_2PwwADRCvmwu5MvJYluZ0m1.CW_jyA4Y8VojAXLkdxW7HkcLBStcqlxbcLIT6Rw5xidOmkBqSMcjBJgWggmzdhe4LAqgc0pAebwCWf4a3O1kDwFMHDnNy91ithdAs5hOhVWAKPAxFTALY9Pt_7RlsqZZfhOyR32OVvaGJqwRCjdkP5jcv93CW185ImKx5fLtSFeeM9xUf7btB_aAmw0lSG6d_XyvAzrzs0Rsgciw9WH0wdnoeEWcSZbeKYZlOwQfCqt8jOBSwfDXKKed9SLN20Pj6mOGv6IXIQqL13FKyywmTW.MAfe0Oql8jZc5rkzhT0oEMkuKPlMnxWlK_KadQcQhJG4.OwrB1I7JDM3MhA7g6IHe9mMYqPwgcjPheCtdOHS63uvwHxPXP.yOa0p51PbPrRIm3aSD3xV6ZPeELcB2thhDjir8HJxtNVK.j2Hta0ZXYuHHjc0A3Iv3OaLoxZauYV.SJprCxn9sDtbg9msb486JmBEb2jctJi1B49IItK59armk7YE_E70jf_rX1OBtO4R.jUwo5YCMZfmJURhMo7UsKYfvGsqwVbIODrTztsRP0ciM82it6eAXVak.BUMU7FqNINQsOfXTFjrnar1UoHp3wJp.JknGf31HyxBa_EMmhoS7ftw8rsSANnxzC1_DxcKd02VpfaS6xHyx17lxvxdzyv_6gfIha4yoBmWtnko0mdGwTXByoAHPpSGaS8notQS_cz8I.LxQ.g5YFOXCr5vgWkx5TG8HM1m8bpP5BZyMJSdAjhWR8nQKxQ9cysWj6PT8igPcF3mAbvwZPtB.bluOfT4iB2I8RhsESmCdijpVrkmVWzNMjY5c63WZ4F_U1.oFUO2KcD77g66IJTHujzUF6Dk1VS_L9skse9C8pQEULesy4hSmRnOK.7SdiSwpuUv63VdMtf67EeRWwmvDfU7z246ZbMy9ouDIT3a.zsuCVjpzTMN23YW8Nw2cT1xcrPpEO4jVzt0qcWY7.ODzaJDPhcoF22drDR3kbblHORe_3e08M5G09V4NBgmYdGAcW0aJ2U1QUBxvhpxhAKLY0ycaEC3zyiioJG9QaIlftjFFu6GVPCD4JWMTD0GAfdA9GlLYUUcyMPft7jx2G9HjhG4Z7lnpPnio4V8G2b_OlyMIe1_uf62D3ALD4ib1.GPjaKc4BbaF0o9ox9GF591MvC3xGfR7uiGwNVKCQjk32C0WbKn5C6NDqgt_Ii4jv8UgRguY27YSeV2lQribTTfddAWDc4HoUlo1Doc0L5z9R59FP8fTv1wsH_eCRpzgBNOnpKQV.DFNvh3KM93xIMKPH10YGaTdFy.YoAjZtr54omfZkLOyAQEjHd0rhFGQ5puZYnQ8C2.4dSdz4WtCqoLAAkVaKQstXxQejOUzfUEJHqeiz7jXohUOQey3WjCKpub2gckBKePjAJycBNUI9sS8TZrOwHSNUpzR4HBmP9_P2f3G7JvfnOQnDMNFabp543k.zbYoUeT01jJqDN96CyYJh.UXJ7oRBIS77pS5cKmN5h45pCw9E9u.zT9u2zTV89BibBdp6OI2L22UOVkEUeJpvYcqEZ7Pg19iXgxIPu4gjtpnVOQkjorAQxQadiGRBYMKvHymE7h7677egTDlaiDVDF2KPsNeD8ZhwbUHQc1aku_DlJXv3wh75D6lfT_xhmI8zzEAc0lWL9tOLTdsAvhR8YxOiY0u4I2CZIZRpvJxXHoY6ki2FM8yW5xou6IBJj074b7JielS66dQAcz1UUh4RoxlezZQp9ogThJe._AHUGD6wS_PUxdZrl15OsTBnmQkjTg0l3.I0HXPCNqv4JiY68AyKye.n_0j4UpykbX7V_9l4Xtp2cgQqFT2klnsG_oQwcsOReprPARKGAd2r4r3LQdVR9wEaPYjGX66NTpZVt7jd.N_4cH7Vr.9tmWTOYUDFruyadQVQ6JnxVK7G_dms1wGHj7l7tjZJcZnKaGzFvXPx_Wqd79eXOsq5OD_RE3wK6KscdCy1tdVpsiXpJfGozWf7Y1DddW00tJAFdhOzS705T_nM2meI9UCV7JqwVfyoBugBC1itn.zQuFKhOTG0LUod8LHUY2ilqv4lJOjnezMkWoFjWJRQ6U0PT3ivo2lkpqth2sgQODFI6kLzs6.FosCfE2wvIQQR.Qumh8rz9Kr8ENm_iaVjHTbxxW4bGhGbXtPbUJUvFJK5PRjNWtvDt1rTIkpjq0IGbJU9aeSe',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f8b20abd290f7';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/assets\/cms\/using_debt_avalanche_method_1200x739_309e925f0d.jpg?__cf_chl_rt_tk=XzOEH6JMV739st2TXOChuCi581Qcu0Z9CbUksiNMMs0-1769257840-1.0.1.1-w7SevdwH5oDwy9F03b_OJSLU7a9GMMmI.YAYK5b9xoM"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f8b20abd290f7',cH: 'wLeRTrqHZ5apRwOf6VBg2qadC.u7REvmELk0_qH4haA-1769257840-1.2.1.1-rrZaHfH4y8qPCy3bNXlTJ_q64Xb4SC9w_iXAvRfseaRAipUxGNN_hURknT8FXM9W',cUPMDTk:"\/assets\/cms\/using_debt_avalanche_method_1200x739_309e925f0d.jpg?__cf_chl_tk=XzOEH6JMV739st2TXOChuCi581Qcu0Z9CbUksiNMMs0-1769257840-1.0.1.1-w7SevdwH5oDwy9F03b_OJSLU7a9GMMmI.YAYK5b9xoM",cFPWv: 'b',cITimeS: '1769257840',cTplC:0,cTplV:5,cTplB: '0',fa:"\/assets\/cms\/using_debt_avalanche_method_1200x739_309e925f0d.jpg?__cf_chl_f_tk=XzOEH6JMV739st2TXOChuCi581Qcu0Z9CbUksiNMMs0-1769257840-1.0.1.1-w7SevdwH5oDwy9F03b_OJSLU7a9GMMmI.YAYK5b9xoM",md: 'SZr020M4rirJL8qPvKtpEalQi89_61C5vH1r3XMLEwk-1769257840-1.2.1.1-InokHCSKJ4WtpscxMLqrccnYyqaelBXWCju2tArEltEwnl3ZC_K0sNvr3ozbByxx0ZSeBaaXu_aFgvu_QMfLSg8hbtn.K9cfaccnY0MdV_QtsfNvf0KBN6RbT36xo8HNbeq0aHQz6y26bvsbbGt4SZK64WjNkRuGEpHE12ZVnP.IThFBjMpqPlCQxvuJ6yav0oKQ85PIC9Todvk1WEdiGvm00wk7SLaG2lhjhMswYQXQ9tqLZ3BOd8L05.6oZ57w2wKlV3vAvarNJ1R8uBAUxfG0nu6hEGMeExPQ4VUPp0h9hizJw4xgrtWkTaYr3lTOqNrovOjhXLaAM9XUtTZgkdIVXaGiRriuoGXjW.3cZ8FZxAvLA4ix6vRSF6bCpvWCM8fntE2GZ3iY8A8bgt7rT6oBaLEhy6jpJ_TusZ6FvwleHJBS8up.W990aqqd6GgLA5Q0UYAHmsV9F2XcccA8JhNl4OFvph2Cy0ACq49YC1Zzp3x22qfUyTWZWXXcsFFohmEtyp_WyTVTfzEvUW9iFn5lI_Oqv4Izk4SQDBpNnKCZ6kW2JSZfgEaJIwQByJ8S33x7dT.J2VU0KfFmvPx8Ihdqu5sD.iBKmLUHp5uSxPcbeyCkt1_e0wOaORVGyEkyjA3vk5z2s0TDNu3kYvNftdqnHRQTtdv3pz_Em2r6l5F_td4xoG5MQc5KWvlsMxjT8Xc0e0lDZtOEHsGui8hcCh._UBKCNHet4apdh0ycFoigQJerxGZog1vi9uzgBIznTHl1dU0hPsDvrELa6mfRdIqOCjndf7J0v11sRyIe0exgJprOA2_LNaGCaGqvt3j.TGjpgOhDZkfs9NINaB7Tp3fCrvQHTiyJmtBsFjRLNZJBDX98H9nZYH7odwvKEMWX5OX5rdBZAsc2M2B15TWVgcD1ZTcMRqmkITlzXlj0lAXwTjG0PHF1d_zMnxSBTgYGawnTQZ4u_5jUXopa5G5.GNuIcKE1DscpGUIR9ONDLVUcM1lcftHLxVDpanYpqRWB_CoOhHN4ayIHhI2OnNxK_w',mdrd: 'e1LHsZ0qtkzLcZ4GAWj22hwGCNDeAVSI2_sax0kO3SE-1769257840-1.2.1.1-gGIp3FeMLlPAgILk1PlCNSBgQxtCvsjy09TIb4fouvFGMc2X7pvjKHWd2mU.OX.7ULhdFPdXYm35rzgJOagUJPqyHY5_._KFR5Dc_Z44RxOT0PpDHw_oE8RNVrbBow_2PwwADRCvmwu5MvJYluZ0m1.CW_jyA4Y8VojAXLkdxW7HkcLBStcqlxbcLIT6Rw5xidOmkBqSMcjBJgWggmzdhe4LAqgc0pAebwCWf4a3O1kDwFMHDnNy91ithdAs5hOhVWAKPAxFTALY9Pt_7RlsqZZfhOyR32OVvaGJqwRCjdkP5jcv93CW185ImKx5fLtSFeeM9xUf7btB_aAmw0lSG6d_XyvAzrzs0Rsgciw9WH0wdnoeEWcSZbeKYZlOwQfCqt8jOBSwfDXKKed9SLN20Pj6mOGv6IXIQqL13FKyywmTW.MAfe0Oql8jZc5rkzhT0oEMkuKPlMnxWlK_KadQcQhJG4.OwrB1I7JDM3MhA7g6IHe9mMYqPwgcjPheCtdOHS63uvwHxPXP.yOa0p51PbPrRIm3aSD3xV6ZPeELcB2thhDjir8HJxtNVK.j2Hta0ZXYuHHjc0A3Iv3OaLoxZauYV.SJprCxn9sDtbg9msb486JmBEb2jctJi1B49IItK59armk7YE_E70jf_rX1OBtO4R.jUwo5YCMZfmJURhMo7UsKYfvGsqwVbIODrTztsRP0ciM82it6eAXVak.BUMU7FqNINQsOfXTFjrnar1UoHp3wJp.JknGf31HyxBa_EMmhoS7ftw8rsSANnxzC1_DxcKd02VpfaS6xHyx17lxvxdzyv_6gfIha4yoBmWtnko0mdGwTXByoAHPpSGaS8notQS_cz8I.LxQ.g5YFOXCr5vgWkx5TG8HM1m8bpP5BZyMJSdAjhWR8nQKxQ9cysWj6PT8igPcF3mAbvwZPtB.bluOfT4iB2I8RhsESmCdijpVrkmVWzNMjY5c63WZ4F_U1.oFUO2KcD77g66IJTHujzUF6Dk1VS_L9skse9C8pQEULesy4hSmRnOK.7SdiSwpuUv63VdMtf67EeRWwmvDfU7z246ZbMy9ouDIT3a.zsuCVjpzTMN23YW8Nw2cT1xcrPpEO4jVzt0qcWY7.ODzaJDPhcoF22drDR3kbblHORe_3e08M5G09V4NBgmYdGAcW0aJ2U1QUBxvhpxhAKLY0ycaEC3zyiioJG9QaIlftjFFu6GVPCD4JWMTD0GAfdA9GlLYUUcyMPft7jx2G9HjhG4Z7lnpPnio4V8G2b_OlyMIe1_uf62D3ALD4ib1.GPjaKc4BbaF0o9ox9GF591MvC3xGfR7uiGwNVKCQjk32C0WbKn5C6NDqgt_Ii4jv8UgRguY27YSeV2lQribTTfddAWDc4HoUlo1Doc0L5z9R59FP8fTv1wsH_eCRpzgBNOnpKQV.DFNvh3KM93xIMKPH10YGaTdFy.YoAjZtr54omfZkLOyAQEjHd0rhFGQ5puZYnQ8C2.4dSdz4WtCqoLAAkVaKQstXxQejOUzfUEJHqeiz7jXohUOQey3WjCKpub2gckBKePjAJycBNUI9sS8TZrOwHSNUpzR4HBmP9_P2f3G7JvfnOQnDMNFabp543k.zbYoUeT01jJqDN96CyYJh.UXJ7oRBIS77pS5cKmN5h45pCw9E9u.zT9u2zTV89BibBdp6OI2L22UOVkEUeJpvYcqEZ7Pg19iXgxIPu4gjtpnVOQkjorAQxQadiGRBYMKvHymE7h7677egTDlaiDVDF2KPsNeD8ZhwbUHQc1aku_DlJXv3wh75D6lfT_xhmI8zzEAc0lWL9tOLTdsAvhR8YxOiY0u4I2CZIZRpvJxXHoY6ki2FM8yW5xou6IBJj074b7JielS66dQAcz1UUh4RoxlezZQp9ogThJe._AHUGD6wS_PUxdZrl15OsTBnmQkjTg0l3.I0HXPCNqv4JiY68AyKye.n_0j4UpykbX7V_9l4Xtp2cgQqFT2klnsG_oQwcsOReprPARKGAd2r4r3LQdVR9wEaPYjGX66NTpZVt7jd.N_4cH7Vr.9tmWTOYUDFruyadQVQ6JnxVK7G_dms1wGHj7l7tjZJcZnKaGzFvXPx_Wqd79eXOsq5OD_RE3wK6KscdCy1tdVpsiXpJfGozWf7Y1DddW00tJAFdhOzS705T_nM2meI9UCV7JqwVfyoBugBC1itn.zQuFKhOTG0LUod8LHUY2ilqv4lJOjnezMkWoFjWJRQ6U0PT3ivo2lkpqth2sgQODFI6kLzs6.FosCfE2wvIQQR.Qumh8rz9Kr8ENm_iaVjHTbxxW4bGhGbXtPbUJUvFJK5PRjNWtvDt1rTIkpjq0IGbJU9aeSe',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f8b20abd290f7';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/assets\/cms\/using_debt_avalanche_method_1200x739_309e925f0d.jpg?__cf_chl_rt_tk=XzOEH6JMV739st2TXOChuCi581Qcu0Z9CbUksiNMMs0-1769257840-1.0.1.1-w7SevdwH5oDwy9F03b_OJSLU7a9GMMmI.YAYK5b9xoM"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>

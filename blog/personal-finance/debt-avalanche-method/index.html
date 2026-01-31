@@ -1,23 +1,113 @@
 <!DOCTYPE html><html lang="en-US"><head>
-<!-- ===== ICON FIX - DO NOT REMOVE ===== -->
-<link rel="stylesheet" href="/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/absolute-fix.css">
+<!-- ===== ICON FIX - WORKING SVG SOLUTION ===== -->
 <style>
-    /* Emergency inline fix */
-    [class*="icon-"]:before {
-        font-family: "Font Awesome 6 Free" !important;
-        font-weight: 900 !important;
+    /* Hide original broken icon elements */
+    [class*="icon-"]:before,
+    [class*="icon-"]:after {
+        display: none !important;
     }
-    .icon-menu:before { content: "\f0c9"; }
-    .icon-chevron-right:before { content: "\f054"; }
-    .icon-chevron-left:before { content: "\f053"; }
-    .icon-check:before { content: "\f00c"; }
-    .icon-close:before { content: "\f00d"; }
-    .icon-search:before { content: "\f002"; }
-    .icon-arrow-forward:before { content: "\f061"; }
-    .icon-credit-score:before { content: "\f09d"; }
-    .icon-coins:before { content: "\f51e"; }
+    
+    /* SVG Icon Styling */
+    .icon-svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 0.25em;
+    }
+    
+    /* Specific icon sizes */
+    .icon-menu .icon-svg,
+    .icon-search .icon-svg { width: 20px; height: 20px; }
+    
+    .icon-chevron-right .icon-svg,
+    .icon-chevron-left .icon-svg { width: 12px; height: 12px; }
+    
+    .icon-check .icon-svg { width: 16px; height: 16px; }
+    .icon-close .icon-svg { width: 16px; height: 16px; }
+    
+    /* Make sure icons work with any background */
+    .icon-svg { flex-shrink: 0; }
 </style>
-<!-- ===== END ICON FIX ===== --><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
-    <link rel="stylesheet" href="/css/svg-icons.css">
-</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f9af5ecadccd7',cH: 'N_O4TYZpYgr7Qrc05sddt5XVcGntR4.zXtCdqnnjQw4-1769258489-1.2.1.1-dHR0PlsIpGv9J9WG43NHOH1Bdqzxx5WFGCKjZXfFWEtoHS57VKlld9g3cIVIQZIm',cUPMDTk:"\/blog\/personal-finance\/debt-avalanche-method\/?__cf_chl_tk=bYc85.uBgMllU5XsyDJOavf8FD4Z2J5Cql9TF8KcojM-1769258489-1.0.1.1-ijjrvnE7amhPoL1rPf1TnFgrTG_n9wiWRvYNRSUi4N8",cFPWv: 'b',cITimeS: '1769258489',cTplC:0,cTplV:5,cTplB: '0',fa:"\/blog\/personal-finance\/debt-avalanche-method\/?__cf_chl_f_tk=bYc85.uBgMllU5XsyDJOavf8FD4Z2J5Cql9TF8KcojM-1769258489-1.0.1.1-ijjrvnE7amhPoL1rPf1TnFgrTG_n9wiWRvYNRSUi4N8",md: 'mcYn0XkDWxcNTmxm5KQ5Ju3NiQSy93KfrSpun_pL20s-1769258489-1.2.1.1-Xzj45NbKI.vOyWyuAXYIsZWpDRBG5mAu_vaIX3KAFU.z.BUTCelS4TJnS8IsosRbo7cD2Wn.WiQr7stu6zYaFDrodCDB.V31xW.SlClFrJMHcIYOT481V3XYbNMGmOMgKdQoXeNceyYd54h8y1sTFWIJs0rYPOehTeHY.3CkMblQwtgiAlGdsEnZbct40YREZgALVTxVh.aW4s.e69IBYwRoKBOWCVJuc6RouAF3aSMMb0u89dWznEaj1ymzW2W.NUhzm964Sul3hfInUGEa4apjfua00EptvaFRDClh2RS1zYcSJ8XfBTmhptha9hOaQEaPtezuGQD.Gkekq0WfePhw29JburXoKeoXSeqKF7c2Vp39avpCXFzh_33ASnHRhoxlGgiTEyJo8LFXqgLxP8LmYdDT37RKgQppuIOWNfCh6ziwqfQH6j3xmpWDYJhKgsKmjsJO3dOSQC7BlnPfeOXU6Emk7kFk2SNEGGiBY8vJmwaXELx6DRm4t5NqDY6CjoOKtLIiPKcCQ4X5VCIqN8OIi.v9j08Adthtz_AfQHliW6V4Habcjx29OIQsPMPwbKlPKRpTyfr4OXMw74XDJhFFn9W6K1.HC1blE4nEPl_YMD_4d7Ph.53CmC3hMnrFA14Zcs6bFftb4F58eVQlysEBkL9kNlnjih6Qck7I1MrmcZkueyguuRKkj2XBkxBRkzfAt06j8ZtO4ZZ1nhHMN8RzWmYAe2sy7z.wnQzKBfi9tFyb4QRRwNthXfJnOSCg6p5Nu_9bBcJweIYRrZ7UZbXu5fkWXWoqtjZM5noVHNjNWbJ2Ctf_BGxmdbCdS.juPfmrFdXgFAnhu8oOIisfQvdaAPJYxU5EnARdXHf_Kt4HMxQ4s5fMM8qyKYZqFWoWr_.0Ri16n35kfQzFwHaTGQH8WMfEmpWzc3V72VGVC8hieKRZITNdfbb8cdhrZOiMp9v_IvKlGeJt1LL9dXucSpB5Bo4GLd7rzx7.7SlEbz4hKlug_RiZ8nfBqbw7yDk3',mdrd: 'ZzksF2wyxf2fYLg8Xkr2oZvVlpaj5fyGM3f5vTz5SaI-1769258489-1.2.1.1-1d6VRRU95MxtklANfLou5HI63x8HAtZZbK144CtWxNnE6bHEMdtwPHhLZ_039oM5EblN7LaCc2v0qZEfb0EtVvCvXQk9M9T4wLkgb6L.pdBNq1SYr1foUCcTWzpXQ9r0BpGQWVkoBGpalBc5gEPJoc3k.xrHGvGWBf3zU00UDB8NUvWhlCoeRcbA0y8C4kJPgvuCukihjRD571ZoNDDcfWXHWDMjkwymqynnoGdCN2L8RpJ66rO02HR7obMqUYc05.OwOTAHiY06ZqDgVj6rvxCXaYmzxrJwUjD5wEi0vkuaABzRN242.hDvR99hMf9Y_72p7Yag_QoDBNmg113seqIor_4OLvAF.M.H3I3DuRd2Z846VIwstSBhpYq3JGQwSiQnnr3pi8UhH9HCIutsYq0YTZpxBB.dWrvAEgtPl7cgqmmJJ_WN6RdlwXU0mLRGspIgiVOgbNR.UUm7AXt9XKVQncmni9B5DFsJDfn3Dk60FfGLyoZJ1yME5CY1ka7rqoxDk7Lt8vGQO9vmeN.z4Z_WroWHqLR2cgsySIWohASmh1AbGK_yy8M4Ep5Mfl48ZHOfmJvNHIFL3tHKz_5rWHdY8UQoD_xKejdjhSLP7VGTypoIn4A1D076GLxoDaJYjFVUhfY0im0zYFN.yjjjSX1aAxzaVjuKNThOyJx5dqpUFUOCzg.G0yM_BS6H1KiuS6CjToLA0GMkwItTiABqMot6XYIySdfy7wOe6cRqKMm7qPNPVeTH7zgAuoJJg1kfqph7LKbkrmfDcVy3lUO.wiIBt3OJgZwiVwN2GMW.mfCXiu36T68ABY12C5JfJlDNbxQKZgKZMW6CRSJ0tLLI15jhtIgj987uv3xUHAvCaNsLVRvQfPTZ0bjlQSdl56dIom0F1_IsEDJ1BzkaHpr2XuLVi2CuHCjeidr_JMWa0ALzAeYg.A0cQyKkykByjimh2IBdcB5tkTVg1Nug6do.b2JbwdHNYv3TiYxj7rM1eQ5AhWq47wG3WWmdPjBfwrbGFl54amjAr.lu.wvfwUxPZqwTgTZAjUXOEIdn.OrjkLTO.x_FSFlitcrXSLPZmGVOVc7mbk8c.0HXUquBwmAqJm5rMUCF_KfVDOSe5HOil3_o8EKSC0OkbV44DQIxjYfpdMe6obfgntZeucUXFdzWkcZEBHclcoXUTuekjq0kmFN.CRClxH6A.6Hla3VWb_DhdFEI1n.E7iR4KuRMiFwhXmCv32C.fRuGVHMlxBBBe6tFKeoi.FQ3UPAE1lhKHZIwIClI5XN2ZX5glRgOxZtruzH.uHsb9.5KWW_Z_q__9FlxMLpK0olM6Fh3GoT6y1yW.eVkwmRo3mAC4bOUhM7IDhyDbqJCHKifF7exXUFyz56EOquP1Lrq3Uaf5Pk3NexFIKKkZWsunoyPHQmqfNdfzoLa.nqMr5jLTo7lbEfQ_uwsE81KhIbxLJXqpPXDLDuXK7f1GBqSHZdgDoeDon0Oi3zEbI21IDGNloVzay.4yLfEBlIZSw1fvXR1peJDWbbhRaolChV4tu2LOLcut_5D4VMmGCPEwVvFVDsyrGfQB0sQZGO4J00WBm6y9tKWDLEffoKf8zJSnz0Kba1V.qkwH2dHxI0pTOsCVx6.JDGV7iCtJo4Oo6BF4e8a.GsT_8f2hmgvcKZbzH7fRia.zJr8JBmUB6ZhyEXlZiTRFS1vdbEC_pmZ93hJ1Vx.S.gxJZakSYSxYem_RVz5E304lTJoHfIJRBGUV4F8dS2Vsh36tl9ANpg.In0X0urGaE.ZTItOhVicQk0JS1JGQAGIok0TI_6uI5.QjA7Q0FBkvrCWnUbbGZ0Ll.fb3SnMvkg1tSS3zIO8F_.c4P.lGo97yQA3J9hYfHYYyoPAvkBNbWGbAdCOUPGan1S6Zw2y.NKKKR_Zkq_v1qMwHOXPxOcQPYl9bjqlimeUBisKV5xJutDxUkBy5bJ4alnmo9zBSSyY1QD8wHA8LSfg8WeC9vtnwK2elo8rB5Zf547qZH8IpZHOCSuuj7.KAHWOz_GCa7Rz0bWLU2RKGfQ.Xdh_ME.HeBbR6PNmr5d03h5Trv2Y7wnhJ_3nTkfrWhE6oUjzQOLsKGx5LlKlxcDASQdWp3x2epvXFYZjMQ7fPE.vPtoeSSSHvABTyNfInNLxoEHRLcTYa_ZpyManQ1VCMWmA9IK8x6.oNxtBi4TavmLbNOWYcWO.EWlU.X1vzRz.opKwxnVCBlB5cF_SRiKJ8vcqLvGaakDOIN9i.YysAVAGSY9N4bpcrGoI_apof.7RMUSq8tX48q7VuEQmR8a3a6GCSvynDLfRA01iBOGqN8EpHjsvMJ6rra6AQSsUeyZmpqS5Q5eVtUBmu_Sfx_GkYZuBc5gaMExMXg',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f9af5ecadccd7';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/blog\/personal-finance\/debt-avalanche-method\/?__cf_chl_rt_tk=bYc85.uBgMllU5XsyDJOavf8FD4Z2J5Cql9TF8KcojM-1769258489-1.0.1.1-ijjrvnE7amhPoL1rPf1TnFgrTG_n9wiWRvYNRSUi4N8"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+<script>
+// SVG Icon Library - Add this right after page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Define all SVG icons
+    const icons = {
+        'menu': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>',
+        'chevron-right': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>',
+        'chevron-left': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>',
+        'check': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+        'close': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+        'search': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>',
+        'arrow-forward': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>',
+        'credit-score': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
+        'coins': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M15 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>',
+        'star': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+        'phone': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+        'email': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+        'home': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>',
+        'person': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+        'calendar': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>',
+        'arrow-down': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>',
+        'arrow-up': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>',
+        'info': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        'warning': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>',
+        'success': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+        'download': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>',
+        'upload': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>',
+        'settings': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>',
+        'lock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+        'unlock': '<svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>'
+    };
+    
+    // Function to replace icon classes with SVG
+    function replaceIcons() {
+        const iconElements = document.querySelectorAll('[class*="icon-"]');
+        
+        iconElements.forEach(element => {
+            const classes = element.className.split(' ');
+            const iconClass = classes.find(cls => cls.startsWith('icon-'));
+            if (!iconClass) return;
+            
+            const iconName = iconClass.replace('icon-', '');
+            
+            if (icons[iconName]) {
+                if (!element.querySelector('.icon-svg')) {
+                    element.insertAdjacentHTML('afterbegin', icons[iconName]);
+                }
+            }
+        });
+    }
+    
+    replaceIcons();
+    
+    // Watch for dynamically added content
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length) {
+                replaceIcons();
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    console.log('✅ SVG Icons loaded successfully');
+});
+</script>
+<!-- ===== END ICON FIX ===== -->
+
+<title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/ultimate-icons.css">
+</head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.credible.com',cType: 'managed',cRay: '9c2f9af5ecadccd7',cH: 'N_O4TYZpYgr7Qrc05sddt5XVcGntR4.zXtCdqnnjQw4-1769258489-1.2.1.1-dHR0PlsIpGv9J9WG43NHOH1Bdqzxx5WFGCKjZXfFWEtoHS57VKlld9g3cIVIQZIm',cUPMDTk:"\/blog\/personal-finance\/debt-avalanche-method\/?__cf_chl_tk=bYc85.uBgMllU5XsyDJOavf8FD4Z2J5Cql9TF8KcojM-1769258489-1.0.1.1-ijjrvnE7amhPoL1rPf1TnFgrTG_n9wiWRvYNRSUi4N8",cFPWv: 'b',cITimeS: '1769258489',cTplC:0,cTplV:5,cTplB: '0',fa:"\/blog\/personal-finance\/debt-avalanche-method\/?__cf_chl_f_tk=bYc85.uBgMllU5XsyDJOavf8FD4Z2J5Cql9TF8KcojM-1769258489-1.0.1.1-ijjrvnE7amhPoL1rPf1TnFgrTG_n9wiWRvYNRSUi4N8",md: 'mcYn0XkDWxcNTmxm5KQ5Ju3NiQSy93KfrSpun_pL20s-1769258489-1.2.1.1-Xzj45NbKI.vOyWyuAXYIsZWpDRBG5mAu_vaIX3KAFU.z.BUTCelS4TJnS8IsosRbo7cD2Wn.WiQr7stu6zYaFDrodCDB.V31xW.SlClFrJMHcIYOT481V3XYbNMGmOMgKdQoXeNceyYd54h8y1sTFWIJs0rYPOehTeHY.3CkMblQwtgiAlGdsEnZbct40YREZgALVTxVh.aW4s.e69IBYwRoKBOWCVJuc6RouAF3aSMMb0u89dWznEaj1ymzW2W.NUhzm964Sul3hfInUGEa4apjfua00EptvaFRDClh2RS1zYcSJ8XfBTmhptha9hOaQEaPtezuGQD.Gkekq0WfePhw29JburXoKeoXSeqKF7c2Vp39avpCXFzh_33ASnHRhoxlGgiTEyJo8LFXqgLxP8LmYdDT37RKgQppuIOWNfCh6ziwqfQH6j3xmpWDYJhKgsKmjsJO3dOSQC7BlnPfeOXU6Emk7kFk2SNEGGiBY8vJmwaXELx6DRm4t5NqDY6CjoOKtLIiPKcCQ4X5VCIqN8OIi.v9j08Adthtz_AfQHliW6V4Habcjx29OIQsPMPwbKlPKRpTyfr4OXMw74XDJhFFn9W6K1.HC1blE4nEPl_YMD_4d7Ph.53CmC3hMnrFA14Zcs6bFftb4F58eVQlysEBkL9kNlnjih6Qck7I1MrmcZkueyguuRKkj2XBkxBRkzfAt06j8ZtO4ZZ1nhHMN8RzWmYAe2sy7z.wnQzKBfi9tFyb4QRRwNthXfJnOSCg6p5Nu_9bBcJweIYRrZ7UZbXu5fkWXWoqtjZM5noVHNjNWbJ2Ctf_BGxmdbCdS.juPfmrFdXgFAnhu8oOIisfQvdaAPJYxU5EnARdXHf_Kt4HMxQ4s5fMM8qyKYZqFWoWr_.0Ri16n35kfQzFwHaTGQH8WMfEmpWzc3V72VGVC8hieKRZITNdfbb8cdhrZOiMp9v_IvKlGeJt1LL9dXucSpB5Bo4GLd7rzx7.7SlEbz4hKlug_RiZ8nfBqbw7yDk3',mdrd: 'ZzksF2wyxf2fYLg8Xkr2oZvVlpaj5fyGM3f5vTz5SaI-1769258489-1.2.1.1-1d6VRRU95MxtklANfLou5HI63x8HAtZZbK144CtWxNnE6bHEMdtwPHhLZ_039oM5EblN7LaCc2v0qZEfb0EtVvCvXQk9M9T4wLkgb6L.pdBNq1SYr1foUCcTWzpXQ9r0BpGQWVkoBGpalBc5gEPJoc3k.xrHGvGWBf3zU00UDB8NUvWhlCoeRcbA0y8C4kJPgvuCukihjRD571ZoNDDcfWXHWDMjkwymqynnoGdCN2L8RpJ66rO02HR7obMqUYc05.OwOTAHiY06ZqDgVj6rvxCXaYmzxrJwUjD5wEi0vkuaABzRN242.hDvR99hMf9Y_72p7Yag_QoDBNmg113seqIor_4OLvAF.M.H3I3DuRd2Z846VIwstSBhpYq3JGQwSiQnnr3pi8UhH9HCIutsYq0YTZpxBB.dWrvAEgtPl7cgqmmJJ_WN6RdlwXU0mLRGspIgiVOgbNR.UUm7AXt9XKVQncmni9B5DFsJDfn3Dk60FfGLyoZJ1yME5CY1ka7rqoxDk7Lt8vGQO9vmeN.z4Z_WroWHqLR2cgsySIWohASmh1AbGK_yy8M4Ep5Mfl48ZHOfmJvNHIFL3tHKz_5rWHdY8UQoD_xKejdjhSLP7VGTypoIn4A1D076GLxoDaJYjFVUhfY0im0zYFN.yjjjSX1aAxzaVjuKNThOyJx5dqpUFUOCzg.G0yM_BS6H1KiuS6CjToLA0GMkwItTiABqMot6XYIySdfy7wOe6cRqKMm7qPNPVeTH7zgAuoJJg1kfqph7LKbkrmfDcVy3lUO.wiIBt3OJgZwiVwN2GMW.mfCXiu36T68ABY12C5JfJlDNbxQKZgKZMW6CRSJ0tLLI15jhtIgj987uv3xUHAvCaNsLVRvQfPTZ0bjlQSdl56dIom0F1_IsEDJ1BzkaHpr2XuLVi2CuHCjeidr_JMWa0ALzAeYg.A0cQyKkykByjimh2IBdcB5tkTVg1Nug6do.b2JbwdHNYv3TiYxj7rM1eQ5AhWq47wG3WWmdPjBfwrbGFl54amjAr.lu.wvfwUxPZqwTgTZAjUXOEIdn.OrjkLTO.x_FSFlitcrXSLPZmGVOVc7mbk8c.0HXUquBwmAqJm5rMUCF_KfVDOSe5HOil3_o8EKSC0OkbV44DQIxjYfpdMe6obfgntZeucUXFdzWkcZEBHclcoXUTuekjq0kmFN.CRClxH6A.6Hla3VWb_DhdFEI1n.E7iR4KuRMiFwhXmCv32C.fRuGVHMlxBBBe6tFKeoi.FQ3UPAE1lhKHZIwIClI5XN2ZX5glRgOxZtruzH.uHsb9.5KWW_Z_q__9FlxMLpK0olM6Fh3GoT6y1yW.eVkwmRo3mAC4bOUhM7IDhyDbqJCHKifF7exXUFyz56EOquP1Lrq3Uaf5Pk3NexFIKKkZWsunoyPHQmqfNdfzoLa.nqMr5jLTo7lbEfQ_uwsE81KhIbxLJXqpPXDLDuXK7f1GBqSHZdgDoeDon0Oi3zEbI21IDGNloVzay.4yLfEBlIZSw1fvXR1peJDWbbhRaolChV4tu2LOLcut_5D4VMmGCPEwVvFVDsyrGfQB0sQZGO4J00WBm6y9tKWDLEffoKf8zJSnz0Kba1V.qkwH2dHxI0pTOsCVx6.JDGV7iCtJo4Oo6BF4e8a.GsT_8f2hmgvcKZbzH7fRia.zJr8JBmUB6ZhyEXlZiTRFS1vdbEC_pmZ93hJ1Vx.S.gxJZakSYSxYem_RVz5E304lTJoHfIJRBGUV4F8dS2Vsh36tl9ANpg.In0X0urGaE.ZTItOhVicQk0JS1JGQAGIok0TI_6uI5.QjA7Q0FBkvrCWnUbbGZ0Ll.fb3SnMvkg1tSS3zIO8F_.c4P.lGo97yQA3J9hYfHYYyoPAvkBNbWGbAdCOUPGan1S6Zw2y.NKKKR_Zkq_v1qMwHOXPxOcQPYl9bjqlimeUBisKV5xJutDxUkBy5bJ4alnmo9zBSSyY1QD8wHA8LSfg8WeC9vtnwK2elo8rB5Zf547qZH8IpZHOCSuuj7.KAHWOz_GCa7Rz0bWLU2RKGfQ.Xdh_ME.HeBbR6PNmr5d03h5Trv2Y7wnhJ_3nTkfrWhE6oUjzQOLsKGx5LlKlxcDASQdWp3x2epvXFYZjMQ7fPE.vPtoeSSSHvABTyNfInNLxoEHRLcTYa_ZpyManQ1VCMWmA9IK8x6.oNxtBi4TavmLbNOWYcWO.EWlU.X1vzRz.opKwxnVCBlB5cF_SRiKJ8vcqLvGaakDOIN9i.YysAVAGSY9N4bpcrGoI_apof.7RMUSq8tX48q7VuEQmR8a3a6GCSvynDLfRA01iBOGqN8EpHjsvMJ6rra6AQSsUeyZmpqS5Q5eVtUBmu_Sfx_GkYZuBc5gaMExMXg',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9c2f9af5ecadccd7';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/blog\/personal-finance\/debt-avalanche-method\/?__cf_chl_rt_tk=bYc85.uBgMllU5XsyDJOavf8FD4Z2J5Cql9TF8KcojM-1769258489-1.0.1.1-ijjrvnE7amhPoL1rPf1TnFgrTG_n9wiWRvYNRSUi4N8"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>    
+</body></html>
