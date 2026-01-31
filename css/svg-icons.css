@@ -1,0 +1,53 @@
+/* SVG ICON STYLING */
+.credible-icon,
+[class^="icon-"],
+[class*=" icon-"],
+.slick-prev,
+.slick-next {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.credible-icon.small,
+.icon-small { width: 16px; height: 16px; }
+.credible-icon.medium,
+.icon-medium { width: 20px; height: 20px; }
+.credible-icon.large,
+.icon-large { width: 32px; height: 32px; }
+
+.icon-primary { fill: #0066cc; }
+.icon-success { fill: #4CAF50; }
+.icon-warning { fill: #FF9800; }
+.icon-error { fill: #f44336; }
+
+button.slick-prev,
+button.slick-next {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.slick-prev:hover,
+button.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+}

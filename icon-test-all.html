@@ -28,24 +28,39 @@
         .success { color: green; }
         .fail { color: red; }
     </style>
+    <link rel="stylesheet" href="/css/svg-icons.css">
 </head>
 <body>
     <h1>Icon System Diagnostic Test</h1>
     
     <div class="test">
         <h3>1. cred-icon system:</h3>
-        <p>☰ Menu: <i class="cred-icon icon-menu"></i> <span class="success">✓ Should show hamburger</span></p>
-        <p>✓ Check: <i class="cred-icon icon-check"></i> <span class="success">✓ Should show checkmark</span></p>
-        <p>✕ Close: <i class="cred-icon icon-close"></i> <span class="success">✓ Should show X</span></p>
+        <p>☰ Menu: <svg class="credible-icon icon-menu cred-icon"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-menu"></use>
+</svg> <span class="success">✓ Should show hamburger</span></p>
+        <p>✓ Check: <span class="icon-placeholder" title="Cred Icon">[C]</span> <span class="success">✓ Should show checkmark</span></p>
+        <p>✕ Close: <svg class="credible-icon icon-close cred-icon"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-close"></use>
+</svg> <span class="success">✓ Should show X</span></p>
     </div>
     
     <div class="test">
         <h3>2. icon-* system:</h3>
-        <p>› Chevron Right: <i class="icon-chevron-right"></i></p>
-        <p>‹ Chevron Left: <i class="icon-chevron-left"></i></p>
-        <p>→ Arrow Forward: <i class="icon-arrow-forward"></i></p>
-        <p>💳 Credit Score: <i class="icon-credit-score"></i></p>
-        <p>💰 Coins: <i class="icon-coins"></i></p>
+        <p>› Chevron Right: <svg class="credible-icon icon-chevron-right"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-chevron-right"></use>
+</svg></p>
+        <p>‹ Chevron Left: <svg class="credible-icon icon-chevron-left"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-chevron-left"></use>
+</svg></p>
+        <p>→ Arrow Forward: <svg class="credible-icon icon-chevron-right"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-chevron-right"></use>
+</svg></p>
+        <p>💳 Credit Score: <svg class="credible-icon icon-credit-score"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-credit-score"></use>
+</svg></p>
+        <p>💰 Coins: <svg class="credible-icon icon-coins"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-coins"></use>
+</svg></p>
     </div>
     
     <div class="test">

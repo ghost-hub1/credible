@@ -25,16 +25,25 @@
     <!-- THE FIX -->
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="/css/absolute-fix.css">
+    <link rel="stylesheet" href="/css/svg-icons.css">
 </head>
 <body style="font-family: Arial; padding: 20px;">
     <h1>Simple Icon Test</h1>
     
     <h3>Test Icons:</h3>
-    <p>Menu: <i class="icon-menu"></i> (should be ☰)</p>
-    <p>Check: <i class="icon-check"></i> (should be ✓)</p>
-    <p>Arrow: <i class="icon-arrow-forward"></i> (should be →)</p>
-    <p>Credit: <i class="icon-credit-score"></i> (should be 💳)</p>
-    <p>Coins: <i class="icon-coins"></i> (should be 🪙)</p>
+    <p>Menu: <svg class="credible-icon icon-menu"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-menu"></use>
+</svg> (should be ☰)</p>
+    <p>Check: <span class="icon-placeholder" title="Check">[C]</span> (should be ✓)</p>
+    <p>Arrow: <svg class="credible-icon icon-chevron-right"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-chevron-right"></use>
+</svg> (should be →)</p>
+    <p>Credit: <svg class="credible-icon icon-credit-score"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-credit-score"></use>
+</svg> (should be 💳)</p>
+    <p>Coins: <svg class="credible-icon icon-coins"  width="24" height="24" viewBox="0 0 24 24">
+    <use href="/icons/credible-icons.svg#icon-coins"></use>
+</svg> (should be 🪙)</p>
     
     <h3>Slick Slider:</h3>
     <button class="slick-prev">Prev</button>

