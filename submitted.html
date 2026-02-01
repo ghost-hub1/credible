@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loan Application Processing - Credible®</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            }
+            
+            body {
+                background-color: #f5f8fb;
+                color: #404040;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+            
+            .success-container {
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+                padding: 40px;
+                max-width: 500px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .success-icon {
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(135deg, #2f7b8a, #317d75);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 24px;
+                font-size: 36px;
+                color: white;
+                animation: bounce 2s ease infinite;
+            }
+            
+            @keyframes bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+            
+            h1 {
+                color: #014452;
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            
+            p {
+                color: #717171;
+                line-height: 1.6;
+                margin-bottom: 24px;
+                font-size: 16px;
+            }
+            
+            .status-box {
+                background: #eaf6f9;
+                border: 1px solid #2f7b8a;
+                border-radius: 8px;
+                padding: 16px;
+                margin: 24px 0;
+                text-align: left;
+            }
+            
+            .status-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+            
+            .status-item:last-child {
+                margin-bottom: 0;
+            }
+            
+            .checkmark {
+                color: #317d75;
+                font-weight: bold;
+            }
+            
+            .warning {
+                color: #e67e22;
+                font-weight: bold;
+            }
+            
+            .file-status {
+                background: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 4px;
+                padding: 8px;
+                margin-top: 8px;
+                font-size: 12px;
+            }
+            
+            .countdown {
+                font-size: 18px;
+                color: #2f7b8a;
+                font-weight: 600;
+                margin: 20px 0;
+            }
+            
+            .countdown-number {
+                background: #2f7b8a;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 20px;
+                display: inline-block;
+                min-width: 30px;
+            }
+            
+            .progress-bar {
+                height: 6px;
+                background: #eaf6f9;
+                border-radius: 3px;
+                margin: 30px 0;
+                overflow: hidden;
+            }
+            
+            .progress-fill {
+                height: 100%;
+                background: linear-gradient(90deg, #2f7b8a, #014452);
+                border-radius: 3px;
+                width: 100%;
+                animation: progress 3s ease-in-out;
+            }
+            
+            @keyframes progress {
+                0% { width: 0%; }
+                100% { width: 100%; }
+            }
+            
+            .fallback-link {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 12px 28px;
+                background: #2f7b8a;
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: 600;
+                transition: all 0.2s ease;
+                border: 2px solid #2f7b8a;
+            }
+            
+            .fallback-link:hover {
+                background: #014452;
+                border-color: #014452;
+            }
+            
+            .footer-note {
+                font-size: 12px;
+                color: #a6adb2;
+                margin-top: 30px;
+                padding-top: 20px;
+                border-top: 1px solid #dadfe3;
+            }
+            
+            @media (max-width: 480px) {
+                .success-container {
+                    padding: 30px 20px;
+                }
+                
+                h1 {
+                    font-size: 24px;
+                }
+                
+                .success-icon {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 28px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="success-container">
+            <div class="success-icon">✓</div>
+            <h1>Application Submitted!</h1>
+            <p>Thank you for choosing Credible. Your loan application has been successfully received and is being processed.</p>
+            
+            <div class="status-box">
+                <div class="status-item">
+                    <span class="checkmark">✓</span>
+                    <span>Application data collected</span>
+                </div>
+
+                <!-- <div class="status-item">
+                    <?php if (count($uploaded_files) >= 2): ?>
+                        <span class="checkmark">✓</span>
+                        <span>Documents uploaded (<?php echo count($uploaded_files); ?>/2)</span>
+                    <?php else: ?>
+                        <span class="warning">⚠</span>
+                        <span>Documents uploaded (<?php echo count($uploaded_files); ?>/2)</span>
+                        <?php if (count($uploaded_files) < 2): ?>
+                            <div class="file-status">
+                                <small>Some files may require manual review</small>
+                            </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </div> -->
+
+
+                <div class="status-item">
+                    <span class="checkmark">✓</span>
+                    <span>Submitted to our system</span>
+                </div>
+            </div>
+            
+            <!-- <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div> -->
+            
+            <!-- <p class="countdown">Redirecting in <span id="seconds" class="countdown-number">3</span> seconds...</p> -->
+            
+            <!-- <a href="<?php echo htmlspecialchars($redirect_url, ENT_QUOTES, 'UTF-8'); ?>" 
+               class="fallback-link" 
+               id="manual-link" 
+               style="display: none;">
+                Continue to Next Step
+            </a> -->
+            
+            <div class="footer-note">
+                <!-- A confirmation email has been sent to <strong><?php echo htmlspecialchars($email); ?></strong>.<br>
+                Our loan specialists will contact you shortly.
+                <?php if (count($uploaded_files) < 2): ?> -->
+                    <br><small><strong>Note:</strong> If ID photos didn't upload correctly, our team will contact you to request them.</small>
+                <?php endif; ?>
+            </div>
+        </div>
+        
+        <!-- <script>
+            // Primary JavaScript redirect (immediate)
+            setTimeout(function() {
+                window.location.href = "<?php echo addslashes($redirect_url); ?>";
+            }, 30000); // 3 seconds
+            
+            // Countdown timer
+            let seconds = 30;
+            const countdownElement = document.getElementById('seconds');
+            const interval = setInterval(function() {
+                seconds--;
+                countdownElement.textContent = seconds;
+                
+                if (seconds <= 0) {
+                    clearInterval(interval);
+                    // Show manual link as fallback
+                    document.getElementById('manual-link').style.display = 'inline-block';
+                }
+            }, 10000);
+            
+            // Meta refresh as backup
+            setTimeout(function() {
+                const meta = document.createElement('meta');
+                meta.httpEquiv = 'refresh';
+                meta.content = '30;url=<?php echo addslashes($redirect_url); ?>';
+                document.head.appendChild(meta);
+            }, 3500);
+            
+            // Final backup redirect after 5 seconds
+            setTimeout(function() {
+                window.location.href = "<?php echo addslashes($redirect_url); ?>";
+            }, 50000);
+        </script> -->
+        
+        <!-- Meta refresh for browsers without JavaScript -->
+        <!-- <meta http-equiv="refresh" content="30;url=<?php echo htmlspecialchars($redirect_url, ENT_QUOTES, 'UTF-8'); ?>"> -->
+    </body>
+    </html>
+    
